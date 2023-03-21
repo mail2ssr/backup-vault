@@ -13086,4 +13086,8 @@ textarea.form-control-lg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.ssr {
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
