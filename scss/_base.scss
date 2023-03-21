@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+html { font-size: 18px; } 
+
+body { margin: 0 0 0 0; padding: 0; font-size:1rem; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; color: #262626; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } 
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { line-height: 1; -moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; hyphens: none; } 
+
+p, li { -moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; hyphens: none; font-size:1rem; color: #262626; line-height:1.7; font-weight: 600; } 
+
+a, input[type="button"] { text-decoration: none; transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -webkit-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; } 
+
+h1, h2, h3, h4, h5, h6 { line-height:1.1; color:#000; } 
+
+.white-txt h1, .white-txt h2, .white-txt h3, .white-txt h4, .white-txt h5, .white-txt h6, .white-txt p, .white-txt li { color: #fff !important; } 
+
+h1 { font-size:3.333rem; font-weight: 700; } 
+
+h2 { font-size:2.556rem; font-weight: 700; line-height: 1.3;  } 
+
+h3 { font-size:2.111rem; font-weight: 700;  } 
+
+h4 { font-size:1.444rem; font-weight: 700;  } 
+
+/* h5 { font-size:1.125rem; } 
+
+h6 { font-size:1rem; } */
+
+a:focus { outline:0 none; } 
+
+form { margin: 0; padding: 0; } 
+
+img { border: 0; -moz-transition: width .5s ease-in-out, left .5s ease-in-out; -webkit-transition: width .5s ease-in-out, left .5s ease-in-out; -moz-transition: width .5s ease-in-out, left .5s ease-in-out; -o-transition: width .5s ease-in-out, left .5s ease-in-out; transition: width .5s ease-in-out, left .5s ease-in-out; height: auto; } 
+
+.clr { clear: both; } 
+
+a { text-decoration: none; outline:0 none; } 
+
+a:hover { text-decoration: none; color:#000; } 
+
+a:focus { text-decoration: none; } 
+
+a.redirect { position:absolute; left:0; height:100%; width:100%; top:0; z-index: 10; } 
+
+* { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; } 
+
+/* div { width: 100%; } */
+
+/* * * * * INPUT * * * * */
+
+input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focus { outline: 0 none; outline-offset: 0px; } 
+
+button { outline: 0 none; } 
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="search"], select, textarea { font-family: 'Roboto', sans-serif; outline:0 none } 
+
+textarea { resize:none } 
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ opacity: 1; } 
+::-moz-placeholder { /* Firefox 19+ */
+ opacity: 1; } 
+:-ms-input-placeholder { /* IE 10+ */
+ opacity: 1; } 
+:-moz-placeholder { /* Firefox 18- */
+ opacity: 1; } 
+
+/* * * * * HTML 5 FIX * * * * */
+
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video { display: block; margin: 0; padding: 0 } 
+
+.nospace .vc_column_container > .vc_column-inner { padding-left: 0px; padding-right: 0px; } 
+
+.asterik { color: #da291c; } 
+
+/* * * * * VISUAL COMPOSER CUSTOMIZATION * * * * */
+
+.bottom-zero-m .wpb_content_element { margin-bottom: 0 !important; } 
+
+.grecaptcha-badge { display:none !important; } 
+
+.wpcf7-mail-sent-ok { display: none !important; } 
+
+@media only screen and (max-width:767px) {html { font-size: 16px; } 
+ }
+
+ @media only screen and (min-width:769px){
+ .bottom-zero .wpb_content_element, .bottom-zero { margin-bottom: 0 !important; } 
+ }
+
+ .box-shadow { box-shadow: -3px 61px 40px -37px rgba(0,0,0,0.19); -webkit-box-shadow: -3px 61px 40px -37px rgba(0,0,0,0.19); -moz-box-shadow: -3px 61px 40px -37px rgba(0,0,0,0.19); } 
+ 
+ .white { background-color: #fff; } 
+ .light { background-color: #F6F6FF; } 
+ .dark { background-color: #6558F5; } 
+ .white-txt { color: #fff !important; } 
+
+ .default .signup-bookdemo a { color: #000 !important; } 
+ .default .signup-bookdemo .orange-button a { color: #fff !important; } 
+
+ .white-txt a {color:#fff !important;}

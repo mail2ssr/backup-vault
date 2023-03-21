@@ -1,4 +1,9 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+@import "base";
 
 @import "blocks/header";
+
+@import "blocks/testimonials";
+
+@import "blocks/common-data-protection-questions";
