@@ -13323,26 +13323,21 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 .testimonials-w {
   padding: 160px 0;
 }
-
-.brief-c {
+.testimonials-w .brief-c {
   max-width: 500px;
   text-align: center;
   margin: 0 auto;
 }
-
-.brief-c h2, .brief-c .h2 {
+.testimonials-w .brief-c h2, .testimonials-w .brief-c .h2 {
   margin: 0 0 30px 0;
 }
-
-.brief-c p {
+.testimonials-w .brief-c p {
   margin: 0;
 }
-
-.cont-testimonials {
+.testimonials-w .cont-testimonials {
   margin: 0;
 }
-
-.static-testimonials {
+.testimonials-w .cont-testimonials .static-testimonials {
   margin: 100px 0 0 0;
   padding: 0;
   display: -webkit-box;
@@ -13351,10 +13346,9 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
-.column-testimonials {
-  border: 1px solid #E6E8EB;
-  background-color: #FBFBFB;
+.testimonials-w .cont-testimonials .static-testimonials .column-testimonials {
+  border: 1px solid #e6e8eb;
+  background-color: #fbfbfb;
   padding: 30px;
   border-radius: 30px;
   -webkit-box-flex: 0;
@@ -13362,8 +13356,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
           flex: 0 0 calc(33.33333333% - 30px);
   margin: 0 20px 30px;
 }
-
-.author-testimonial {
+.testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13371,8 +13364,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
       -ms-flex-align: center;
           align-items: center;
 }
-
-.img-author {
+.testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .img-author {
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -13380,23 +13372,20 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   background-color: greenyellow;
   margin-right: 15px;
 }
-
-.author-d {
+.testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .author-d {
   margin: 0;
 }
-
-.author-d h5, .author-d .h5 {
+.testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .author-d h5, .testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .author-d .h5 {
   font-size: 18px;
   margin: 0 0 10px 0;
   padding: 0;
   font-weight: 700;
 }
-
-.author-d h6, .author-d .h6 {
+.testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .author-d h6, .testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .author-d .h6 {
   font-size: 18px;
   margin: 0;
   padding: 0;
-  color: #007AFF;
+  color: #007aff;
   font-weight: normal;
 }
 
