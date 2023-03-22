@@ -13391,7 +13391,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 
 .cdpa-w {
   padding: 160px 0;
-  background: url(../images/cdpq-bg.png) no-repeat;
+  background: url(../images/cdpq-bg.svg) no-repeat;
   background-size: cover;
   position: relative;
 }
