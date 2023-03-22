@@ -1,0 +1,58 @@
+.ourtechpartners-w {
+  padding: 160px 0;
+  position: relative;
+  background: url(../images/otp-bg.png) no-repeat;
+  background-size: cover;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:before {
+    width: 396px;
+    height: 236px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+  }
+
+  &:after {
+    width: 396px;
+    height: 236px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+  }
+
+  .brief-c {
+    max-width: 560px;
+  }
+
+  .cont-otp {
+    display: flex;
+    margin: 80px -40px;
+    justify-content: center;
+
+    .column-otp {
+      flex: 0 0 calc(33.33333333% - 80px);
+      margin: 0 40px 30px;
+      padding: 40px 30px;
+      background-color: #fff;
+      border-radius: 30px;
+      text-align: center;
+    }
+
+    .partner-logo {
+      margin: 0 0 20px 0;
+    }
+
+    .column-otp p {
+      margin: 0;
+    }
+  }
+}

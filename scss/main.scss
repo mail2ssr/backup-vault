@@ -1,13 +1,17 @@
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 @import "function";
-@import "base";
 
+@import "base";
 
 //common
 @import "blocks/header";
-
+@import "blocks/common-ui";
 
 //blocks
+@import "blocks/free-trial";
+@import "blocks/our-tech-partners";
 @import "blocks/testimonials";
+@import "blocks/whychoose";
 @import "blocks/common-data-protection-questions";

@@ -1,50 +1,128 @@
+.cdpa-w {
+  padding: 160px 0;
+  background: url(../images/cdpq-bg.png) no-repeat ; 
+  background-size: cover;
+  position: relative;
 
-.cdpa-w{ padding: 160px 0; background: url(../images/cdpq-bg.svg) no-repeat; background-size: cover; position: relative;}
+  .brief-c{ max-width: 580px;}
 
-.cdpa-w .container{ position: relative; z-index: 1;}
+  .brief-c h2, .brief-c .h2, .brief-c p{ color:#fff}
 
-.cdpa-w:before{ width: 396px; height: 236px; position: absolute; top: 0; right: 0; content: ""; background: url(../images/white-small-bubbles-bg.svg) no-repeat;}
+  .container {
+    position: relative;
+    z-index: 1;
+  }
 
-.cdpa-w:after{ width: 396px; height: 236px; position: absolute; bottom: 0; left: 0; content: "";  background: url(../images/white-small-bubbles-bg.svg) no-repeat;}
+  &:before {
+    width: 396px;
+    height: 236px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+  }
 
-.title-cdpa{ max-width: 580px; text-align: center; margin: 0 auto; padding: 0 40px;}
-
-.title-cdpa h2{ margin: 0 0 30px 0;}
-
-.title-cdpa p{margin:0 ;}
-
-.cont-cdpa{ max-width: 786px; margin: 0 auto; padding: 0;}
-
-.accordion-cdpa{ margin: 80px 0 0 0;}
-
-.accordion-cdpa .accordion-item{ background-color: transparent; margin-bottom: 15px; border-radius:30px; border: 1px solid #fff !important; overflow: hidden; }
-
-.accordion-cdpa .accordion-button:not(.collapsed){  background-color: rgba(255,255,255,0.2);}
-
-.accordion-cdpa .accordion-button{ background-color: transparent; color: #fff; font-size: 1rem; font-weight: 600; border-bottom: none; box-shadow: none; padding: 28px 60px 28px 30px; position: relative;}
-
-.accordion-cdpa .accordion-body{ color: #fff; padding: 0 30px 30px 30px; background-color: rgba(255,255,255,0.2); }
-
-.accordion-cdpa .accordion-item:not(:first-of-type){border: none;}
-
-.accordion-cdpa .accordion-button:after{ display: none;}
-
-.accordion-cdpa .accordion-button .ico{ position: absolute; right: 35px; width: 10px; height: 10px; display: flex; align-items: center; flex-direction: column; justify-content: center;}
-
-.accordion-cdpa .accordion-button .ico:after{  width: 100%; height: 2px; background-color: #fff; content: ""; position: absolute; border-radius: 3px;}
-
-.accordion-cdpa .accordion-button .ico:before{  width: 2px; height: 100%; background-color: #fff; content: ""; position: absolute;}
-
-.accordion-cdpa .accordion-button:not(.collapsed) .ico:before{display: none;}
+  &:after {
+    width: 396px;
+    height: 236px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+  }
 
 
-@media only screen and (max-width:767px) {
 
-    .cdpa-w{ padding: 50px 0;} 
-    
-    .accordion-cdpa{ margin-top: 50px;}
+  .cont-cdpa {
+    max-width: 786px;
+    margin: 0 auto;
+    padding: 0;
 
+    .accordion-cdpa {
+      margin: 80px 0 0 0;
+
+
+
+      .accordion-item {
+        background-color: transparent;
+        margin-bottom: 15px;
+        border-radius: 30px;
+        border: 1px solid #fff !important;
+        overflow: hidden;
+
+        :not(:first-of-type) {
+          border: none;
+        }
+
+        .accordion-button:not(.collapsed) {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .accordion-button:not(.collapsed) .ico:before {
+          display: none;
+        }
+
+        .accordion-button {
+          background-color: transparent;
+          color: #fff;
+          font-size: 1rem;
+          font-weight: 600;
+          border-bottom: none;
+          box-shadow: none;
+          padding: 28px 60px 28px 30px;
+          position: relative;
+
+          &:after {
+            display: none;
+          }
+
+          .ico {
+            position: absolute;
+            right: 35px;
+            width: 10px;
+            height: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            &:after {
+              width: 100%;
+              height: 2px;
+              background-color: #fff;
+              content: "";
+              position: absolute;
+              border-radius: 3px;
+            }
+
+            &:before {
+              width: 2px;
+              height: 100%;
+              background-color: #fff;
+              content: "";
+              position: absolute;
+            }
+          }
+        }
+
+        .accordion-body {
+          color: #fff;
+          padding: 0 30px 30px 30px;
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
 }
 
+ @media only screen and (max-width: 767px) {
+  .cdpa-w {
+    padding: 50px 0;
+  }
 
-
+  .accordion-cdpa {
+     margin-top: 50px;
+   }
+ }
