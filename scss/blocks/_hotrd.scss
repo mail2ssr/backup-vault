@@ -1,0 +1,79 @@
+.hotrd-w {
+  padding: 160px 0;
+  background: url(../images/hotrd-bg.png) no-repeat;
+  background-size: cover;
+
+  @include max-screen(767px) {
+    padding: 60px 0;
+  }
+
+  .brief-c {
+    max-width: 700px;
+
+    p {
+      max-width: 476px;
+      margin: 0 auto;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:before {
+    width: 396px;
+    height: 236px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+  }
+
+  &:after {
+    width: 396px;
+    height: 236px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+  }
+
+  .cont-hotrd {
+    margin-top: 100px;
+    display: flex;
+
+    @include max-screen(991px) {
+        flex-direction: column;
+      }
+
+    .column-hotrd {
+      flex: 0 0 calc(33.33333333% - 30px);
+      margin: 0 15px 50px;
+      text-align: center;
+
+      &:last-child{ margin-bottom: 0;}
+
+      @include max-screen(991px) {
+        flex: 0 0 calc(100% - 30px);
+      }
+
+      .icon-hotrd {
+        margin: 0 0 30px 0;
+      }
+
+      h4 {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        line-height: 1.5;
+
+        span {
+          color: #b3e4ff;
+        }
+      }
+    }
+  }
+}
