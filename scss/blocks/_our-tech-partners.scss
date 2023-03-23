@@ -4,6 +4,10 @@
   background: url(../images/otp-bg.png) no-repeat;
   background-size: cover;
 
+  @include max-screen(767px) {
+    padding: 60px 0;
+  }
+
   .container {
     position: relative;
     z-index: 1;
@@ -35,8 +39,16 @@
 
   .cont-otp {
     display: flex;
-    margin: 80px -40px;
+    margin: 80px 0 0 0;
     justify-content: center;
+
+    @include max-screen(767px) {
+      margin-top: 50px;
+    }
+
+    @include max-screen(991px) {
+      flex-direction: column;
+    }
 
     .column-otp {
       flex: 0 0 calc(33.33333333% - 80px);
@@ -45,14 +57,18 @@
       background-color: #fff;
       border-radius: 30px;
       text-align: center;
+
+      p {
+        margin: 0;
+      }
+
+      @include max-screen(991px) {
+        flex: 0 0 calc(100% - 80px);
+      }
     }
 
     .partner-logo {
       margin: 0 0 20px 0;
-    }
-
-    .column-otp p {
-      margin: 0;
     }
   }
 }

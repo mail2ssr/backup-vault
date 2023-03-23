@@ -1,0 +1,28 @@
+<svg width="686" height="718" viewBox="0 0 686 718" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.202254" filter="url(#filter0_f_0_7298)">
+<rect x="109" y="109" width="660" height="500" rx="20" fill="#003E81"/>
+</g>
+<rect x="89" y="49" width="700" height="500" rx="20" fill="#222426"/>
+<mask id="mask0_0_7298" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="89" y="49" width="700" height="500">
+<rect x="89" y="49" width="700" height="500" rx="20" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_7298)">
+<g opacity="0.85303">
+<rect x="89" y="49" width="700" height="500" rx="20" fill="#007AFF"/>
+<mask id="mask1_0_7298" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="89" y="49" width="700" height="500">
+<rect x="89" y="49" width="700" height="500" rx="20" fill="white"/>
+</mask>
+<g mask="url(#mask1_0_7298)">
+</g>
+</g>
+</g>
+<circle cx="388" cy="299" r="50" fill="#FBFBFB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M383.267 292.598C383.267 291.002 385.044 290.049 386.373 290.932L395.659 297.102C396.85 297.893 396.85 299.642 395.659 300.433L386.373 306.603C385.044 307.486 383.267 306.533 383.267 304.937L383.267 292.598Z" fill="#00A4FF"/>
+<defs>
+<filter id="filter0_f_0_7298" x="0.26873" y="0.26873" width="877.463" height="717.463" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="54.3656" result="effect1_foregroundBlur_0_7298"/>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,122 @@
+.home-banner-w {
+  padding: 120px 0;
+
+
+
+  h1 {
+    color: #262626;
+    letter-spacing: -1px;
+    line-height: 1.23;
+    margin: 0 0 35px 0;
+
+    span {
+      color: #007aff;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    max-width: 476px;
+  }
+
+  ul {
+    margin: 0 0 0 0;
+    padding: 15px 0 38px 0;
+    display: flex;
+
+    li {
+      list-style-type: none;
+      margin: 0 20px 20px 0;
+      padding: 0 0 0 35px;
+      flex: 0 0 33.3333333333%;
+      color: #262626;
+      background: url(../images/icon-blue-circle-check.svg) no-repeat left 2px;
+      flex: 1 0 auto;
+      font-weight: bold;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .trusted-partners {
+    margin: 35px 0 0 0;
+    max-width: 560px;
+
+    @include max-screen(991px) {
+
+        max-width: 100%;
+        
+      }
+    
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+
+      @include max-screen(991px) {
+
+        display: block;
+        text-align: center;
+        max-width: 425px; margin: 0 auto;
+        
+      }
+
+      li {
+        margin: 0 40px 0 0;
+        padding: 0;
+        background: none;
+
+        @include max-screen(991px) {
+
+          display: inline-block;
+          margin-bottom:20px;
+
+          
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .home-free-trial {
+    padding: 0;
+  }
+
+  @include max-screen(991px) {
+
+    p{ max-width: 100%;}
+    
+  }
+
+  @include max-screen(767px) {
+    padding: 60px 0;
+  }
+
+  .home-info{ padding: 0;
+
+    @include max-screen(991px) {
+        text-align: center;
+        
+      }
+
+}
+
+  .home-video-img {
+    margin: 0;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
