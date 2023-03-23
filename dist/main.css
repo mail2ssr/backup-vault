@@ -13401,11 +13401,6 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   color: #fff;
   margin: 0 0 20px 0;
 }
-@media only screen and (max-width: 767px) {
-  .free-trial-w .free-trial-c h2, .free-trial-w .free-trial-c .h2 {
-    color: red;
-  }
-}
 .free-trial-w .free-trial-c p {
   color: #fff;
 }
@@ -13599,7 +13594,9 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 .cdpa-w .brief-c {
   max-width: 580px;
 }
-.cdpa-w .brief-c h2, .cdpa-w .brief-c .h2, .cdpa-w .brief-c p {
+.cdpa-w .brief-c h2,
+.cdpa-w .brief-c .h2,
+.cdpa-w .brief-c p {
   color: #fff;
 }
 .cdpa-w .container {
