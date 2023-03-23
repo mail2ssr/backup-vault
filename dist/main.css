@@ -13401,6 +13401,11 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   color: #fff;
   margin: 0 0 20px 0;
 }
+@media only screen and (max-width: 767px) {
+  .free-trial-w .free-trial-c h2, .free-trial-w .free-trial-c .h2 {
+    color: red;
+  }
+}
 .free-trial-w .free-trial-c p {
   color: #fff;
 }
