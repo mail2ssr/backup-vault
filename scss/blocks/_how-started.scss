@@ -1,0 +1,44 @@
+.how-started-w {
+  background-color: #f5faff;
+  padding: 160px 0;
+
+  @include max-screen(991px) {
+    padding: 60px 0;
+  }
+
+  .brief-c {
+    max-width: 580px;
+  }
+
+  .cont-howstarted {
+    margin: 0;
+    max-width: 988px;
+    margin: 0 auto;
+  }
+
+  .director {
+    max-width: 250px;
+    margin: 40px auto;
+    text-align: center;
+
+    img {
+      width: 85px;
+      height: 85px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    h5 {
+      font-size: pxToRem(18px);
+      margin: 0 0 10px 0;
+      font-weight: bold;
+    }
+
+    h6 {
+      color: #007aff;
+      font-weight: 500;
+      font-size: pxToRem(18px);
+    }
+  }
+}

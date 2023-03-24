@@ -1,0 +1,44 @@
+.about-hdr {
+  padding-top: 70px;
+  padding-bottom: 150px;
+
+  .about-hdrinfo {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto;
+
+    h1 {
+      margin: 0 0 40px 0;
+    }
+
+    p {
+      font-size: pxToRem(20px);
+    }
+  }
+
+  .about-logos {
+    margin: 75px 0 0 0;
+    padding: 0;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 calc(20% - 30px);
+        margin: 0 15px 30px;
+        min-height: 120px;
+        border: 1px solid #e6e8eb;
+        border-radius: 25px;
+      }
+    }
+  }
+}

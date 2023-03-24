@@ -13124,7 +13124,7 @@ a, input[type=button] {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1.1;
-  color: #000;
+  color: #262626;
 }
 
 .white-txt h1, .white-txt .h1, .white-txt h2, .white-txt .h2, .white-txt h3, .white-txt .h3, .white-txt h4, .white-txt .h4, .white-txt h5, .white-txt .h5, .white-txt h6, .white-txt .h6, .white-txt p, .white-txt li {
@@ -13314,10 +13314,11 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 }
 
 .header {
-  padding: 0;
+  padding: 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 130px;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -13345,7 +13346,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   border-radius: 27px;
   display: inline-block;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.8333333333rem;
   color: #fff;
   font-weight: bold;
   padding: 0 30px;
@@ -13363,7 +13364,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   display: inline-block;
   border: 1px solid #fff;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.8333333333rem;
   color: #fff;
   font-weight: bold;
   padding: 0 35px;
@@ -13385,7 +13386,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   border-radius: 27px;
   display: inline-block;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.8333333333rem;
   color: #fff;
   font-weight: bold;
   padding: 0 25px 0 20px;
@@ -13406,7 +13407,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   display: inline-block;
   border: 1px solid #fff;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.8333333333rem;
   color: #fff;
   font-weight: bold;
   padding: 0 25px 0 20px;
@@ -13418,6 +13419,60 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 .border-button-i a:hover {
   background-color: rgb(255, 255, 255);
   color: #262626;
+}
+
+.download-contact {
+  background-color: #007aff;
+  padding: 12px 0;
+}
+@media only screen and (max-width: 991px) {
+  .download-contact {
+    text-align: center;
+  }
+}
+.download-contact p {
+  color: #fff;
+  margin: 0;
+  font-size: 0.8333333333rem;
+}
+.download-contact p a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 0.8333333333rem;
+}
+.download-contact .call {
+  margin: 0;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+@media only screen and (max-width: 991px) {
+  .download-contact .call {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 8px;
+  }
+}
+.download-contact .call a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8333333333rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.download-contact .call a img {
+  width: 14px;
+  height: auto;
+  margin-right: 6px;
 }
 
 .home-banner-w {
@@ -13433,7 +13488,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   color: #007aff;
 }
 .home-banner-w p {
-  font-size: 20px;
+  font-size: 1.1111111111rem;
   max-width: 476px;
 }
 .home-banner-w ul {
@@ -13536,6 +13591,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   padding: 160px 0;
   background: url(../images/hotrd-bg.png) no-repeat;
   background-size: cover;
+  position: relative;
 }
 @media only screen and (max-width: 767px) {
   .hotrd-w {
@@ -13659,7 +13715,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   border-radius: 27px;
   display: inline-block;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.8333333333rem;
   color: #303333;
   font-weight: bold;
   padding: 0 30px;
@@ -14060,14 +14116,14 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   margin: 0;
 }
 .testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .author-d h5, .testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .author-d .h5 {
-  font-size: 18px;
+  font-size: 1rem;
   margin: 0 0 10px 0;
   padding: 0;
   font-weight: 700;
   color: #262626;
 }
 .testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .author-d h6, .testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .author-d .h6 {
-  font-size: 18px;
+  font-size: 1rem;
   margin: 0 0 5px 0;
   padding: 0;
   color: #007aff;
@@ -14341,7 +14397,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   }
 }
 .bottom-w h6, .bottom-w .h6 {
-  font-size: 15px;
+  font-size: 0.8333333333rem;
   font-weight: 700;
   margin: 0 0 18px 0;
   color: #222426;
@@ -14368,7 +14424,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   }
 }
 .bottom-w ul li a {
-  font-size: 15px;
+  font-size: 0.8333333333rem;
   color: #222426;
 }
 .bottom-w ul li a:hover {
@@ -14404,7 +14460,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   padding: 0;
   list-style-type: none;
   color: #222426;
-  font-size: 15px;
+  font-size: 0.8333333333rem;
   font-weight: 700;
 }
 @media only screen and (max-width: 991px) {
@@ -14444,12 +14500,12 @@ footer {
 }
 footer p {
   color: #222426;
-  font-size: 15px;
+  font-size: 0.8333333333rem;
   margin: 0;
   padding: 0;
 }
 footer p span {
-  color: #007AFF;
+  color: #007aff;
 }
 footer .sm-icons {
   margin: 0;
@@ -14473,4 +14529,94 @@ footer .sm-icons a img {
   footer {
     text-align: center;
   }
+}
+
+.about-hdr {
+  padding-top: 70px;
+  padding-bottom: 150px;
+}
+.about-hdr .about-hdrinfo {
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto;
+}
+.about-hdr .about-hdrinfo h1, .about-hdr .about-hdrinfo .h1 {
+  margin: 0 0 40px 0;
+}
+.about-hdr .about-hdrinfo p {
+  font-size: 1.1111111111rem;
+}
+.about-hdr .about-logos {
+  margin: 75px 0 0 0;
+  padding: 0;
+}
+.about-hdr .about-logos ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about-hdr .about-logos ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(20% - 30px);
+          flex: 0 0 calc(20% - 30px);
+  margin: 0 15px 30px;
+  min-height: 120px;
+  border: 1px solid #e6e8eb;
+  border-radius: 25px;
+}
+
+.how-started-w {
+  background-color: #f5faff;
+  padding: 160px 0;
+}
+@media only screen and (max-width: 991px) {
+  .how-started-w {
+    padding: 60px 0;
+  }
+}
+.how-started-w .brief-c {
+  max-width: 580px;
+}
+.how-started-w .cont-howstarted {
+  margin: 0;
+  max-width: 988px;
+  margin: 0 auto;
+}
+.how-started-w .director {
+  max-width: 250px;
+  margin: 40px auto;
+  text-align: center;
+}
+.how-started-w .director img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.how-started-w .director h5, .how-started-w .director .h5 {
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+.how-started-w .director h6, .how-started-w .director .h6 {
+  color: #007aff;
+  font-weight: 500;
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
