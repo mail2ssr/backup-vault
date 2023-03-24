@@ -1,0 +1,172 @@
+.protect-business-w {
+  padding: 160px 0;
+
+  @include max-screen(767px) {
+    padding: 60px 0;
+  }
+
+  .protect-features {
+    margin: 100px 0 0 0;
+
+    .column-pf {
+      padding: 77px;
+      min-height: 600px;
+      margin-bottom: 40px;
+      margin-right: 13px;
+      position: relative;
+      border-radius: 50px;
+      overflow: hidden;
+      background-clip: padding-box;
+
+      @include max-screen(991px) {
+        margin-bottom: 60px;
+      }
+
+      h3 {
+        color: #fff;
+        margin: 0 0 15px 0;
+        line-height: 1.4;
+
+        span {
+          color: #bfe8ff;
+        }
+      }
+
+      p {
+        color: #fff;
+        margin: 0 0 40px 0;
+      }
+
+      a {
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 27px;
+        display: inline-block;
+        text-align: center;
+        font-size: 15px;
+        color: #303333;
+        font-weight: bold;
+        padding: 0 30px;
+        line-height: 54px;
+
+        &:hover {
+          background-color: rgba(11, 212, 125, 0.7);
+          color: #fff;
+        }
+      }
+
+      &.cloudbackup {
+        background: url(../images/cloudbackup-bg.png) no-repeat left top;
+        background-size: cover;
+
+        a {
+          color: #00a4ff;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+
+        .img-placeholder {
+          margin: 0;
+          position: absolute;
+          bottom: 0;
+          left: 77px;
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+
+      &.microsoft365 {
+        background: url(../images/microsoft365-bg.png) no-repeat left top;
+        background-size: cover;
+
+        .img-placeholder {
+          margin: 0;
+          position: absolute;
+          bottom: 0;
+          left: 77px;
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+
+      &.disasterrecovery {
+        background: url(../images/disaster-recovery-bg.png) no-repeat left top;
+        background-size: cover;
+        margin-top: 76px;
+
+        @include max-screen(991px) {
+            margin-top: 0;
+          }
+    
+
+        .img-placeholder {
+          margin: 0 auto;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 77px;
+
+          img {
+            max-width: 90%;
+          }
+        }
+      }
+
+      &.googleworkspace {
+        background: url(../images/google-workspace-bg.png) no-repeat left top;
+        background-size: cover;
+        margin-top: 76px;
+
+        a {
+          color: #00a4ff;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+
+        .img-placeholder {
+          margin: 0;
+          position: absolute;
+          bottom: -20px;
+          right: 0;
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .cont-pf {
+    max-width: 385px;
+  }
+}
+
+.your-business-data {
+  margin: 100px 0;
+
+  h2{ margin: 0 0 30px 0; color: #262626;}
+
+  .cont-ybd{ margin: 0;
+
+    @include max-screen(991px) {
+       text-align: center;
+      }
+
+}
+
+
+  .img-ybd{ margin: 0;
+
+img{ max-width: 100%;
+}
+
+}
+}
