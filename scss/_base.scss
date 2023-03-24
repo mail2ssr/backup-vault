@@ -90,13 +90,14 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
  }
 
  .box-shadow { box-shadow: -3px 61px 40px -37px rgba(0,0,0,0.19); -webkit-box-shadow: -3px 61px 40px -37px rgba(0,0,0,0.19); -moz-box-shadow: -3px 61px 40px -37px rgba(0,0,0,0.19); } 
+
+ .default p, .default li { color: #000 !important; } 
  
  .white { background-color: #fff; } 
  .light { background-color: #F6F6FF; } 
  .dark { background-color: #6558F5; } 
  .white-txt { color: #fff !important; } 
 
- .default .signup-bookdemo a { color: #000 !important; } 
- .default .signup-bookdemo .orange-button a { color: #fff !important; } 
-
  .white-txt a {color:#fff !important;}
+
+
