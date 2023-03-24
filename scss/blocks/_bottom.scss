@@ -7,7 +7,7 @@
   }
 
   h6 {
-    font-size: 15px;
+    font-size:pxToRem(15px);
     font-weight: 700;
     margin: 0 0 18px 0;
     color: #222426;
@@ -32,7 +32,7 @@
       }
 
       a {
-        font-size: 15px;
+        font-size:pxToRem(15px);
         color: #222426;
 
         &:hover {
@@ -72,7 +72,7 @@
         padding: 0;
         list-style-type: none;
         color: #222426;
-        font-size: 15px;
+        font-size:pxToRem(15px);
         font-weight: 700;
 
         @include max-screen(991px) {

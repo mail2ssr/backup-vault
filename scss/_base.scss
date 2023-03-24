@@ -7,11 +7,11 @@ body { margin: 0 0 0 0; padding: 0; font-size:pxToRem(18px); font-family: 'Plus 
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { line-height: 1; -moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; hyphens: none; } 
 
-p, li { -moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; hyphens: none; font-size:1rem; color: #5c5c5c; line-height:1.7; font-weight: 600; } 
+p, li { -moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; hyphens: none; font-size:pxToRem(18px); color: #5c5c5c; line-height:1.7; font-weight: 600; } 
 
 a, input[type="button"] { text-decoration: none; transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -webkit-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; } 
 
-h1, h2, h3, h4, h5, h6 { line-height:1.1; color:#000; } 
+h1, h2, h3, h4, h5, h6 { line-height:1.1; color: #262626;; } 
 
 .white-txt h1, .white-txt h2, .white-txt h3, .white-txt h4, .white-txt h5, .white-txt h6, .white-txt p, .white-txt li { color: #fff !important; } 
 
