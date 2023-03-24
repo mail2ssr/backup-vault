@@ -17,7 +17,7 @@
       }
     }
   
-  .call{ margin:0; text-align: right; display: flex; justify-content: end;
+  .call{ margin:0; text-align: right; display: flex; justify-content: flex-end;
   
     @include max-screen(991px) {
       justify-content: center; margin-top: 8px;
