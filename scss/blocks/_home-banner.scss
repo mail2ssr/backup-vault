@@ -20,7 +20,8 @@
     ul {
         margin: 0 0 0 0;
         padding: 15px 0 38px 0;
-        display: flex;
+        
+        
 
         li {
             list-style-type: none;
@@ -28,9 +29,10 @@
             padding: 0 0 0 35px;
             flex: 0 0 33.3333333333%;
             color: #262626;
-            background: url(../images/icon-blue-circle-check.svg) no-repeat left 2px;
-            flex: 1 0 auto;
+            background: url(../images/icon-blue-circle-check.svg) no-repeat left 3px;
             font-weight: bold;
+            text-align: left;
+            display: inline-block;
 
             &:last-child {
                 margin-right: 0;

@@ -33,6 +33,12 @@
 
 // --- screen ------------------------------------------------------------------
 
+@mixin custom-device($min, $max) {
+  @include mq($media-type: 'screen', $min-width: $min, $max-width: $max) {
+    @content;
+  }
+}
+
 @mixin screen($min, $max, $orientation: false) {
   @include mq($min-width: $min, $max-width: $max, $orientation: $orientation) {
     @content;
