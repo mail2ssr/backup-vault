@@ -13569,9 +13569,6 @@ video {
   list-style-type: none;
   margin: 0 20px 20px 0;
   padding: 0 0 0 35px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.3333333333%;
-          flex: 0 0 33.3333333333%;
   color: #262626;
   background: url(../images/icon-blue-circle-check.svg) no-repeat left 3px;
   font-weight: bold;
@@ -13612,6 +13609,7 @@ video {
   margin: 0 40px 0 0;
   padding: 0;
   background: none;
+  display: block;
 }
 @media only screen and (max-width: 991px) {
   .home-banner-w .trusted-partners ul li {
