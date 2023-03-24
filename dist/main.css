@@ -13285,6 +13285,10 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   -moz-box-shadow: -3px 61px 40px -37px rgba(0, 0, 0, 0.19);
 }
 
+.default p, .default li {
+  color: #000 !important;
+}
+
 .white {
   background-color: #fff;
 }
@@ -13298,14 +13302,6 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 }
 
 .white-txt {
-  color: #fff !important;
-}
-
-.default .signup-bookdemo a {
-  color: #000 !important;
-}
-
-.default .signup-bookdemo .orange-button a {
   color: #fff !important;
 }
 
@@ -14804,4 +14800,50 @@ footer .sm-icons a img {
 }
 .news-w .our-blog-w .cont-ourblog .column-ourblog {
   margin-bottom: 70px;
+}
+
+.whybackup-hdr {
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+@media only screen and (max-width: 991px) {
+  .whybackup-hdr {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .whybackup-hdr {
+    padding: 60px 0;
+  }
+}
+.whybackup-hdr .whybackup-info {
+  max-width: 610px;
+}
+@media only screen and (max-width: 991px) {
+  .whybackup-hdr .whybackup-info {
+    max-width: 100%;
+  }
+}
+.whybackup-hdr h2, .whybackup-hdr .h2 {
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+.whybackup-hdr h2 span, .whybackup-hdr .h2 span {
+  color: #007AFF;
+}
+.whybackup-hdr p {
+  margin: 0;
+  max-width: 476px;
+}
+@media only screen and (max-width: 991px) {
+  .whybackup-hdr p {
+    max-width: 100%;
+  }
+}
+.whybackup-hdr .img-whybackup {
+  margin: 0;
+}
+.whybackup-hdr .img-whybackup img {
+  max-width: 100%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
