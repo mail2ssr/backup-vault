@@ -11,8 +11,13 @@
 		display: flex;
 		flex-wrap: wrap;
 
+		@include max-screen(991px) {
+			justify-content: center;
+		}
+
 		@include max-screen(767px) {
 			margin-top: 60px;
+			
 		  }
 
 		.column-whychoose {

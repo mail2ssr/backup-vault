@@ -13639,6 +13639,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 @media only screen and (max-width: 991px) {
   .protect-business-w .protect-features .column-pf {
     margin-bottom: 60px;
+    margin-right: 0;
   }
 }
 .protect-business-w .protect-features .column-pf h3, .protect-business-w .protect-features .column-pf .h3 {
@@ -13743,9 +13744,20 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 .protect-business-w .cont-pf {
   max-width: 385px;
 }
+@media only screen and (max-width: 767px) {
+  .protect-business-w .cont-pf {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 
 .your-business-data {
   margin: 100px 0;
+}
+@media only screen and (max-width: 767px) {
+  .your-business-data {
+    margin: 50px 0;
+  }
 }
 .your-business-data h2, .your-business-data .h2 {
   margin: 0 0 30px 0;
@@ -14078,6 +14090,13 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media only screen and (max-width: 991px) {
+  .whychoose-w .cont-whychoose {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media only screen and (max-width: 767px) {
   .whychoose-w .cont-whychoose {
