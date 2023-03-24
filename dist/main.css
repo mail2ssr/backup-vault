@@ -13586,7 +13586,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 .hotrd-w {
   padding: 160px 0;
   background: url(../images/hotrd-bg.png) no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   position: relative;
 }
 @media only screen and (max-width: 767px) {
@@ -14800,50 +14800,4 @@ footer .sm-icons a img {
 }
 .news-w .our-blog-w .cont-ourblog .column-ourblog {
   margin-bottom: 70px;
-}
-
-.whybackup-hdr {
-  padding-top: 70px;
-  padding-bottom: 120px;
-}
-@media only screen and (max-width: 991px) {
-  .whybackup-hdr {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .whybackup-hdr {
-    padding: 60px 0;
-  }
-}
-.whybackup-hdr .whybackup-info {
-  max-width: 610px;
-}
-@media only screen and (max-width: 991px) {
-  .whybackup-hdr .whybackup-info {
-    max-width: 100%;
-  }
-}
-.whybackup-hdr h2, .whybackup-hdr .h2 {
-  margin: 0 0 30px 0;
-  padding: 0;
-}
-.whybackup-hdr h2 span, .whybackup-hdr .h2 span {
-  color: #007AFF;
-}
-.whybackup-hdr p {
-  margin: 0;
-  max-width: 476px;
-}
-@media only screen and (max-width: 991px) {
-  .whybackup-hdr p {
-    max-width: 100%;
-  }
-}
-.whybackup-hdr .img-whybackup {
-  margin: 0;
-}
-.whybackup-hdr .img-whybackup img {
-  max-width: 100%;
-  height: auto;
 }/*# sourceMappingURL=main.css.map */
