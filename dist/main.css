@@ -13579,10 +13579,20 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 .home-banner-w .home-video-img {
   margin: 0;
 }
+@media only screen and (max-width: 991px) {
+  .home-banner-w .home-video-img {
+    margin-bottom: 60px;
+  }
+}
 .home-banner-w .home-video-img .videoBlock {
   width: 150%;
   -webkit-box-shadow: -4px 47px 52px -8px rgba(0, 0, 0, 0.3);
           box-shadow: -4px 47px 52px -8px rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width: 1100px) {
+  .home-banner-w .home-video-img .videoBlock {
+    width: 100%;
+  }
 }
 
 .hotrd-w {

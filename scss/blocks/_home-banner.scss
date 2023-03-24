@@ -105,9 +105,18 @@
     .home-video-img {
         margin: 0;
 
+        @include max-screen(991px) {
+            margin-bottom: 60px;
+        }
+
         .videoBlock {
             width: 150%;
-            box-shadow: -4px 47px 52px -8px rgba(0,0,0,0.3);
+            box-shadow: -4px 47px 52px -8px rgba(0, 0, 0, 0.3);
+
+            @include max-screen(1100px) {
+                width: 100%;
+
+            }
         }
     }
 }
