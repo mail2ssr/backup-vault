@@ -2,6 +2,10 @@
   padding-top: 70px;
   padding-bottom: 150px;
 
+  @include max-screen(767px) {
+    padding: 60px 0;
+  }
+
   .about-hdrinfo {
     text-align: center;
     max-width: 580px;
@@ -25,10 +29,11 @@
       padding: 0;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
 
       li {
         margin: 0;
-        padding: 0;
+        padding: 0 30px;
         list-style-type: none;
         display: flex;
         align-items: center;

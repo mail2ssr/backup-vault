@@ -15,10 +15,10 @@
     }
 
     .column-ourblog {
-      flex: 0 0 calc(33.33333333% - 30px);
+      flex: 0 0 calc(33.33333333% - 40px);
       padding-bottom: 100px;
       position: relative;
-      margin: 0 15px 40px;
+      margin: 0 20px 40px;
 
       @include max-screen(991px) {
         flex: 0 0 calc(100% - 30px);
