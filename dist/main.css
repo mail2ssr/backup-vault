@@ -13579,8 +13579,10 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 .home-banner-w .home-video-img {
   margin: 0;
 }
-.home-banner-w .home-video-img img {
-  max-width: 100%;
+.home-banner-w .home-video-img .videoBlock {
+  width: 150%;
+  -webkit-box-shadow: -4px 47px 52px -8px rgba(0, 0, 0, 0.3);
+          box-shadow: -4px 47px 52px -8px rgba(0, 0, 0, 0.3);
 }
 
 .hotrd-w {
