@@ -1,0 +1,46 @@
+.whybackup-hdr {
+  padding-top: 70px;
+  padding-bottom: 120px;
+
+  @include max-screen(991px) {
+    text-align: center;
+  }
+
+  @include max-screen(767px) {
+    padding: 60px 0;
+  }
+
+  .whybackup-info {
+    max-width: 610px;
+    @include max-screen(991px) {
+      max-width: 100%;
+    }
+  }
+
+  h2 {
+    margin: 0 0 30px 0;
+    padding: 0;
+
+    span {
+      color: #007aff;
+    }
+  }
+
+  p {
+    margin: 0;
+    max-width: 476px;
+
+    @include max-screen(991px) {
+      max-width: 100%;
+    }
+  }
+
+  .img-whybackup {
+    margin: 0;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
