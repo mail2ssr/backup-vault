@@ -2,6 +2,7 @@
   padding: 160px 0;
   background: url(../images/hotrd-bg.png) no-repeat;
   background-size: cover;
+  position: relative;
 
   @include max-screen(767px) {
     padding: 60px 0;
@@ -46,15 +47,17 @@
     display: flex;
 
     @include max-screen(991px) {
-        flex-direction: column;
-      }
+      flex-direction: column;
+    }
 
     .column-hotrd {
       flex: 0 0 calc(33.33333333% - 30px);
       margin: 0 15px 50px;
       text-align: center;
 
-      &:last-child{ margin-bottom: 0;}
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       @include max-screen(991px) {
         flex: 0 0 calc(100% - 30px);

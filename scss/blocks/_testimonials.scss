@@ -1,67 +1,66 @@
 .testimonials-w {
-	padding: 160px 0;
+  padding: 160px 0;
 
-	@include max-screen(767px) {
-		padding: 60px 0;
-	  }
+  @include max-screen(767px) {
+    padding: 60px 0;
+  }
 
-	.cont-testimonials {
-		margin: 0;
-		.static-testimonials {
-			margin: 80px -20px 0 -20px;
-			padding: 0;
-			display: flex;
-			flex-wrap: wrap;
+  .cont-testimonials {
+    margin: 0;
+    .static-testimonials {
+      margin: 80px -20px 0 -20px;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
 
-			@include max-screen(767px) {
-				margin-top: 50px;
-			  }
-			.column-testimonials {
-				border: 1px solid #e6e8eb;
-				background-color: #fbfbfb;
-				padding: 30px;
-				border-radius: 30px;
-				flex: 0 0 calc(33.33333333% - 40px);
-				margin: 0 20px 30px;
+      @include max-screen(767px) {
+        margin-top: 50px;
+      }
+      .column-testimonials {
+        border: 1px solid #e6e8eb;
+        background-color: #fbfbfb;
+        padding: 30px;
+        border-radius: 30px;
+        flex: 0 0 calc(33.33333333% - 40px);
+        margin: 0 20px 30px;
 
-				@include max-screen(991px) {
-					flex: 0 0 calc(50% - 40px);
-				  }
+        @include max-screen(991px) {
+          flex: 0 0 calc(50% - 40px);
+        }
 
-				  
-				@include max-screen(767px) {
-					flex: 0 0 calc(100% - 40px);
-				  }
-				.author-testimonial {
-					display: flex;
-					align-items: center;
-					.img-author {
-						border-radius: 50%;
-						width: 60px;
-						height: 60px;
-						display: block;
-						background-color: gray;
-						margin-right: 16px;
-					}
-					.author-d {
-						margin: 0;
-						h5 {
-							font-size: 18px;
-							margin: 0 0 10px 0;
-							padding: 0;
-							font-weight: 700;
-							color: #262626;
-						}
-						h6 {
-							font-size: 18px;
-							margin: 0 0 5px 0;
-							padding: 0;
-							color: #007aff;
-							font-weight: 500;
-						}
-					}
-				}
-			}
-		}
-	}
+        @include max-screen(767px) {
+          flex: 0 0 calc(100% - 40px);
+        }
+        .author-testimonial {
+          display: flex;
+          align-items: center;
+          .img-author {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: block;
+            background-color: gray;
+            margin-right: 16px;
+          }
+          .author-d {
+            margin: 0;
+            h5 {
+              font-size: 18px;
+              margin: 0 0 10px 0;
+              padding: 0;
+              font-weight: 700;
+              color: #262626;
+            }
+            h6 {
+              font-size: 18px;
+              margin: 0 0 5px 0;
+              padding: 0;
+              color: #007aff;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
 }
