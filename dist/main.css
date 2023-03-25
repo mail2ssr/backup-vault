@@ -13754,7 +13754,7 @@ video {
 }
 
 .protect-business-w {
-  padding: 160px 0;
+  padding: 160px 0 60px 0;
 }
 @media only screen and (max-width: 767px) {
   .protect-business-w {
@@ -13890,7 +13890,7 @@ video {
 }
 
 .your-business-data {
-  margin: 100px 0;
+  margin: 25px 0;
 }
 @media only screen and (max-width: 767px) {
   .your-business-data {
@@ -13921,6 +13921,7 @@ video {
   background-size: cover;
   position: relative;
   border-radius: 50px;
+  margin: 120px 0;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14468,7 +14469,7 @@ video {
 }
 
 .our-blog-w {
-  padding: 160px 0;
+  padding: 160px 0 0px 0;
 }
 @media only screen and (max-width: 767px) {
   .our-blog-w {
