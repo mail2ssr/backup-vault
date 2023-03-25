@@ -48,6 +48,8 @@
         font-weight: bold;
         padding: 0 30px;
         line-height: 54px;
+        position: relative;
+        z-index: 99999;
 
         &:hover {
           background-color: rgba(11, 212, 125, 0.7);
