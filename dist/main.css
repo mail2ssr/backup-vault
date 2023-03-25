@@ -15221,6 +15221,19 @@ footer .sm-icons a img {
 
 .intro-datac-w {
   padding: 0 0 150px;
+  position: relative;
+}
+.intro-datac-w:after {
+  position: absolute;
+  width: 100%;
+  content: "";
+  bottom: 0;
+  height: 63%;
+  background-color: #f5faff;
+}
+.intro-datac-w .container {
+  position: relative;
+  z-index: 2;
 }
 @media only screen and (max-width: 991px) {
   .intro-datac-w {
@@ -15251,6 +15264,36 @@ footer .sm-icons a img {
   border-radius: 30px;
 }
 .intro-datac-w .datac-desc {
-  margin: 50px 0 0 0;
+  margin: 80px 0 0 0;
   padding: 0;
+}
+.intro-datac-w .datac-desc .column-datac {
+  margin: 0;
+  padding: 0 30px;
+  text-align: center;
+}
+.intro-datac-w .datac-desc .column-datac .icon-datac {
+  margin: 0 0 25px 0;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.intro-datac-w .datac-desc .column-datac .icon-datac img {
+  max-width: 100px;
+  height: auto;
+}
+.intro-datac-w .datac-desc .column-datac h4, .intro-datac-w .datac-desc .column-datac .h4 {
+  margin: 0 0 15px 0;
+  padding: 0;
+  line-height: 1.4;
+}
+.intro-datac-w .datac-desc .column-datac p {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */

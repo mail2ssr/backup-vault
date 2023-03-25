@@ -1,4 +1,8 @@
-.intro-datac-w{ padding: 0 0 150px;
+.intro-datac-w{ padding: 0 0 150px; position: relative;
+
+    &:after{ position: absolute; width: 100%; content:""; bottom: 0; height:63%; background-color: #f5faff;}
+
+    .container{ position: relative; z-index: 2;}
 
     @include max-screen(991px) {
         padding:0 0 60px 0;
@@ -23,7 +27,21 @@
     
     }
 
-    .datac-desc{ margin: 50px 0 0 0; padding: 0;
+    .datac-desc{ margin: 80px 0 0 0; padding: 0;
+
+        .column-datac{ margin: 0; padding: 0 30px; text-align: center;
+
+            .icon-datac{ margin: 0 0 25px 0; min-height: 100px; display: flex; align-items: center; justify-content: center;
+            
+                img{ max-width: 100px; height: auto;}
+            
+            }
+        
+            h4{ margin: 0 0 15px 0; padding: 0; line-height: 1.4;}
+
+            p{ margin: 0;}
+        
+        }
     
         
         

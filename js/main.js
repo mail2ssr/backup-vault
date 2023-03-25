@@ -12,7 +12,7 @@ $('.slider-testimonials').slick({
             breakpoint: 991,
             settings: {
                 slidesToShow: 2,
-                dots: false,
+                dots: true,
                 arrows: true,
                 slidesToScroll: 1
             }
@@ -22,7 +22,7 @@ $('.slider-testimonials').slick({
             breakpoint: 768,
             settings: {
                 slidesToShow: 1,
-                dots: false,
+                dots: true,
                 arrows: true,
                 slidesToScroll: 1
             }
