@@ -1,0 +1,40 @@
+.intro-datac-w{ padding: 0 0 150px;
+
+    @include max-screen(991px) {
+        padding:0 0 60px 0;
+      }
+
+
+      .cont-intro-datac{ max-width: 815px; margin: 0 auto;
+    
+        .brief-c{  max-width: 100%; clear: both;
+        
+        span{ color: #007AFF;}
+
+        p{ max-width: 694px; margin: 0 auto; text-align: center; font-size:pxToRem(20px);}
+        
+        }
+
+        .img-datac{ margin:50px 0 140px 0;
+        
+        img{ border-radius: 30px;}
+        
+        }
+    
+    }
+
+    .datac-desc{ margin: 50px 0 0 0; padding: 0;
+    
+        
+        
+        
+        
+        }
+    
+    }
+
+
+
+
+    
+

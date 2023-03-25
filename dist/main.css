@@ -13401,6 +13401,11 @@ video {
   text-align: center;
   margin: 0 auto;
 }
+.brief-c:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .brief-c h2, .brief-c .h2 {
   margin: 0 0 30px 0;
 }
@@ -15212,4 +15217,40 @@ footer .sm-icons a img {
   width: 100%;
   border-radius: 20px;
   height: auto;
+}
+
+.intro-datac-w {
+  padding: 0 0 150px;
+}
+@media only screen and (max-width: 991px) {
+  .intro-datac-w {
+    padding: 0 0 60px 0;
+  }
+}
+.intro-datac-w .cont-intro-datac {
+  max-width: 815px;
+  margin: 0 auto;
+}
+.intro-datac-w .cont-intro-datac .brief-c {
+  max-width: 100%;
+  clear: both;
+}
+.intro-datac-w .cont-intro-datac .brief-c span {
+  color: #007AFF;
+}
+.intro-datac-w .cont-intro-datac .brief-c p {
+  max-width: 694px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1111111111rem;
+}
+.intro-datac-w .cont-intro-datac .img-datac {
+  margin: 50px 0 140px 0;
+}
+.intro-datac-w .cont-intro-datac .img-datac img {
+  border-radius: 30px;
+}
+.intro-datac-w .datac-desc {
+  margin: 50px 0 0 0;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
