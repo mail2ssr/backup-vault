@@ -227,8 +227,8 @@
 
             .menu-grid-3 {
 
-                visibility: visible;
-                opacity: 1;
+                //visibility: visible;
+                //opacity: 1;
 
 				@include max-screen(1100px) {
                    padding-bottom: 30px;
@@ -287,7 +287,7 @@
 
 
                 @include max-screen(1100px) {
-                    padding: 30px 20px;
+                    padding: 30px 38px;
                     width: 100%;
                     left: auto;
                     margin-left: auto;

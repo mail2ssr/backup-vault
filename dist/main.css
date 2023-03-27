@@ -13969,8 +13969,6 @@ video {
           transform: translateY(5px);
 }
 .mega-menu ul li .menu-grid-3 {
-  visibility: visible;
-  opacity: 1;
   /****************** Sub Nav Heading ******************/
 }
 @media only screen and (max-width: 1100px) {
@@ -14022,7 +14020,7 @@ video {
 }
 @media only screen and (max-width: 1100px) {
   .mega-menu ul li .single-column {
-    padding: 30px 20px;
+    padding: 30px 38px;
     width: 100%;
     left: auto;
     margin-left: auto;
