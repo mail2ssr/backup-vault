@@ -21,7 +21,6 @@
 
             >a {
                 padding: 15px 5px;
-                width: 100%;
                 display: block;
             }
 
@@ -29,6 +28,8 @@
             a {
                 font-size: 15px;
                 color: #262626 !important;
+				padding: 0 0 0 25px;
+				display: block;
 
                 @include max-screen(1100px) {}
 
@@ -38,18 +39,17 @@
             }
 
             &.menu-item-has-children {
-                background: url(../images/arrow-down.svg) no-repeat right 16px;
+                background: url(../images/arrow-down.svg) no-repeat right 13px;
 
 
                 @include max-screen(1100px) {
-                    padding: 15px 0;
                     background: none;
                     display: block;
                 }
 
                 .menu-item__parent {
                     @include max-screen(1100px) {
-                        padding: 0 25px;
+                        padding: 0 0;
                         background: url(../images/arrow-down.svg) no-repeat right 12px top 12px;
                         background-size: 12px;
                         -webkit-box-pack: justify;
@@ -74,7 +74,7 @@
             }
 
             &.menu-item-has-children:hover {
-                background: url(../images/arrow-up.svg) no-repeat right 15px;
+                background: url(../images/arrow-up.svg) no-repeat right 12px;
 
                 @include max-screen(1100px) {
                     background: none;
@@ -252,7 +252,7 @@
                     align-items: flex-start;
                     // min-height: 58px;
                     margin-bottom: 20px;
-                    margin-left: 25px;
+                    margin-left: -5px;
                     font-size: pxToRem(18px);
 
                     @include max-screen(1100px) {
