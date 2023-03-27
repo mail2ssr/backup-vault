@@ -13773,7 +13773,7 @@ video {
   .mega-menu ul li {
     display: block;
     width: 100%;
-    padding: 12px 15px 12px 0;
+    padding: 12px 0px 12px 0;
   }
 }
 .mega-menu ul li > a {
@@ -13897,6 +13897,11 @@ video {
   font-weight: 600;
   display: block;
 }
+@media only screen and (max-width: 1100px) {
+  .mega-menu ul li .sub-nav span {
+    display: none;
+  }
+}
 .mega-menu ul li .sub-nav li {
   width: auto;
   padding: 0;
@@ -13924,6 +13929,9 @@ video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .mega-menu ul li .sub-nav .menu-group .icon-menu {
   width: 40px;
@@ -13937,6 +13945,7 @@ video {
 }
 .mega-menu ul li .sub-nav .menu-group .info-menu {
   width: 100%;
+  padding-top: 2px;
 }
 @media only screen and (max-width: 1100px) {
   .mega-menu ul li .sub-nav .menu-group .info-menu span {
@@ -13960,7 +13969,14 @@ video {
           transform: translateY(5px);
 }
 .mega-menu ul li .menu-grid-3 {
+  visibility: visible;
+  opacity: 1;
   /****************** Sub Nav Heading ******************/
+}
+@media only screen and (max-width: 1100px) {
+  .mega-menu ul li .menu-grid-3 {
+    padding-bottom: 30px;
+  }
 }
 .mega-menu ul li .menu-grid-3 ul {
   padding: 0;
@@ -13980,6 +13996,11 @@ video {
   margin-bottom: 20px;
   margin-left: -9px;
   font-size: 1rem;
+}
+@media only screen and (max-width: 1100px) {
+  .mega-menu ul li .menu-grid-3 a h4, .mega-menu ul li .menu-grid-3 a .h4 {
+    margin-top: 20px;
+  }
 }
 .mega-menu ul li .menu-grid-3 a h4 img, .mega-menu ul li .menu-grid-3 a .h4 img {
   margin-right: 10px;
@@ -14001,10 +14022,11 @@ video {
 }
 @media only screen and (max-width: 1100px) {
   .mega-menu ul li .single-column {
-    padding: 0 20px;
+    padding: 30px 20px;
     width: 100%;
     left: auto;
     margin-left: auto;
+    max-width: none;
   }
 }
 

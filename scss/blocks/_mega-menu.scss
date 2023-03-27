@@ -15,7 +15,7 @@
             @include max-screen(1100px) {
                 display: block;
                 width: 100%;
-                padding: 12px 15px 12px 0;
+                padding: 12px 0px 12px 0;
 
             }
 
@@ -147,6 +147,9 @@
                     font-weight: 600;
                     // padding-bottom: 4px;
                     display: block;
+					@include max-screen(1100px) {
+                        display: none;
+                    }
                 }
 
                 li {
@@ -182,7 +185,7 @@
 
                 .menu-group {
                     display: flex;
-                    // padding-top: 5px;
+                    align-items: center;
 
                     .icon-menu {
                         width: 40px;
@@ -197,6 +200,7 @@
 
                     .info-menu {
                         width: 100%;
+						padding-top: 2px;
 
                         span {
                             @include max-screen(1100px) {
@@ -223,8 +227,12 @@
 
             .menu-grid-3 {
 
-                //visibility: visible;
-                //opacity: 1;
+                visibility: visible;
+                opacity: 1;
+
+				@include max-screen(1100px) {
+                   padding-bottom: 30px;
+                }
                 ul {
                     padding: 0;
                     margin: 0;
@@ -248,6 +256,10 @@
                     margin-left: -9px;
                     font-size: pxToRem(18px);
 
+					@include max-screen(1100px) {
+                        margin-top: 20px;
+                    }
+
                     img {
                         margin-right: 10px;
                         margin-top: 4px;
@@ -269,16 +281,17 @@
                 max-width: 383px;
                 width:auto;
                 left: auto;
-				
+
 				//visibility: visible;
                 //opacity: 1;
 
 
                 @include max-screen(1100px) {
-                    padding: 0 20px;
+                    padding: 30px 20px;
                     width: 100%;
                     left: auto;
                     margin-left: auto;
+					max-width: none;
                 }
 
 
