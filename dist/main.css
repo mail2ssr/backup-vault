@@ -13767,7 +13767,7 @@ video {
   margin: 0 20px 0 0;
   display: inline-block;
   /****************** Sub Nav Starts ******************/
-  /****************** Single Dropdown ******************/
+  /****************** Single level Dropdown ******************/
 }
 @media only screen and (max-width: 1100px) {
   .mega-menu ul li {
@@ -13849,6 +13849,7 @@ video {
   left: 0;
   padding: 50px 20px;
   border-radius: 15px;
+  /****************** Sub Nav Sub Category Starts ******************/
 }
 @media only screen and (max-width: 1100px) {
   .mega-menu ul li .sub-nav {
