@@ -1,5 +1,16 @@
 .article-w {
-  padding: 150px 0 0 0;
+  padding: 90px 0 0 0;
+  position: relative;
+  &:before {
+    width: 100%;
+    height: 16%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #F5FAFF;
+    z-index: -1;
+  }
 
   @include max-screen(767px) {
     padding: 60px 0 0 0;
