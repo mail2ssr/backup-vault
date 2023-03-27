@@ -14518,12 +14518,14 @@ video {
           align-items: center;
 }
 .testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .img-author {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: block;
-  background-color: gray;
   margin-right: 16px;
+}
+.testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .img-author img {
+  max-width: 60px;
+  max-height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
 }
 .testimonials-w .cont-testimonials .static-testimonials .column-testimonials .author-testimonial .author-d {
   margin: 0;
