@@ -1,34 +1,47 @@
 .download-contact {
     background-color: #007aff;
     padding: 12px 0;
-  
+
     @include max-screen(991px) {
-      text-align: center;
+        text-align: center;
     }
-  
+
     p {
-      color: #fff;
-      margin: 0;
-      font-size:pxToRem(15px);
-  
-      a {
         color: #fff;
-        text-decoration: underline;   font-size:pxToRem(15px);
-      }
+        margin: 0;
+        font-size: pxToRem(15px);
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+            font-size: pxToRem(15px);
+        }
     }
-  
-  .call{ margin:0; text-align: right; display: flex; justify-content: flex-end;
-  
-    @include max-screen(991px) {
-      justify-content: center; margin-top: 8px;
+
+    .call {
+        margin: 0;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+
+        @include max-screen(991px) {
+            justify-content: center;
+            margin-top: 8px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: pxToRem(15px);
+            display: inline-flex;
+            align-items: center;
+
+            img {
+                width: 14px;
+                height: auto;
+                margin-right: 6px;
+            }
+        }
     }
-  
-    a {
-      color: #fff;
-      text-decoration: none;   font-size:pxToRem(15px); display: inline-flex; align-items: center;
-  
-      img{ width: 14px; height: auto; margin-right: 6px;}
-    }
-  }
-  
-  }
+
+}
