@@ -15201,6 +15201,9 @@ video {
   padding: 0 30px 30px 30px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+.cdpa-w .cont-cdpa .accordion-cdpa .accordion-item .accordion-body p, .cdpa-w .cont-cdpa .accordion-cdpa .accordion-item .accordion-body h2, .cdpa-w .cont-cdpa .accordion-cdpa .accordion-item .accordion-body .h2, .cdpa-w .cont-cdpa .accordion-cdpa .accordion-item .accordion-body h3, .cdpa-w .cont-cdpa .accordion-cdpa .accordion-item .accordion-body .h3, .cdpa-w .cont-cdpa .accordion-cdpa .accordion-item .accordion-body h4, .cdpa-w .cont-cdpa .accordion-cdpa .accordion-item .accordion-body .h4, .cdpa-w .cont-cdpa .accordion-cdpa .accordion-item .accordion-body li {
+  color: #fff;
+}
 
 .our-blog-w {
   padding: 160px 0 0px 0;
