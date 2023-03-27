@@ -13764,7 +13764,7 @@ video {
 }
 .mega-menu ul li {
   padding: 0 15px 0 0;
-  margin: 0 20px 0 0;
+  margin: 0 0px 0 0;
   display: inline-block;
   /****************** Sub Nav Starts ******************/
   /****************** Single level Dropdown ******************/
@@ -13773,7 +13773,7 @@ video {
   .mega-menu ul li {
     display: block;
     width: 100%;
-    margin-right: 0;
+    padding: 12px 15px 12px 0;
   }
 }
 .mega-menu ul li > a {
@@ -13783,7 +13783,7 @@ video {
 .mega-menu ul li a {
   font-size: 15px;
   color: #262626 !important;
-  padding: 0 0 0 25px;
+  padding: 0 0 0 30px;
   display: block;
 }
 .mega-menu ul li a:hover {
@@ -13898,7 +13898,7 @@ video {
   display: block;
 }
 .mega-menu ul li .sub-nav li {
-  width: 100%;
+  width: auto;
   padding: 0;
   margin: 0;
 }
@@ -13970,11 +13970,6 @@ video {
   padding: 0 0 0 0 !important;
   margin: 0 !important;
 }
-@media only screen and (max-width: 1100px) {
-  .mega-menu ul li .menu-grid-3 ul {
-    display: none;
-  }
-}
 .mega-menu ul li .menu-grid-3 a h4, .mega-menu ul li .menu-grid-3 a .h4 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13983,19 +13978,8 @@ video {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 20px;
-  margin-left: -5px;
+  margin-left: -9px;
   font-size: 1rem;
-}
-@media only screen and (max-width: 1100px) {
-  .mega-menu ul li .menu-grid-3 a h4, .mega-menu ul li .menu-grid-3 a .h4 {
-    font-size: 16px;
-    min-height: auto;
-    margin-bottom: 15px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 0;
-  }
 }
 .mega-menu ul li .menu-grid-3 a h4 img, .mega-menu ul li .menu-grid-3 a .h4 img {
   margin-right: 10px;
@@ -14011,10 +13995,9 @@ video {
 .mega-menu ul li .single-column {
   font-weight: 600;
   padding: 30px 20px;
-  min-width: 200px;
+  max-width: 383px;
   width: auto;
   left: auto;
-  margin-left: -50px;
 }
 @media only screen and (max-width: 1100px) {
   .mega-menu ul li .single-column {
