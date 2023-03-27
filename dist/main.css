@@ -13360,7 +13360,7 @@ video {
 
 .default p,
 .default li {
-  color: #000 !important;
+  color: #5c5c5c !important;
 }
 
 .white {
@@ -15066,10 +15066,18 @@ video {
 .whychoose-w .cont-whychoose .column-whychoose .icon-whychoose {
   margin-bottom: 20px;
   min-height: 111px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .whychoose-w .cont-whychoose .column-whychoose .icon-whychoose img {
-  max-width: 111px;
-  height: auto;
+  width: 111px;
+  height: 111px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .cdpa-w {
