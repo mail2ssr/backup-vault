@@ -13490,7 +13490,7 @@ video {
 }
 @media only screen and (max-width: 1100px) {
   .header__nav {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 150px);
   }
 }
 
