@@ -62,7 +62,7 @@
     height: auto;
 }
 .container-768{
-    max-width: 768px;
+    max-width: 786px;
     margin: 0 auto!important;
 }
 .container-630{
@@ -194,4 +194,7 @@
     transform: translate(-50%,-50%);
     transition: .3s;
     z-index: 2;
+}
+.rounded-c{
+    border-radius: 30px;
 }
