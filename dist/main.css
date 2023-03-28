@@ -14500,7 +14500,7 @@ video {
   width: 100%;
   overflow: hidden;
   min-height: calc(100vh - 273px);
-  padding-top: 180px;
+  padding-top: 130px;
 }
 @media only screen and (max-width: 1100px) {
   #main {
@@ -14571,7 +14571,7 @@ video {
 }
 
 .home-banner-w {
-  padding: 0px 0 120px 0;
+  padding: 20px 0 120px 0;
 }
 @media only screen and (max-width: 767px) {
   .home-banner-w {
