@@ -13666,9 +13666,17 @@ video {
   left: 0;
   z-index: 100;
   width: 100%;
-  background-color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.single #header {
+  background-color: #f5faff;
+}
+#header.white {
+  background-color: #fff;
+}
+#header.light-blue {
+  background-color: #f5faff;
 }
 @media only screen and (max-width: 1100px) {
   #header {
@@ -14504,7 +14512,12 @@ video {
 }
 @media only screen and (max-width: 1100px) {
   #main {
-    padding-top: 105px;
+    padding-top: 94px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  #main {
+    padding-top: 84px;
   }
 }
 
@@ -14571,7 +14584,7 @@ video {
 }
 
 .home-banner-w {
-  padding: 20px 0 120px 0;
+  padding: 50px 0 120px 0;
 }
 @media only screen and (max-width: 767px) {
   .home-banner-w {

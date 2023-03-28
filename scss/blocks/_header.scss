@@ -4,9 +4,20 @@
     left: 0;
     z-index: 100;
     width: 100%;
-    background-color: #fff;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+
+    .single &
+    {
+        background-color: #f5faff;
+    }
+
+    &.white {
+        background-color: #fff;
+    }
+    &.light-blue {
+        background-color: #f5faff;
+    }
 
     @include max-screen(1100px) {
         top: 80px;
