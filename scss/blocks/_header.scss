@@ -7,14 +7,18 @@
     -webkit-transition: 0.3s;
     transition: 0.3s;
 
-    .single &
-    {
+    .single & {
         background-color: #f5faff;
+    }
+
+    .scrolled & {
+        background-color: #fff !important;
     }
 
     &.white {
         background-color: #fff;
     }
+
     &.light-blue {
         background-color: #f5faff;
     }
@@ -26,6 +30,7 @@
     @include max-screen(767px) {
         top: 75px;
     }
+
     @include max-screen(600px) {
         top: 97px;
     }

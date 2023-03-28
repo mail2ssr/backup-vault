@@ -8,6 +8,10 @@
   .protect-features {
     margin: 100px 0 0 0;
 
+    @include max-screen(767px) {
+      margin: 60px 0 0 0;
+    }
+
     .column-pf {
       padding: 77px;
       min-height: 600px;

@@ -13672,6 +13672,9 @@ video {
 .single #header {
   background-color: #f5faff;
 }
+.scrolled #header {
+  background-color: #fff !important;
+}
 #header.white {
   background-color: #fff;
 }
@@ -14439,6 +14442,11 @@ video {
   min-height: 54px;
   min-width: 141px;
 }
+@media only screen and (max-width: 767px) {
+  .green-button-i a {
+    min-width: auto;
+  }
+}
 .green-button-i a span {
   margin-right: 10px;
 }
@@ -14453,7 +14461,7 @@ video {
   border-radius: 27px;
   display: inline-block;
   border: 1px solid #fff;
-  text-align: center;
+  text-align: left;
   font-size: 0.8333333333rem;
   color: #fff;
   font-weight: bold;
@@ -14796,6 +14804,11 @@ video {
 .protect-business-w .protect-features {
   margin: 100px 0 0 0;
 }
+@media only screen and (max-width: 767px) {
+  .protect-business-w .protect-features {
+    margin: 60px 0 0 0;
+  }
+}
 .protect-business-w .protect-features .column-pf {
   padding: 77px;
   min-height: 600px;
@@ -14964,6 +14977,11 @@ video {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media only screen and (max-width: 767px) {
+  .free-trial-c {
+    margin: 60px 0;
+  }
+}
 .free-trial-c h2, .free-trial-c .h2 {
   color: #fff;
   margin: 0 0 20px 0;
@@ -15042,7 +15060,6 @@ video {
             justify-content: baseline;
     margin-bottom: 0;
     margin-right: 0;
-    width: 100%;
   }
   .free-trial-c .trial-action-button ul li:first-of-type {
     margin-bottom: 20px;
@@ -15053,9 +15070,6 @@ video {
 }
 @media only screen and (max-width: 479px) {
   .free-trial-c .trial-action-button ul li div {
-    width: 100%;
-  }
-  .free-trial-c .trial-action-button ul li div a {
     width: 100%;
   }
 }
@@ -15149,6 +15163,11 @@ video {
   background-color: #fff;
   border-radius: 30px;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .ourtechpartners-w .cont-otp .column-otp {
+    margin: 0 20px 30px;
+  }
 }
 .ourtechpartners-w .cont-otp .column-otp p {
   margin: 0;
@@ -15353,6 +15372,7 @@ video {
 @media only screen and (max-width: 767px) {
   .whychoose-w .cont-whychoose {
     margin-top: 60px;
+    margin-bottom: 0px;
   }
 }
 .whychoose-w .cont-whychoose .column-whychoose {
@@ -15385,6 +15405,13 @@ video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  .whychoose-w .cont-whychoose .column-whychoose .icon-whychoose {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .whychoose-w .cont-whychoose .column-whychoose .icon-whychoose img {
   width: 111px;

@@ -90,6 +90,10 @@
         min-height: 54px;
         min-width: 141px;
 
+        @include max-screen(767px) {
+            min-width: auto;
+        }
+
         span {
             margin-right: 10px;
         }
@@ -107,7 +111,7 @@
         border-radius: 27px;
         display: inline-block;
         border: 1px solid #fff;
-        text-align: center;
+        text-align: left;
         font-size: pxToRem(15px);
         color: #fff;
         font-weight: bold;

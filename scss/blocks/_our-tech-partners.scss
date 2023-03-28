@@ -58,6 +58,10 @@
       border-radius: 30px;
       text-align: center;
 
+      @include max-screen(767px) {
+        margin: 0 20px 30px;
+      }
+
       p {
         margin: 0;
       }
