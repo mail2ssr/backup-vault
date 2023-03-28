@@ -4,9 +4,13 @@ footer {
 
   p {
     color: #222426;
-    font-size:pxToRem(15px);
+    font-size: pxToRem(15px);
     margin: 0;
     padding: 0;
+
+    a {
+      color: #222426;
+    }
 
     span {
       color: #007aff;
@@ -25,10 +29,10 @@ footer {
     a {
       margin-left: 30px;
       display: inline-block;
+      color: #007AFF;
 
-      img {
-        height: auto;
-        max-width: 22px;
+      i {
+        font-size: 20px;
       }
     }
   }

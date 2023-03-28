@@ -15503,7 +15503,7 @@ video {
 }
 
 .our-blog-w {
-  padding: 120px 0 120px 0;
+  padding: 120px 0 0px 0;
 }
 @media only screen and (max-width: 767px) {
   .our-blog-w {
@@ -15702,6 +15702,9 @@ footer p {
   margin: 0;
   padding: 0;
 }
+footer p a {
+  color: #222426;
+}
 footer p span {
   color: #007aff;
 }
@@ -15718,10 +15721,10 @@ footer .sm-icons {
 footer .sm-icons a {
   margin-left: 30px;
   display: inline-block;
+  color: #007AFF;
 }
-footer .sm-icons a img {
-  height: auto;
-  max-width: 22px;
+footer .sm-icons a i {
+  font-size: 20px;
 }
 @media only screen and (max-width: 767px) {
   footer {
