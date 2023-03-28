@@ -15316,12 +15316,14 @@ video {
           align-items: center;
 }
 .testimonials-slider .column-testimonials .author-testimonial .img-author {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: block;
-  background-color: gray;
   margin-right: 16px;
+}
+.testimonials-slider .column-testimonials .author-testimonial .img-author img {
+  max-width: 60px;
+  max-height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
 }
 .testimonials-slider .column-testimonials .author-testimonial .author-d {
   margin: 0;
@@ -15871,7 +15873,7 @@ footer .sm-icons a i {
 }
 
 .team-w {
-  padding: 160px 0;
+  padding: 120px 0 0 0;
 }
 @media only screen and (max-width: 991px) {
   .team-w {
@@ -15931,7 +15933,7 @@ footer .sm-icons a i {
 
 .estb-company {
   max-width: 1000px;
-  margin: 50px auto 0;
+  margin: 50px auto 120px;
 }
 .estb-company h2, .estb-company .h2 {
   margin: 0 0 30px 0;
@@ -15955,9 +15957,6 @@ footer .sm-icons a i {
 .estb-company .img-estb img {
   max-width: 100%;
   border-radius: 30px;
-}
-.estb-company .estb-info {
-  text-align: center;
 }
 
 .news-w .our-blog-w {

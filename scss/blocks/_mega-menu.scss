@@ -28,8 +28,8 @@
             a {
                 font-size: 15px;
                 color: #262626 !important;
-				padding: 0 0 0 30px;
-				display: block;
+                padding: 0 0 0 30px;
+                display: block;
 
                 @include max-screen(1100px) {}
 
@@ -147,7 +147,8 @@
                     font-weight: 600;
                     // padding-bottom: 4px;
                     display: block;
-					@include max-screen(1100px) {
+
+                    @include max-screen(1100px) {
                         display: none;
                     }
                 }
@@ -200,7 +201,7 @@
 
                     .info-menu {
                         width: 100%;
-						padding-top: 2px;
+                        padding-top: 2px;
 
                         span {
                             @include max-screen(1100px) {
@@ -230,9 +231,10 @@
                 //visibility: visible;
                 //opacity: 1;
 
-				@include max-screen(1100px) {
-                   padding-bottom: 30px;
+                @include max-screen(1100px) {
+                    padding-bottom: 30px;
                 }
+
                 ul {
                     padding: 0;
                     margin: 0;
@@ -256,7 +258,7 @@
                     margin-left: -9px;
                     font-size: pxToRem(18px);
 
-					@include max-screen(1100px) {
+                    @include max-screen(1100px) {
                         margin-top: 20px;
                     }
 
@@ -279,10 +281,10 @@
                 font-weight: 600;
                 padding: 30px 20px;
                 max-width: 383px;
-                width:auto;
+                width: auto;
                 left: auto;
 
-				//visibility: visible;
+                //visibility: visible;
                 //opacity: 1;
 
 
@@ -291,7 +293,7 @@
                     width: 100%;
                     left: auto;
                     margin-left: auto;
-					max-width: none;
+                    max-width: none;
                 }
 
 
