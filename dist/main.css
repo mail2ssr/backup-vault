@@ -15184,7 +15184,7 @@ video {
 }
 
 .testimonials-w {
-  padding: 160px 0;
+  padding: 120px 0;
 }
 @media only screen and (max-width: 767px) {
   .testimonials-w {
@@ -15908,6 +15908,7 @@ footer .sm-icons a i {
         -ms-flex: 0 0 calc(100% - 30px);
             flex: 0 0 calc(100% - 30px);
     text-align: center;
+    margin: 0 15px 40px;
   }
 }
 .team-w .members-c .column-members .img-members {
@@ -15934,6 +15935,11 @@ footer .sm-icons a i {
 .estb-company {
   max-width: 1000px;
   margin: 50px auto 120px;
+}
+@media only screen and (max-width: 767px) {
+  .estb-company {
+    margin: 0px auto 60px;
+  }
 }
 .estb-company h2, .estb-company .h2 {
   margin: 0 0 30px 0;

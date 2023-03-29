@@ -76,6 +76,12 @@
         padding: 0 20px;
     }
 }
+.blocks-margin-btm-zero{
+    padding-bottom: 0!important;
+}
+.blocks-margin-top-zero{
+    padding-top: 0!important;
+}
 .blocks-margin-zero{
     padding: 0;
 }
