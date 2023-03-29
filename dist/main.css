@@ -16242,8 +16242,10 @@ footer .sm-icons a i {
           align-items: center;
 }
 .freetrial-features .column-ff .icon-ff img {
-  height: auto;
-  max-width: 100px;
+  height: 100px;
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .freetrial-features .column-ff h4, .freetrial-features .column-ff .h4 {
   margin: 0;
