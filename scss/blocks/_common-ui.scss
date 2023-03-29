@@ -28,7 +28,8 @@
     padding: 0;
 
     a,
-    input[type=button] {
+    input[type=button],
+    input[type=submit] {
         background-color: rgba(11, 212, 125, 1);
         border-radius: 27px;
         display: inline-block;
@@ -180,6 +181,7 @@
     @include max-screen(1100px) {
         padding-top: 94px;
     }
+
     @include max-screen(430px) {
         padding-top: 84px;
     }

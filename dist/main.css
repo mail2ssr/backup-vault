@@ -14380,7 +14380,8 @@ video {
   padding: 0;
 }
 .green-button a,
-.green-button input[type=button] {
+.green-button input[type=button],
+.green-button input[type=submit] {
   background-color: rgb(11, 212, 125);
   border-radius: 27px;
   display: inline-block;
@@ -14393,7 +14394,8 @@ video {
   border: 0;
 }
 .green-button a:hover,
-.green-button input[type=button]:hover {
+.green-button input[type=button]:hover,
+.green-button input[type=submit]:hover {
   background-color: rgba(11, 212, 125, 0.7);
 }
 
@@ -16032,7 +16034,7 @@ footer .sm-icons a i {
 
 .freetrial-header {
   background-color: #f5faff;
-  padding: 130px 0;
+  padding: 50px 0 130px 0;
 }
 @media only screen and (max-width: 991px) {
   .freetrial-header {
@@ -16058,19 +16060,13 @@ footer .sm-icons a i {
   font-weight: 600;
   color: #5c5c5c;
   line-height: 1.75;
+  max-width: 415px;
 }
 .freetrial-header p {
   color: #262626;
   margin: 0;
   font-weight: bold;
-}
-.freetrial-header .desc-freetrial {
   max-width: 415px;
-}
-@media only screen and (max-width: 991px) {
-  .freetrial-header .desc-freetrial {
-    margin: 0 auto;
-  }
 }
 
 .form-freetrial {
@@ -16079,6 +16075,8 @@ footer .sm-icons a i {
   padding: 40px;
   background-color: #fff;
   text-align: left;
+  -webkit-box-shadow: 0px 0px 68px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 68px 3px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 991px) {
   .form-freetrial {
@@ -16131,6 +16129,18 @@ footer .sm-icons a i {
   font-weight: 600;
   font-size: 0.8333333333rem;
 }
+.form-freetrial .textarea-freetrial {
+  border: 1px solid #e6e8eb;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 15px 15px;
+  color: #262626;
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.8333333333rem;
+  height: 120px;
+}
 .form-freetrial .input-freetrial::-webkit-input-placeholder {
   opacity: 1;
   color: #262626;
@@ -16152,8 +16162,8 @@ footer .sm-icons a i {
   color: #262626;
 }
 .form-freetrial .consent {
-  margin: 5px 0 30px 0;
-  padding: 3px 0 0 25px;
+  margin: 5px 0 30px 0 !important;
+  padding: 3px 0 0 0px;
   position: relative;
 }
 .form-freetrial .consent .form-check {
@@ -16171,10 +16181,27 @@ footer .sm-icons a i {
   border: 0;
   background-size: 70% auto;
 }
-.form-freetrial .consent p {
-  font-size: 11px;
-  color: #5c5c5c;
-  text-align: left;
+.form-freetrial .consent p,
+.form-freetrial .consent label {
+  font-size: 11px !important;
+  color: #5c5c5c !important;
+  text-align: left !important;
+}
+
+.nf-form-fields-required,
+.ninja-forms-req-symbol {
+  display: none;
+}
+
+.nf-field-container {
+  clear: both;
+  position: relative;
+  margin-bottom: 12px !important;
+}
+
+.nf-after-field .nf-error-msg {
+  margin-right: 10px;
+  font-size: 14px !important;
 }
 
 .freetrial-features {
