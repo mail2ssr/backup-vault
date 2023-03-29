@@ -1,6 +1,6 @@
 .whybackup-hdr {
-  padding-top: 70px;
-  padding-bottom: 120px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 
   @include max-screen(991px) {
     text-align: center;
@@ -12,6 +12,8 @@
 
   .whybackup-info {
     max-width: 610px;
+    margin-top: -50px;
+
     @include max-screen(991px) {
       max-width: 100%;
     }
@@ -39,8 +41,15 @@
     margin: 0;
 
     img {
-      max-width: 100%;
+      max-width: 140%;
       height: auto;
+      margin-left: -75px;
+
+      @include max-screen(767px) {
+        max-width: 100%;
+      height: auto;
+      margin-left: 0px;
+      }
     }
   }
 }

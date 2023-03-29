@@ -15348,7 +15348,7 @@ video {
 }
 
 .whychoose-w {
-  padding: 160px 0;
+  padding: 120px 0;
   background-color: #f5faff;
 }
 @media only screen and (max-width: 767px) {
@@ -15976,8 +15976,8 @@ footer .sm-icons a i {
 }
 
 .whybackup-hdr {
-  padding-top: 70px;
-  padding-bottom: 120px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 @media only screen and (max-width: 991px) {
   .whybackup-hdr {
@@ -15991,6 +15991,7 @@ footer .sm-icons a i {
 }
 .whybackup-hdr .whybackup-info {
   max-width: 610px;
+  margin-top: -50px;
 }
 @media only screen and (max-width: 991px) {
   .whybackup-hdr .whybackup-info {
@@ -16017,8 +16018,16 @@ footer .sm-icons a i {
   margin: 0;
 }
 .whybackup-hdr .img-whybackup img {
-  max-width: 100%;
+  max-width: 140%;
   height: auto;
+  margin-left: -75px;
+}
+@media only screen and (max-width: 767px) {
+  .whybackup-hdr .img-whybackup img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0px;
+  }
 }
 
 .freetrial-header {
