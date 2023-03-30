@@ -1,0 +1,48 @@
+.c-blue-w {
+  padding: 160px 0;
+  position: relative;
+  background: url(../images/otp-bg.png) no-repeat;
+  background-size: 100% 100%;
+
+  @include max-screen(991px) {
+    padding: 60px 0;
+  }
+
+  &:before {
+    width: 396px;
+    height: 236px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+  }
+
+  &:after {
+    width: 396px;
+    height: 236px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+  }
+
+  h2 {
+    color: #fff;
+    margin: 0 0 25px 0;
+  }
+
+  p {
+    color: #bfe2ff;
+    margin: 0;
+    font-size: pxToRem(18px);
+  }
+
+  .cont-blue {
+    max-width: 650px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+  }
+}

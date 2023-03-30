@@ -1,0 +1,131 @@
+.become-parnter-w {
+  padding: 160px 0;
+  background: url(../images/hotrd-bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  @include max-screen(767px) {
+    padding: 60px 0;
+  }
+
+  h4{ text-align: center; margin: 0 0 30px 0;}
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:before {
+    width: 396px;
+    height: 236px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+  }
+
+  &:after {
+    width: 396px;
+    height: 236px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+  }
+
+
+.form-bp{ max-width: 476px; margin: 0 auto; background-color: #fff; border-radius: 30px;  padding: 40px;
+
+    .form {
+        margin: 30px 0 0 0;
+    }
+
+    .fieldbox {
+        margin: 0 0 10px 0;
+    }
+
+    .two-column-field {
+        display: flex;
+        margin: 0 -10px;
+
+        .column {
+            flex: 0 0 calc(50% - 20px);
+            margin: 0 10px;
+        }
+    }
+
+    .single-column-field {
+        display: flex;
+        margin: 0 -10px;
+
+        .column {
+            flex: 0 0 calc(100% - 20px);
+            margin: 0 10px;
+        }
+    }
+
+    .input-freetrial {
+        border: 1px solid #e6e8eb;
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 15px 15px;
+        color: #262626;
+        width: 100%;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 600;
+        font-size: pxToRem(15px);
+    }
+
+    .textarea-freetrial {
+        border: 1px solid #e6e8eb;
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 15px 15px;
+        color: #262626;
+        width: 100%;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 600;
+        font-size: pxToRem(15px);
+        height: 120px;
+    }
+
+    .input-freetrial::placeholder {
+        opacity: 1;
+        color: #262626;
+    }
+
+    .consent {
+        margin: 5px 0 30px 0 !important;
+        padding: 3px 0 0 0px;
+        position: relative;
+
+        .form-check {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .form-check-input {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            box-shadow: none;
+            background-color: #0ABA6E;
+            border: 0;
+            background-size: 70% auto;
+        }
+
+        p,
+        label {
+            font-size: 11px !important;
+            color: #5c5c5c !important;
+            text-align: left !important;
+        }
+
+    }
+
+}
+
+}
