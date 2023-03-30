@@ -1,58 +1,115 @@
-.intro-datac-w{ padding: 0 0 150px; position: relative;
+.intro-datac-w {
+    padding: 50px 0 150px;
+    position: relative;
 
-    &:after{ position: absolute; width: 100%; content:""; bottom: 0; height:63%; background-color: #f5faff;}
+    &:after {
+        position: absolute;
+        width: 100%;
+        content: "";
+        bottom: 0;
+        height: 63%;
+        background-color: #f5faff;
 
-    .container{ position: relative; z-index: 2;}
+        @include max-screen(767px) {
+            height: 73%;
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
 
     @include max-screen(991px) {
-        padding:0 0 60px 0;
-      }
-
-
-      .cont-intro-datac{ max-width: 815px; margin: 0 auto;
-    
-        .brief-c{  max-width: 100%; clear: both;
-        
-        span{ color: #007AFF;}
-
-        p{ max-width: 694px; margin: 0 auto; text-align: center; font-size:pxToRem(20px);}
-        
-        }
-
-        .img-datac{ margin:50px 0 140px 0;
-        
-        img{ border-radius: 30px;}
-        
-        }
-    
+        padding: 0 0 60px 0;
     }
 
-    .datac-desc{ margin: 80px 0 0 0; padding: 0;
 
-        .column-datac{ margin: 0; padding: 0 30px; text-align: center;
+    .cont-intro-datac {
+        max-width: 815px;
+        margin: 0 auto;
 
-            .icon-datac{ margin: 0 0 25px 0; min-height: 100px; display: flex; align-items: center; justify-content: center;
-            
-                img{ max-width: 100px; height: auto;}
-            
+        .brief-c {
+            max-width: 100%;
+            clear: both;
+
+            span {
+                color: #007AFF;
             }
-        
-            h4{ margin: 0 0 15px 0; padding: 0; line-height: 1.4;}
 
-            p{ margin: 0;}
-        
+            p {
+                max-width: 694px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: pxToRem(20px);
+            }
+
         }
-    
-        
-        
-        
-        
+
+        .img-datac {
+            margin: 50px 0 140px 0;
+
+            @include max-screen(767px) {
+                margin: 50px 0 70px 0;
+            }
+
+
+            img {
+                border-radius: 30px;
+                max-width: 100%;
+            }
+
         }
-    
+
     }
 
+    .datac-desc {
+        margin: 80px 0 0 0;
+        padding: 0;
+
+        @include max-screen(767px) {
+            margin: 40px 0 0 0;
+        }
+
+        .column-datac {
+            margin: 0;
+            padding: 0 30px;
+            text-align: center;
+
+            @include max-screen(991px) {
+                margin-bottom: 30px;
+            }
+
+            .icon-datac {
+                margin: 0 0 25px 0;
+                min-height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    max-width: 100px;
+                    height: auto;
+                }
+
+            }
+
+            h4 {
+                margin: 0 0 15px 0;
+                padding: 0;
+                line-height: 1.4;
+            }
+
+            p {
+                margin: 0;
+            }
+
+        }
 
 
 
-    
 
+
+    }
+
+}
