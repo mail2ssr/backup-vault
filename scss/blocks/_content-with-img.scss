@@ -5,6 +5,25 @@
     padding: 60px 0;
   }
 
+
+
+  .img-c-w {
+    width: 100%;
+
+    @include max-screen(991px) {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.c-w-info {
+  padding: 0;
+
   h2 {
     margin: 0 0 30px 0;
 
@@ -32,29 +51,6 @@
         top: 3px;
         background: url(../images/icon-blue-circle-check.svg) no-repeat left;
       }
-
-      span {
-        display: block;
-        color: #262626;
-        font-weight: bold;
-      }
-    }
-  }
-
-  .c-w-info {
-    padding: 0;
-  }
-
-  .img-c-w {
-    width: 100%;
-
-    @include max-screen(991px) {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    img {
-      max-width: 100%;
     }
   }
 }

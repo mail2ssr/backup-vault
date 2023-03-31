@@ -1,13 +1,8 @@
 .icon-grid-section {
-    padding: 120px 0;
-    background-color: #f5faff;
-
-    @include max-screen(767px) {
-        padding: 60px 0;
-    }
+   // background-color: #f5faff;
 
     .brief-c {
-        max-width: 650px;
+        max-width: 700px;
         text-align: center;
         margin: 0 auto 60px auto;
 
@@ -23,7 +18,7 @@
 
 
     .column-grid-icon {
-        margin: 0 20px 30px;
+        margin: 0 20px 60px;
         text-align: center;
 
         .icon-grid {

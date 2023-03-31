@@ -13645,9 +13645,13 @@ video {
   }
 }
 .box-shadow {
-  box-shadow: -3px 61px 40px -37px rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: -3px 61px 40px -37px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -3px 61px 40px -37px rgba(0, 0, 0, 0.19);
+          box-shadow: -3px 61px 40px -37px rgba(0, 0, 0, 0.19);
+}
+
+.box-shadow-hdr-img {
+  -webkit-box-shadow: 2px 43px 72px -31px rgba(0, 62, 129, 0.42);
+          box-shadow: 2px 43px 72px -31px rgba(0, 62, 129, 0.42);
 }
 
 .default p,
@@ -14375,7 +14379,7 @@ video {
   }
 }
 .brief-c {
-  max-width: 500px;
+  max-width: 700px;
   text-align: center;
   margin: 0 auto;
 }
@@ -15566,7 +15570,7 @@ video {
 }
 @media only screen and (max-width: 767px) {
   .our-blog-w {
-    padding: 60px 0;
+    padding: 60px 0 0 0;
   }
 }
 .our-blog-w .cont-ourblog {
@@ -16650,7 +16654,7 @@ footer .sm-icons a i {
 }
 
 .c-banner-w {
-  padding: 100px 0;
+  padding: 50px 0 100px 0;
 }
 @media only screen and (max-width: 991px) {
   .c-banner-w {
@@ -16757,41 +16761,6 @@ footer .sm-icons a i {
     padding: 60px 0;
   }
 }
-.c-w-img-w h2, .c-w-img-w .h2 {
-  margin: 0 0 30px 0;
-}
-@media only screen and (max-width: 991px) {
-  .c-w-img-w h2, .c-w-img-w .h2 {
-    text-align: center;
-  }
-}
-.c-w-img-w ul {
-  margin: 0;
-  padding: 0;
-}
-.c-w-img-w ul li {
-  list-style-type: none;
-  margin: 0 0 20px 0;
-  padding: 0 0 0 35px;
-  position: relative;
-}
-.c-w-img-w ul li:before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  left: 0;
-  top: 3px;
-  background: url(../images/icon-blue-circle-check.svg) no-repeat left;
-}
-.c-w-img-w ul li span {
-  display: block;
-  color: #262626;
-  font-weight: bold;
-}
-.c-w-img-w .c-w-info {
-  padding: 0;
-}
 .c-w-img-w .img-c-w {
   width: 100%;
 }
@@ -16803,6 +16772,37 @@ footer .sm-icons a i {
 }
 .c-w-img-w .img-c-w img {
   max-width: 100%;
+}
+
+.c-w-info {
+  padding: 0;
+}
+.c-w-info h2, .c-w-info .h2 {
+  margin: 0 0 30px 0;
+}
+@media only screen and (max-width: 991px) {
+  .c-w-info h2, .c-w-info .h2 {
+    text-align: center;
+  }
+}
+.c-w-info ul {
+  margin: 0;
+  padding: 0;
+}
+.c-w-info ul li {
+  list-style-type: none;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 35px;
+  position: relative;
+}
+.c-w-info ul li:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  background: url(../images/icon-blue-circle-check.svg) no-repeat left;
 }
 
 .os-comp-w {
@@ -17039,17 +17039,8 @@ footer .sm-icons a i {
   text-align: left !important;
 }
 
-.icon-grid-section {
-  padding: 120px 0;
-  background-color: #f5faff;
-}
-@media only screen and (max-width: 767px) {
-  .icon-grid-section {
-    padding: 60px 0;
-  }
-}
 .icon-grid-section .brief-c {
-  max-width: 650px;
+  max-width: 700px;
   text-align: center;
   margin: 0 auto 60px auto;
 }
@@ -17060,7 +17051,7 @@ footer .sm-icons a i {
   margin: 0;
 }
 .icon-grid-section .column-grid-icon {
-  margin: 0 20px 30px;
+  margin: 0 20px 60px;
   text-align: center;
 }
 .icon-grid-section .column-grid-icon .icon-grid {
