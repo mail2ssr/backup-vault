@@ -16650,7 +16650,7 @@ footer .sm-icons a i {
 }
 
 .c-banner-w {
-  padding: 128px 0;
+  padding: 100px 0;
 }
 @media only screen and (max-width: 991px) {
   .c-banner-w {
@@ -17037,4 +17037,48 @@ footer .sm-icons a i {
   font-size: 11px !important;
   color: #5c5c5c !important;
   text-align: left !important;
+}
+
+.icon-grid-section {
+  padding: 120px 0;
+  background-color: #f5faff;
+}
+@media only screen and (max-width: 767px) {
+  .icon-grid-section {
+    padding: 60px 0;
+  }
+}
+.icon-grid-section .brief-c {
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto 60px auto;
+}
+.icon-grid-section .brief-c h2, .icon-grid-section .brief-c .h2 {
+  margin: 0 0 30px 0;
+}
+.icon-grid-section .brief-c p {
+  margin: 0;
+}
+.icon-grid-section .column-grid-icon {
+  margin: 0 20px 30px;
+  text-align: center;
+}
+.icon-grid-section .column-grid-icon .icon-grid {
+  margin-bottom: 20px;
+  min-height: 111px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.icon-grid-section .column-grid-icon .icon-grid img {
+  width: auto;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */
