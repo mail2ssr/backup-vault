@@ -17065,7 +17065,7 @@ footer .sm-icons a i {
 }
 .icon-grid-section .column-grid-icon .icon-grid {
   margin-bottom: 20px;
-  min-height: 111px;
+  min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
