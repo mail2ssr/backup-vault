@@ -35,8 +35,10 @@
 
   p {
     color: #bfe2ff;
-    margin: 0;
+    margin: 0 auto;
     font-size: pxToRem(18px);
+    max-width: 600px;
+
   }
 
   .cont-blue {
@@ -44,5 +46,11 @@
     text-align: center;
     color: #fff;
     margin: 0 auto;
+  }
+
+  .img-btm {
+    max-width: 100%;
+    height: auto;
+    margin: 70px 0 0 0;
   }
 }
