@@ -1,110 +1,145 @@
 .bottom-w {
-  padding: 120px 0;
-  background-color: #f6faff;
-
-  @include max-screen(767px) {
-    padding: 60px 0;
-  }
-
-  h6 {
-    font-size:pxToRem(15px);
-    font-weight: 700;
-    margin: 0 0 18px 0;
-    color: #222426;
+    padding: 120px 0;
+    background-color: #f6faff;
 
     @include max-screen(991px) {
-      text-align: center;
-      margin-top: 40px;
-    }
-  }
+        padding: 60px 0;
+        max-width: 95%;
+        margin: 0 auto;
 
-  ul {
-    margin: 0;
-    padding: 0;
-
-    li {
-      margin: 0 0 10px 0;
-      padding: 0;
-      list-style-type: none;
-      font-weight: 600;
-      @include max-screen(991px) {
-        text-align: center;
-      }
-
-      a {
-        font-size:pxToRem(15px);
-        color: #222426;
-
-        &:hover {
-          color: #0bd47d;
+        .open {
+            margin-bottom: 10px;
         }
-      }
+
+        .nav-btm h6 {
+            cursor: pointer;
+            margin-bottom: 20px;
+            position: relative
+        }
+
+        ul {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s ease-out;
+        }
+
+        .nav-btm h6:after {
+            content: url("../images/arrow-down-footer.svg");
+            width: 25px;
+            float: right;
+            right: 0;
+            position: absolute;
+        }
+
+        .nav-btm.open h6:after {
+            content: url("../images/arrow-up-footer.svg");
+            width: 25px;
+        }
+
+        .nav-btm.open ul {
+            height: auto;
+            max-height: 500px;
+            margin-bottom: 25px;
+            transition: max-height 1s ease-in !important;
+        }
+
+        .nav-btm h6 {
+            font-size: 1rem
+        }
     }
-  }
 
-  .b-logo {
-    max-width: 180px;
-
-    @include max-screen(991px) {
-      margin: 0 auto 50px;
-    }
-
-    img {
-      max-width: 100%;
-    }
-  }
-
-  .phone-address {
-    margin: 24px 0 0 0;
-    max-width: 270px;
-
-    @include max-screen(991px) {
-      margin-left: auto;
-      margin-right: auto;
+    h6 {
+        font-size: pxToRem(15px);
+        font-weight: 700;
+        margin: 0 0 18px 0;
+        color: #222426;
     }
 
     ul {
-      margin: 0;
-      padding: 0;
-
-      li {
-        margin: 0 0 15px 0;
+        margin: 0;
         padding: 0;
-        list-style-type: none;
-        color: #222426;
-        font-size:pxToRem(15px);
-        font-weight: 700;
+
+        li {
+            margin: 0 0 10px 0;
+            padding: 0;
+            list-style-type: none;
+            font-weight: 600;
+            a {
+                font-size: pxToRem(15px);
+                color: #222426;
+
+                &:hover {
+                    color: #0bd47d;
+                }
+            }
+        }
+    }
+
+    .b-logo {
+        max-width: 180px;
 
         @include max-screen(991px) {
-          margin-bottom: 30px;
+            margin: 0 auto 50px;
         }
 
-        &.address {
-          background: url(../images/icon-blue-address.svg) no-repeat left 2px;
-          padding: 0 0 0 25px;
-
-          @include max-screen(991px) {
-            padding-left: 0;
-            padding-top: 30px;
-            background-position: center top;
-          }
+        img {
+            max-width: 100%;
         }
-
-        &.phone {
-          background: url(../images/icon-blue-phone-call.svg) no-repeat left 2px;
-          padding: 0 0 0 25px;
-
-          @include max-screen(991px) {
-            padding-left: 0;
-            padding-top: 30px;
-            background-position: center top;
-          }
-        }
-
-        a {
-          color: #222426;
-        }
-      }
     }
-  }
+
+    .phone-address {
+        margin: 24px 0 0 0;
+        max-width: 270px;
+
+        // @include max-screen(991px) {
+        //     margin-left: auto;
+        //     margin-right: auto;
+        // }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            max-height: none;
+
+            li {
+                margin: 0 0 15px 0;
+                padding: 0;
+                list-style-type: none;
+                color: #222426;
+                font-size: pxToRem(15px);
+                font-weight: 700;
+
+                @include max-screen(991px) {
+                    margin-bottom: 30px;
+                }
+
+                &.address {
+                    background: url(../images/icon-blue-address.svg) no-repeat left 2px;
+                    padding: 0 0 0 25px;
+
+                     @include max-screen(991px) {
+                         //padding-left: 0;
+                         //padding-top: 30px;
+                         //background-position: center top;
+                     }
+                }
+
+                &.phone {
+                    background: url(../images/icon-blue-phone-call.svg) no-repeat left 2px;
+                    padding: 0 0 0 25px;
+
+                     @include max-screen(991px) {
+                         //padding-left: 0;
+                         //padding-top: 30px;
+                         //background-position: center top;
+                         margin-bottom: 15px;
+                     }
+                }
+
+                a {
+                    color: #222426;
+                }
+            }
+        }
+    }
 }

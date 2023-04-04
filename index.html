@@ -1155,7 +1155,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 nav-btm">
           <h6>Backup Software</h6>
           <ul>
             <li><a href="#">Cloud Backup</a></li>
@@ -1164,7 +1164,7 @@
             <li><a href="#">Google Workspaces Backup</a></li>
           </ul>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 nav-btm">
           <h6>Company</h6>
           <ul>
             <li><a href="#">About us</a></li>
@@ -1174,7 +1174,7 @@
             <li><a href="#">Contact us</a></li>
           </ul>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 nav-btm">
           <h6>Support</h6>
           <ul>
             <li><a href="#">Downloads</a></li>
@@ -1262,6 +1262,12 @@
   <!--animation end -->
 
   <script src="js/header.js"></script>
+
+  <script>
+    jQuery(".bottom-w h6").click(function () {
+      jQuery(this).parent(".nav-btm").toggleClass("open");
+    });
+  </script>
 </body>
 
 </html>

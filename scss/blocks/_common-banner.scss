@@ -26,22 +26,6 @@
         margin: 0;
     }
 
-    .actions {
-        margin: 50px 0 0 0;
-        display: flex;
-
-        div {
-            display: inline-flex;
-
-            &.border-button-i {
-                a {
-                    border: 1px solid #e6e8eb;
-                    color: #262626;
-                }
-            }
-        }
-    }
-
     .img-c-banner {
         margin: 0;
         width: 100%;
@@ -53,6 +37,22 @@
 
             @include max-screen(991px) {
                 margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.actions {
+    margin: 50px 0 0 0;
+    display: flex;
+
+    div {
+        display: inline-flex;
+
+        &.border-button-i {
+            a {
+                border: 1px solid #e6e8eb;
+                color: #262626;
             }
         }
     }

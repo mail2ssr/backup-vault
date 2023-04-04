@@ -9,24 +9,24 @@ $('.slider-testimonials').slick({
     dots: true,
     slidesToScroll: 1,
     responsive: [{
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 2,
-                dots: true,
-                arrows: true,
-                slidesToScroll: 1
-            }
-        },
+        breakpoint: 991,
+        settings: {
+            slidesToShow: 2,
+            dots: true,
+            arrows: true,
+            slidesToScroll: 1
+        }
+    },
 
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                dots: true,
-                arrows: true,
-                slidesToScroll: 1
-            }
-        },
+    {
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 1,
+            dots: true,
+            arrows: true,
+            slidesToScroll: 1
+        }
+    },
 
     ]
 
@@ -39,4 +39,5 @@ on('setPosition', function (event, slick) {
 
 
 
-    //slider testimonials end
+//slider testimonials end
+
