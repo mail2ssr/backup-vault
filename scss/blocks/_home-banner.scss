@@ -116,10 +116,15 @@
         .videoBlock {
             width: 150%;
             box-shadow: -4px 47px 52px -8px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
 
             @include max-screen(1100px) {
                 width: 100%;
 
+            }
+
+            .plyr--video {
+                border-radius: 20px;
             }
         }
     }

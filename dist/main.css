@@ -14723,15 +14723,19 @@ video {
   width: 150%;
   -webkit-box-shadow: -4px 47px 52px -8px rgba(0, 0, 0, 0.3);
           box-shadow: -4px 47px 52px -8px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
 @media only screen and (max-width: 1100px) {
   .home-banner-w .home-video-img .videoBlock {
     width: 100%;
   }
 }
+.home-banner-w .home-video-img .videoBlock .plyr--video {
+  border-radius: 20px;
+}
 
 .hotrd-w {
-  padding: 160px 0;
+  padding: 140px 0 100px 0;
   background: url(../images/hotrd-bg.png) no-repeat;
   background-size: 100% 100%;
   position: relative;
@@ -14815,7 +14819,7 @@ video {
 }
 
 .protect-business-w {
-  padding: 160px 0 60px 0;
+  padding: 140px 0 60px 0;
 }
 @media only screen and (max-width: 767px) {
   .protect-business-w {
@@ -15118,7 +15122,7 @@ video {
 }
 
 .ourtechpartners-w {
-  padding: 160px 0;
+  padding: 140px 0 123px 0;
   position: relative;
   background: url(../images/otp-bg.png) no-repeat;
   background-size: 100% 100%;
@@ -15205,7 +15209,7 @@ video {
 }
 
 .testimonials-w {
-  padding: 120px 0;
+  padding: 120px 0 100px 0;
 }
 @media only screen and (max-width: 767px) {
   .testimonials-w {
@@ -15444,7 +15448,7 @@ video {
 }
 
 .cdpa-w {
-  padding: 160px 0;
+  padding: 140px 0 135px 0;
   background: url(../images/cdpq-bg.png) no-repeat;
   background-size: cover;
   position: relative;
@@ -15809,7 +15813,7 @@ footer .sm-icons a i {
 
 .about-hdr {
   padding-top: 70px;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
 @media only screen and (max-width: 767px) {
   .about-hdr {
@@ -15867,7 +15871,7 @@ footer .sm-icons a i {
 
 .how-started-w {
   background-color: #f5faff;
-  padding: 160px 0;
+  padding: 140px 0 110px 0;
 }
 @media only screen and (max-width: 991px) {
   .how-started-w {
