@@ -167,6 +167,12 @@
                         &:hover {
                             background-color: #fbfbfb;
 
+                            .info-menu {
+                                background: url(../images/menu-right-arrow.svg) no-repeat right 12px;
+                                width: auto;
+                                padding-right: 20px;
+                            }
+
                             &:after {
                                 content: "";
                                 width: 6px;
@@ -189,7 +195,7 @@
                     align-items: center;
 
                     .icon-menu {
-                        width: 40px;
+                        width: 35px;
                         display: block;
 
                         img {
@@ -200,7 +206,7 @@
                     }
 
                     .info-menu {
-                        width: 100%;
+                        //width: 100%;
                         padding-top: 2px;
 
                         span {

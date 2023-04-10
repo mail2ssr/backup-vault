@@ -6,6 +6,10 @@
         padding: 60px 0;
     }
 
+    .brief-c {
+        max-width: 550px;
+    }
+
     .cont-whychoose {
         margin: 80px 0 50px 0;
         display: flex;
@@ -21,16 +25,16 @@
         }
 
         .column-whychoose {
-            flex: 0 0 calc(20% - 40px);
-            margin: 0 20px 30px;
+            flex: 0 0 calc(20% - 32px);
+            margin: 0 32px 30px 0;
 
             @include max-screen(991px) {
-                flex: 0 0 calc(50% - 40px);
+                flex: 0 0 calc(50% - 32px);
                 text-align: center;
             }
 
             @include max-screen(767px) {
-                flex: 0 0 calc(100% - 40px);
+                flex: 0 0 calc(100% - 32px);
             }
 
             .icon-whychoose {

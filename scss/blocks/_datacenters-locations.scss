@@ -1,8 +1,8 @@
 .datacenters-location-w {
-    padding-top: 150px;
+    padding: 140px 0 0px 0;
 
     @include max-screen(767px) {
-        padding-top: 60px;
+        padding: 60px 0 50px 0;
     }
 
     .brief-c {
@@ -17,7 +17,7 @@
         .column {
             flex: 0 0 calc(50% - 40px);
             margin: 0 20px 30px;
-            padding: 35px 35px 320px 35px;
+            padding: 35px 26px 320px 26px;
             border: 1px solid #e6e8eb;
             position: relative;
             background-color: #fbfbfb;

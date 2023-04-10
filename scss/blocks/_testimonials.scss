@@ -5,6 +5,10 @@
         padding: 60px 0;
     }
 
+    .brief-c {
+        max-width: 550px;
+    }
+
     .cont-testimonials {
         margin: 0;
 
@@ -38,8 +42,9 @@
                     display: flex;
                     align-items: center;
 
-                    .img-author {                     
+                    .img-author {
                         margin-right: 16px;
+
                         img {
                             max-width: 60px;
                             max-height: 60px;
@@ -113,8 +118,9 @@
             display: flex;
             align-items: center;
 
-            .img-author {                     
+            .img-author {
                 margin-right: 16px;
+
                 img {
                     max-width: 60px;
                     max-height: 60px;
