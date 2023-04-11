@@ -29,11 +29,84 @@
         max-width: 415px;
     }
 
+    h4 {
+        font-size: pxToRem(26px);
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        max-width: 373px;
+    }
+
     p {
         color: #262626;
         margin: 0;
         font-weight: bold;
         max-width: 415px;
+    }
+
+}
+
+.contact-w {
+    background-color: #f5faff;
+    padding: 50px 0 130px 0;
+
+    @include max-screen(991px) {
+        text-align: center;
+    }
+
+    @include max-screen(767px) {
+        padding: 60px 0;
+    }
+
+    h1 {
+        margin: 0;
+        line-height: 1.2;
+        margin: 0 0 35px 0;
+    }
+
+    .address-w {
+
+        max-width: 476px;
+        padding: 20px 0;
+
+        h4 {
+            font-size: pxToRem(26px);
+            margin: 0 0 20px 0;
+            font-weight: 700;
+            max-width: 373px;
+        }
+
+        p {
+            color: #5c5c5c;
+            margin: 0;
+        }
+
+        ul {
+            margin: px 0 0 0;
+            padding: 20px 0 0 0;
+
+            li {
+                margin: 0;
+                padding: 0 0 0 30px;
+                list-style-type: none;
+                color: #222426;
+                position: relative;
+
+                a {
+                    color: #222426;
+                }
+
+                img {
+                    margin-right: 10px;
+                    position: absolute;
+                    left: 0;
+                    top: 6px;
+                }
+
+                img.email {
+                    top: 9px;
+                }
+            }
+        }
     }
 
 }
@@ -162,4 +235,17 @@
 .nf-after-field .nf-error-msg {
     margin-right: 10px;
     font-size: 14px !important;
+}
+
+.contact-map {
+    padding: 120px 0 90px 0;
+
+    @include max-screen(991px) {
+        padding: 60px 0 45px 0;
+      }
+
+    img {
+        max-width: 100%;
+     
+    }
 }

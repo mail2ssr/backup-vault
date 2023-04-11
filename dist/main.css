@@ -16110,11 +16110,74 @@ footer .sm-icons a i {
   line-height: 1.75;
   max-width: 415px;
 }
+.freetrial-header h4, .freetrial-header .h4 {
+  font-size: 1.4444444444rem;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  max-width: 373px;
+}
 .freetrial-header p {
   color: #262626;
   margin: 0;
   font-weight: bold;
   max-width: 415px;
+}
+
+.contact-w {
+  background-color: #f5faff;
+  padding: 50px 0 130px 0;
+}
+@media only screen and (max-width: 991px) {
+  .contact-w {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact-w {
+    padding: 60px 0;
+  }
+}
+.contact-w h1, .contact-w .h1 {
+  margin: 0;
+  line-height: 1.2;
+  margin: 0 0 35px 0;
+}
+.contact-w .address-w {
+  max-width: 476px;
+  padding: 20px 0;
+}
+.contact-w .address-w h4, .contact-w .address-w .h4 {
+  font-size: 1.4444444444rem;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  max-width: 373px;
+}
+.contact-w .address-w p {
+  color: #5c5c5c;
+  margin: 0;
+}
+.contact-w .address-w ul {
+  margin: px 0 0 0;
+  padding: 20px 0 0 0;
+}
+.contact-w .address-w ul li {
+  margin: 0;
+  padding: 0 0 0 30px;
+  list-style-type: none;
+  color: #222426;
+  position: relative;
+}
+.contact-w .address-w ul li a {
+  color: #222426;
+}
+.contact-w .address-w ul li img {
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+.contact-w .address-w ul li img.email {
+  top: 9px;
 }
 
 .form-freetrial {
@@ -16252,8 +16315,20 @@ footer .sm-icons a i {
   font-size: 14px !important;
 }
 
+.contact-map {
+  padding: 120px 0 90px 0;
+}
+@media only screen and (max-width: 991px) {
+  .contact-map {
+    padding: 60px 0 45px 0;
+  }
+}
+.contact-map img {
+  max-width: 100%;
+}
+
 .freetrial-features {
-  padding: 160px 0 130px 0;
+  padding: 140px 0 110px 0;
 }
 @media only screen and (max-width: 991px) {
   .freetrial-features {
