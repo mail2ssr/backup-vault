@@ -20,11 +20,12 @@
 
     p {
         color: #fff;
+        max-width: 420px;
     }
 
     .cont-free-trial {
-        max-width: 490px;
-        padding: 48px 0 48px 76px;
+        max-width: 575px;
+        padding: 48px 0 48px 66px;
 
         @include max-screen(991px) {
             padding: 48px 76px;
