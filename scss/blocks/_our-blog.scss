@@ -4,7 +4,7 @@
     @include max-screen(767px) {
         padding: 60px 0 0 0;
     }
-    
+
     .brief-c {
         max-width: 550px;
     }
@@ -82,4 +82,12 @@
 
 .itemsbigtip {
     display: none;
+}
+
+.related-w {
+    padding-bottom: 90px;
+
+    @include max-screen(767px) {
+        padding-bottom: 45px;
+    }
 }
