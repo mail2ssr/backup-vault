@@ -14379,6 +14379,11 @@ video {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 1150px;
+  }
+}
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 1200px;
