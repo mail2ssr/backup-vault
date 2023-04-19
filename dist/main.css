@@ -13467,6 +13467,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: 2.1111111111rem;
   font-weight: 700;
+  line-height: 1.3;
 }
 @media only screen and (max-width: 767px) {
   h3, .h3 {
@@ -13477,6 +13478,7 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1.4444444444rem;
   font-weight: 700;
+  line-height: 1.3;
 }
 @media only screen and (max-width: 767px) {
   h4, .h4 {
@@ -15660,12 +15662,12 @@ video {
 }
 .our-blog-w .cont-ourblog .column-ourblog .img-ourblog {
   width: 100%;
-  height: 280px;
+  height: 200px;
   margin-bottom: 20px;
   overflow: hidden;
 }
 .our-blog-w .cont-ourblog .column-ourblog .img-ourblog img {
-  height: 280px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -16644,8 +16646,8 @@ footer .sm-icons a i {
   }
 }
 .article-w .hdr-article {
-  max-width: 579px;
-  margin-left: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
   margin-bottom: 50px;
 }
 @media only screen and (max-width: 991px) {
@@ -16655,6 +16657,7 @@ footer .sm-icons a i {
 }
 .article-w .hdr-article h2, .article-w .hdr-article .h2 {
   margin: 0 0 15px 0;
+  line-height: 1.2;
 }
 .article-w .hdr-article .date {
   background-color: #fbfbfb;
@@ -16747,9 +16750,9 @@ footer .sm-icons a i {
   content: "";
   background: url(../images/white-small-bubbles-bg.svg) no-repeat;
 }
-.single-testimonial h2, .single-testimonial .h2 {
+.single-testimonial h4, .single-testimonial .h4 {
   color: #fff;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .single-testimonial .s-testimonial {
   max-width: 800px;
@@ -16997,8 +17000,8 @@ footer .sm-icons a i {
     padding: 60px 0;
   }
 }
-.single-testimonial-inner h2, .single-testimonial-inner .h2 {
-  margin-bottom: 80px;
+.single-testimonial-inner h4, .single-testimonial-inner .h4 {
+  margin-bottom: 40px;
 }
 .single-testimonial-inner .s-testimonial {
   max-width: 800px;
