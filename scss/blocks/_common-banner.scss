@@ -26,6 +26,18 @@
         margin: 0;
     }
 
+    .img-sec {
+
+        @include max-screen(991px) {
+            padding-bottom: 60px;
+        }
+
+        @include max-screen(767px) {
+            padding-bottom: 30px;
+        }
+
+    }
+
     .img-c-banner {
         margin: 0;
         width: 100%;
@@ -45,6 +57,11 @@
 .actions {
     margin: 50px 0 0 0;
     display: flex;
+
+    @include max-screen(991px) {
+        margin-top: 25px;
+        display: inline-flex;
+    }
 
     div {
         display: inline-flex;

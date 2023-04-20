@@ -21,6 +21,10 @@
     p {
         color: #fff;
         max-width: 420px;
+
+        @include max-screen(991px) {
+               max-width: none;
+        }
     }
 
     .cont-free-trial {
@@ -30,7 +34,8 @@
         @include max-screen(991px) {
             padding: 48px 76px;
             text-align: center;
-            max-width: 100%;
+            width: 100%;
+            max-width: none;
         }
 
         @include max-screen(767px) {

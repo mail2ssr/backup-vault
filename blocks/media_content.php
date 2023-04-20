@@ -51,7 +51,7 @@ $select_media_type = get_sub_field('select_media_type');
 																											} ?> d-flex align-items-<?php the_sub_field('vertical_align'); ?> os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
 					<div class="innerpage-body <?php echo $col_padding;?>">
 
-					<div class="c-w-info"><?php the_sub_field('content'); ?></div>
+					<div class="c-w-info1"><?php the_sub_field('content'); ?></div>
 					</div>
 				</div>
 			</div>

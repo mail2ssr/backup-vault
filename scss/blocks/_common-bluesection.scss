@@ -52,5 +52,13 @@
     max-width: 100%;
     height: auto;
     margin: 70px 0 0 0;
+
+    @include max-screen(991px) {
+      margin: 40px 0 0 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
   }
 }

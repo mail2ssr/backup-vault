@@ -4,6 +4,7 @@
 
   @include max-screen(991px) {
     text-align: center;
+    padding-bottom: 70px;
   }
 
   @include max-screen(767px) {
@@ -44,6 +45,10 @@
       max-width: 140%;
       height: auto;
       margin-left: -75px;
+
+      @include max-screen(991px) {
+        margin-left: 0;
+      }
 
       @include max-screen(767px) {
         max-width: 100%;

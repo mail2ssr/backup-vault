@@ -14,8 +14,8 @@ $select_media_type = get_sub_field('select_media_type');
     <section class="c-banner-w  os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-md-5 offset-lg-1 <?php if ($media_position == "right") {
-                                                                echo "order-md-1";
+                <div class="col-lg-5 offset-lg-1 <?php if ($media_position == "right") {
+                                                                echo "order-lg-1";
                                                             } ?> d-flex align-items-<?php the_sub_field('vertical_align'); ?> os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".5s">
 
                     <div class="img-sec">
@@ -33,8 +33,8 @@ $select_media_type = get_sub_field('select_media_type');
                         ?>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 <?php if ($media_position == "right") {
-                                                    echo "order-md-0 order-lg-0";
+                <div class="col-lg-6 <?php if ($media_position == "right") {
+                                                    echo "order-lg-0";
                                                 } ?> d-flex align-items-<?php the_sub_field('vertical_align'); ?> os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
                     <div class="c-info">
                         <?php the_sub_field('content'); ?>
