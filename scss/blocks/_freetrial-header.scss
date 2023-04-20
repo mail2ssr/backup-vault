@@ -27,6 +27,9 @@
         color: #5c5c5c;
         line-height: 1.75;
         max-width: 415px;
+        @include max-screen(991px) {
+            margin: 0 auto;
+        }
     }
 
     h4 {
@@ -34,6 +37,9 @@
         margin: 0 0 20px 0;
         font-weight: 700;
         max-width: 373px;
+        @include max-screen(991px) {
+            margin: 0 auto;
+        }
     }
 
     p {
@@ -41,6 +47,9 @@
         margin: 0;
         font-weight: bold;
         max-width: 415px;
+        @include max-screen(991px) {
+            margin: 0 auto;
+        }
     }
 
 }

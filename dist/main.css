@@ -16215,17 +16215,32 @@ footer .sm-icons a i {
   line-height: 1.75;
   max-width: 415px;
 }
+@media only screen and (max-width: 991px) {
+  .freetrial-header h6, .freetrial-header .h6 {
+    margin: 0 auto;
+  }
+}
 .freetrial-header h4, .freetrial-header .h4 {
   font-size: 1.4444444444rem;
   margin: 0 0 20px 0;
   font-weight: 700;
   max-width: 373px;
 }
+@media only screen and (max-width: 991px) {
+  .freetrial-header h4, .freetrial-header .h4 {
+    margin: 0 auto;
+  }
+}
 .freetrial-header p {
   color: #262626;
   margin: 0;
   font-weight: bold;
   max-width: 415px;
+}
+@media only screen and (max-width: 991px) {
+  .freetrial-header p {
+    margin: 0 auto;
+  }
 }
 
 .contact-w {
