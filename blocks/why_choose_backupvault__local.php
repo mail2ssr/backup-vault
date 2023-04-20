@@ -7,11 +7,11 @@ if (get_sub_field('hide_this_block') == 0) { ?>
     <section class="whychoose-w">
         <div class="container">
             <div class="brief-c os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
-                <?php the_field('content_wcb', 'option'); ?>
+                <?php the_sub_field( 'content_wcb' ); ?>
             </div>
             <div class="cont-whychoose">
-                <?php if (have_rows('grid_box_wcb', 'option')) : ?>
-                    <?php while (have_rows('grid_box_wcb', 'option')) : the_row(); ?>
+                <?php if (have_rows('grid_box_wcb')) : ?>
+                    <?php while (have_rows('grid_box_wcb')) : the_row(); ?>
                         <?php $icon = get_sub_field('icon'); ?>
 
 
@@ -25,10 +25,10 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                 <?php endif; ?>
             </div>
 
-            <?php $button_wcb = get_field('button_wcb', 'option'); ?>
-            <?php if ($button_wcb) : ?>
-                 <div class="green-button text-center"><a href="<?php echo esc_url($button_wcb['url']); ?>" target="<?php echo esc_attr($button_wcb['target']); ?>"><?php echo esc_html($button_wcb['title']); ?></a> </div>
-            <?php endif; ?>
+            <?php $button_wcb = get_sub_field( 'button_wcb' ); ?>
+			<?php if ( $button_wcb ) : ?>
+				<div class="green-button text-center"><a href="<?php echo esc_url( $button_wcb['url'] ); ?>" target="<?php echo esc_attr( $button_wcb['target'] ); ?>"><?php echo esc_html( $button_wcb['title'] ); ?></a></div>
+			<?php endif; ?>
         </div>
     </section>
     <!--Why Choose End-->
