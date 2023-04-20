@@ -14596,6 +14596,15 @@ video {
   }
 }
 
+.top-padding-50 {
+  padding-top: 50px !important;
+}
+@media only screen and (max-width: 767px) {
+  .top-padding-50 {
+    padding-top: 25px;
+  }
+}
+
 .download-contact {
   background-color: #007aff;
   padding: 12px 0;

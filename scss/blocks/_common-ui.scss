@@ -111,6 +111,7 @@
         }
     }
 }
+
 .green-button-i-wa {
     padding: 0;
 
@@ -223,5 +224,12 @@
 
     @include max-screen(430px) {
         padding-top: 84px;
+    }
+}
+
+.top-padding-50 {
+    padding-top: 50px !important;
+    @include max-screen(767px) {
+        padding-top: 25px;
     }
 }

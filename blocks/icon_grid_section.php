@@ -18,7 +18,7 @@ if (get_sub_field('hide_this_block') == 0) : ?>
     </style>
 
     <!-- icon grid section -->
-    <section class="icon-grid-section <?php the_sub_field('block_top_bottom_margin'); ?> <?php the_sub_field('section_background_color'); ?> <?php the_sub_field('section_text_color'); ?> <?php the_sub_field('remove_padding'); ?> os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
+    <section class="icon-grid-section <?php the_sub_field('block_top_bottom_margin'); ?> <?php the_sub_field( 'custom_class' ); ?> <?php the_sub_field('section_background_color'); ?> <?php the_sub_field('section_text_color'); ?> <?php the_sub_field('remove_padding'); ?> os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
 
 
         <div class="<?php the_sub_field('container_width'); ?>">
