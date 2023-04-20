@@ -4,27 +4,25 @@
 
     &:before {
         width: 100%;
-        height: 16%;
+        height: 580px;
         content: "";
         position: absolute;
         left: 0;
         top: 0;
         background-color: #F5FAFF;
         z-index: -1;
+        @include max-screen(767px) {
+            height: 377px;
+        }
     }
 
     @include max-screen(767px) {
-        padding: 60px 0 0 0;
+        padding: 30px 0 0 0;
     }
 
     .hdr-article {
-        margin-left: 50px;
-        margin-right: 50px;
         margin-bottom: 50px;
 
-        @include max-screen(991px) {
-            margin-left: 0;
-        }
 
         h2 {
             margin: 0 0 15px 0;
@@ -48,6 +46,8 @@
         img {
             border-radius: 30px;
             width: 100%;
+            max-height: 535px;
+            object-fit: cover;
         }
     }
 }

@@ -18,9 +18,11 @@ $select_media_type = get_field('select_media_type');
 <!--Article Start-->
 <section class="article-w">
 	<div class="container">
-		<div class="hdr-article">
-			<h2><?php the_title(); ?></h2>
-			<div class="date"><?php echo get_the_date(); ?></div>
+		<div class="container-768">
+			<div class="hdr-article">
+				<h2><?php the_title(); ?></h2>
+				<div class="date"><?php echo get_the_date(); ?></div>
+			</div>
 		</div>
 		<div class="img-article-l">
 			<div class="text-center">
@@ -90,7 +92,7 @@ $select_media_type = get_field('select_media_type');
 						<div class="date"><?php echo get_the_date(); ?></div>
 
 						<h4><?php the_title(); ?></h4>
-						<p><?php the_field('brief_description'); ?></p>
+						<p><?php echo wp_trim_words(get_field('brief_description'), 22, '...'); ?></p>
 
 						<div class="action-blog">
 							<div class="green-button">

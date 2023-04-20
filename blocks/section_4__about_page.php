@@ -3,7 +3,7 @@
 if (get_sub_field('hide_this_block') == 0) { ?>
     <div class="estb-company">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-5 order-lg-1 offset-lg-2">
                     <div class="img-estb os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
                         <?php $image = get_sub_field('image'); ?>

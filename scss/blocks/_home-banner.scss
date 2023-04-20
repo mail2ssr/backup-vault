@@ -27,6 +27,8 @@
 
         @include max-screen(991px) {
             padding: 15px 0 15px 0;
+            margin: 0 auto;
+            width: fit-content;
         }
 
 
@@ -39,7 +41,7 @@
             background: url(../images/icon-blue-circle-check.svg) no-repeat left 3px;
             font-weight: bold;
             text-align: left;
-            display: inline-block;
+            display: block;
 
             &:last-child {
                 margin-right: 0;
