@@ -76,7 +76,7 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 								<div class="date"><?php echo get_the_date(); ?></div>
 
 								<h4><?php the_title(); ?></h4>
-								<p><?php the_field('brief_description'); ?></p>
+								<p><?php echo wp_trim_words(get_field('brief_description'), 22, '...'); ?></p>
 
 								<div class="action-blog">
 									<div class="green-button">
