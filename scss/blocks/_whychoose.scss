@@ -1,9 +1,9 @@
 .whychoose-w {
-    padding: 120px 0;
+    padding: 105px 0 120px 0;
     background-color: #f5faff;
 
     @include max-screen(767px) {
-        padding: 60px 0;
+        padding: 50px 0 60px 0;
     }
 
     .brief-c {
