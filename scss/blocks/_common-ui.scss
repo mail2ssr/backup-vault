@@ -100,6 +100,7 @@
 
         @include max-screen(767px) {
             min-width: auto;
+            margin-bottom: 15px;
         }
 
         span {
@@ -225,10 +226,27 @@
     @include max-screen(430px) {
         padding-top: 84px;
     }
+
+    @include max-screen(991px) {
+
+        p br,
+        li br,
+        h1 br,
+        h2 br,
+        h3 br,
+        h4 br,
+        h5 br,
+        h6 br {
+            display: none;
+        }
+
+    }
+
 }
 
 .top-padding-50 {
     padding-top: 50px !important;
+
     @include max-screen(767px) {
         padding-top: 25px;
     }

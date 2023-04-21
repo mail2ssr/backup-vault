@@ -14477,6 +14477,7 @@ video {
 @media only screen and (max-width: 767px) {
   .green-button-i a {
     min-width: auto;
+    margin-bottom: 15px;
   }
 }
 .green-button-i a span {
@@ -14593,6 +14594,24 @@ video {
 @media only screen and (max-width: 430px) {
   #main {
     padding-top: 84px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  #main p br,
+  #main li br,
+  #main h1 br,
+  #main .h1 br,
+  #main h2 br,
+  #main .h2 br,
+  #main h3 br,
+  #main .h3 br,
+  #main h4 br,
+  #main .h4 br,
+  #main h5 br,
+  #main .h5 br,
+  #main h6 br,
+  #main .h6 br {
+    display: none;
   }
 }
 
@@ -15163,7 +15182,7 @@ video {
   }
 }
 .free-trial-c .trial-action-button ul li {
-  margin: 0 10px 20px 0;
+  margin: 0 10px 0px 0;
   padding: 0;
   list-style-type: none;
 }
@@ -15174,9 +15193,6 @@ video {
             justify-content: baseline;
     margin-bottom: 0;
     margin-right: 0;
-  }
-  .free-trial-c .trial-action-button ul li:first-of-type {
-    margin-bottom: 20px;
   }
 }
 .free-trial-c .trial-action-button ul li:last-child {
@@ -16936,6 +16952,12 @@ footer .sm-icons a i {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .actions {
+    margin-top: 25px;
+    display: block;
   }
 }
 .actions div {

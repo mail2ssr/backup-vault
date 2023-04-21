@@ -62,6 +62,10 @@
         margin-top: 25px;
         display: inline-flex;
     }
+    @include max-screen(767px) {
+        margin-top: 25px;
+        display: block;
+    }
 
     div {
         display: inline-flex;
