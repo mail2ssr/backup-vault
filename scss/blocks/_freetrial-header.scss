@@ -27,6 +27,7 @@
         color: #5c5c5c;
         line-height: 1.75;
         max-width: 415px;
+
         @include max-screen(991px) {
             margin: 0 auto;
         }
@@ -37,6 +38,7 @@
         margin: 0 0 20px 0;
         font-weight: 700;
         max-width: 373px;
+
         @include max-screen(991px) {
             margin: 0 auto;
         }
@@ -47,6 +49,7 @@
         margin: 0;
         font-weight: bold;
         max-width: 415px;
+
         @include max-screen(991px) {
             margin: 0 auto;
         }
@@ -175,6 +178,21 @@
         font-size: pxToRem(15px);
     }
 
+    .list-wrap {
+        font-size: 16px;
+        color: #262626;
+        width: 100%;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 600;
+    }
+    label {
+        font-size: 14px;
+        color: #262626;
+        width: 100%;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 600;
+    }
+
     .textarea-freetrial {
         border: 1px solid #e6e8eb;
         border-radius: 10px;
@@ -248,10 +266,10 @@
 
     @include max-screen(991px) {
         padding: 60px 0 45px 0;
-      }
+    }
 
     img {
         max-width: 100%;
-     
+
     }
 }

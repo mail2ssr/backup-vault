@@ -16372,6 +16372,20 @@ footer .sm-icons a i {
   font-weight: 600;
   font-size: 0.8333333333rem;
 }
+.form-freetrial .list-wrap {
+  font-size: 16px;
+  color: #262626;
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+}
+.form-freetrial label {
+  font-size: 14px;
+  color: #262626;
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+}
 .form-freetrial .textarea-freetrial {
   border: 1px solid #e6e8eb;
   border-radius: 10px;
