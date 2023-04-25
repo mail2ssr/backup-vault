@@ -14513,6 +14513,7 @@ video {
 @media only screen and (max-width: 767px) {
   .green-button-i-wa a {
     min-width: auto;
+    margin-bottom: 15px;
   }
 }
 .green-button-i-wa a span {

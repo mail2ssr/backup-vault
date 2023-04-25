@@ -134,6 +134,7 @@
 
         @include max-screen(767px) {
             min-width: auto;
+            margin-bottom: 15px;
         }
 
         span {
