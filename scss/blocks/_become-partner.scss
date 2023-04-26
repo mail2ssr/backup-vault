@@ -51,92 +51,92 @@
         margin: 0 0 30px 0;
     }
 
-    .form {
-        margin: 30px 0 0 0;
-    }
+    // .form {
+    //     margin: 30px 0 0 0;
+    // }
 
-    .fieldbox {
-        margin: 0 0 10px 0;
-    }
+    // .fieldbox {
+    //     margin: 0 0 10px 0;
+    // }
 
-    .two-column-field {
-        display: flex;
-        margin: 0 -10px;
+    // .two-column-field {
+    //     display: flex;
+    //     margin: 0 -10px;
 
-        .column {
-            flex: 0 0 calc(50% - 20px);
-            margin: 0 10px;
-        }
-    }
+    //     .column {
+    //         flex: 0 0 calc(50% - 20px);
+    //         margin: 0 10px;
+    //     }
+    // }
 
-    .single-column-field {
-        display: flex;
-        margin: 0 -10px;
+    // .single-column-field {
+    //     display: flex;
+    //     margin: 0 -10px;
 
-        .column {
-            flex: 0 0 calc(100% - 20px);
-            margin: 0 10px;
-        }
-    }
+    //     .column {
+    //         flex: 0 0 calc(100% - 20px);
+    //         margin: 0 10px;
+    //     }
+    // }
 
-    .input-freetrial {
-        border: 1px solid #e6e8eb;
-        border-radius: 10px;
-        font-size: 16px;
-        padding: 15px 15px;
-        color: #262626;
-        width: 100%;
-        font-family: "Plus Jakarta Sans", sans-serif;
-        font-weight: 600;
-        font-size: pxToRem(15px);
-    }
+    // .input-freetrial {
+    //     border: 1px solid #e6e8eb;
+    //     border-radius: 10px;
+    //     font-size: 16px;
+    //     padding: 15px 15px;
+    //     color: #262626;
+    //     width: 100%;
+    //     font-family: "Plus Jakarta Sans", sans-serif;
+    //     font-weight: 600;
+    //     font-size: pxToRem(15px);
+    // }
 
-    .textarea-freetrial {
-        border: 1px solid #e6e8eb;
-        border-radius: 10px;
-        font-size: 16px;
-        padding: 15px 15px;
-        color: #262626;
-        width: 100%;
-        font-family: "Plus Jakarta Sans", sans-serif;
-        font-weight: 600;
-        font-size: pxToRem(15px);
-        height: 120px;
-    }
+    // .textarea-freetrial {
+    //     border: 1px solid #e6e8eb;
+    //     border-radius: 10px;
+    //     font-size: 16px;
+    //     padding: 15px 15px;
+    //     color: #262626;
+    //     width: 100%;
+    //     font-family: "Plus Jakarta Sans", sans-serif;
+    //     font-weight: 600;
+    //     font-size: pxToRem(15px);
+    //     height: 120px;
+    // }
 
-    .input-freetrial::placeholder {
-        opacity: 1;
-        color: #262626;
-    }
+    // .input-freetrial::placeholder {
+    //     opacity: 1;
+    //     color: #262626;
+    // }
 
-    .consent {
-        margin: 5px 0 30px 0 !important;
-        padding: 3px 0 0 0px;
-        position: relative;
+    // .consent {
+    //     margin: 5px 0 30px 0 !important;
+    //     padding: 3px 0 0 0px;
+    //     position: relative;
 
-        .form-check {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
+    //     .form-check {
+    //         position: absolute;
+    //         left: 0;
+    //         top: 0;
+    //     }
 
-        .form-check-input {
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            box-shadow: none;
-            background-color: #0ABA6E;
-            border: 0;
-            background-size: 70% auto;
-        }
+    //     .form-check-input {
+    //         width: 15px;
+    //         height: 15px;
+    //         border-radius: 50%;
+    //         box-shadow: none;
+    //         background-color: #0ABA6E;
+    //         border: 0;
+    //         background-size: 70% auto;
+    //     }
 
-        p,
-        label {
-            font-size: 11px !important;
-            color: #5c5c5c !important;
-            text-align: left !important;
-        }
+    //     p,
+    //     label {
+    //         font-size: 11px !important;
+    //         color: #5c5c5c !important;
+    //         text-align: left !important;
+    //     }
 
-    }
+    // }
 
 }
