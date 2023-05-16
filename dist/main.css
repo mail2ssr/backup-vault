@@ -15498,6 +15498,40 @@ video {
   margin: 0 0 20px 0;
 }
 
+.dark-bg {
+  padding: 140px 0 123px 0;
+  position: relative;
+  background: url(../images/otp-bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+@media only screen and (max-width: 767px) {
+  .dark-bg {
+    padding: 60px 0;
+  }
+}
+.dark-bg .container {
+  position: relative;
+  z-index: 1;
+}
+.dark-bg:before {
+  width: 396px;
+  height: 236px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+}
+.dark-bg:after {
+  width: 396px;
+  height: 236px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: url(../images/white-small-bubbles-bg.svg) no-repeat;
+}
+
 .testimonials-w {
   padding: 120px 0 100px 0;
 }
@@ -17337,7 +17371,7 @@ footer .sm-icons a i {
 }
 
 .icon-grid-section .brief-c {
-  max-width: 700px;
+  max-width: 820px;
   text-align: center;
   margin: 0 auto 60px auto;
 }

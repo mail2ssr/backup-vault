@@ -3,9 +3,13 @@ $content = get_sub_field('content');
 
 $column = get_sub_field('number_of_column');
 
-$col = (12/$column);
+$col = (12 / $column);
 
-$clscol = 'col-md-6 col-lg-'.$col; 
+if ($column == "5") {
+    $clscol = 'col';
+} else {
+    $clscol = 'col-md-6 col-lg-' . $col;
+}
 
 
 
@@ -18,7 +22,7 @@ if (get_sub_field('hide_this_block') == 0) : ?>
     </style>
 
     <!-- icon grid section -->
-    <section class="icon-grid-section <?php the_sub_field('block_top_bottom_margin'); ?> <?php the_sub_field( 'custom_class' ); ?> <?php the_sub_field('section_background_color'); ?> <?php the_sub_field('section_text_color'); ?> <?php the_sub_field('remove_padding'); ?> os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
+    <section class="icon-grid-section <?php the_sub_field('block_top_bottom_margin'); ?> <?php the_sub_field('custom_class'); ?> <?php the_sub_field('section_background_color'); ?> <?php the_sub_field('section_text_color'); ?> <?php the_sub_field('remove_padding'); ?> os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
 
 
         <div class="<?php the_sub_field('container_width'); ?>">
@@ -31,7 +35,7 @@ if (get_sub_field('hide_this_block') == 0) : ?>
                 <?php if (have_rows('grid')) : ?>
                     <?php while (have_rows('grid')) : the_row(); ?>
                         <?php $icon = get_sub_field('icon'); ?>
-                        <div class="<?php echo $clscol;?>">
+                        <div class="<?php echo $clscol; ?>">
                             <div class="column-grid-icon os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
                                 <?php if ($icon) : ?>
                                     <div class="icon-grid"><img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" /></div>
@@ -41,10 +45,12 @@ if (get_sub_field('hide_this_block') == 0) : ?>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
-
-
-
             </div>
+
+            <?php $button = get_sub_field( 'button' ); ?>
+			<?php if ( $button ) : ?>
+				<div class="green-button text-center"><a href="<?php echo esc_url( $button['url'] ); ?>" target="<?php echo esc_attr( $button['target'] ); ?>"><?php echo esc_html( $button['title'] ); ?></a></div>
+			<?php endif; ?>
         </div>
 
 
