@@ -10,7 +10,7 @@ if (get_sub_field('hide_this_block') == 0) { ?>
     <!--Home Banner Start-->
     <section class="home-banner-w">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-<?php the_sub_field('vertical_align'); ?>">
                 <div class="col-lg-5 order-lg-1">
                     <div class="home-video-img os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
                         <?php if ($select_media_type == 'image') {
