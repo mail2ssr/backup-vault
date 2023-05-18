@@ -57,6 +57,15 @@
             background-color: #fff;
             border-radius: 30px;
             text-align: center;
+            position: relative;
+
+            a.link-box {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
 
             @include max-screen(767px) {
                 margin: 0 20px 30px;

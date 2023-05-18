@@ -121,10 +121,11 @@
     }
 
     .home-video-img {
-        margin: 0;
+        margin: 90px 0 0 0;
 
         @include max-screen(991px) {
             margin-bottom: 60px;
+            margin-top: 0;
         }
 
         .videoBlock {

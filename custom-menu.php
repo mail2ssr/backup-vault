@@ -33,13 +33,13 @@
 
                            <div class="col-lg-4">
 
-                             <?php $second_level_title = get_sub_field('second_level_title'); ?>
+                            
 
-                             <?php if ($second_level_title) : ?>
-                               <a href="<?php echo esc_url($second_level_title['url']); ?>" target="<?php echo esc_attr($second_level_title['target']); ?>">
-                                 <h4><?php echo esc_html($second_level_title['title']); ?></h4>
-                               </a>
-                             <?php endif; ?>
+                             
+                               
+                                 <h4><?php the_sub_field( 'second_level_title' ); ?></h4>
+                              
+                            
 
                              <ul>
                                <?php if (have_rows('column_grid')) : ?>

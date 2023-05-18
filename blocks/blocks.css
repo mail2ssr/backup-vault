@@ -52,9 +52,9 @@
  
 .img-blog-big { margin: 0 0 25px 0!important; padding: 0; overflow: hidden; border-radius: 10px; } 
  
-.col-padding-right { padding-right: 20%; } 
+.col-padding-right { padding-right: 18%; } 
  
-.col-padding-left { padding-left: 20%; } 
+.col-padding-left { padding-left: 18%; } 
  
 @media only screen and (max-width:991px){
     
@@ -96,6 +96,8 @@
 .blog-title h1 { margin: 0; padding: 0; color: #1d2b3a; } 
  
 .blog-title h6 { font-size: 14px!important; color: #80868b; margin: 0 0 15px 0; font-weight: 400!important; } 
+
+.plyr--video {border-radius: 30px;}
  
 .plyr__control--overlaid { background: #fff!important; border: 0; border-radius: 100%; color: #00a4ff!important; color: var(--plyr-video-control-color,#fff); display: none; left: 50%; opacity: .9; padding: 15px; padding: calc(var(--plyr-control-spacing,10px)*3)!important; position: absolute; top: 50%; transform: translate(-50%,-50%); transition: .3s; z-index: 2; } 
  
