@@ -12,9 +12,11 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 
                 <?php $select_team_member = get_sub_field('select_team_member'); ?>
                 <?php if ($select_team_member) : ?>
-                    <?php foreach ($select_team_member as $post) : ?>
+                    <?php
+                         $t=.5;
+                        foreach ($select_team_member as $post) : ?>
                         <?php setup_postdata($post); ?>
-                        <div class="column-members os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".5s">
+                        <div class="column-members os-animation" data-os-animation="fadeIn" data-os-animation-delay="<?php echo $t?>s">
 
 
                             <?php if (has_post_thumbnail()) { ?>
@@ -35,7 +37,9 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                             <h5><?php the_title(); ?></h5>
                             <h6><?php the_field('position'); ?></h6>
                         </div>
-                    <?php endforeach; ?>
+                    <?php 
+                 $t=$t+0.1;
+                endforeach; ?>
                     <?php wp_reset_postdata(); ?>
                 <?php endif; ?>
 

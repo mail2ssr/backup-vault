@@ -11,17 +11,21 @@ if (get_sub_field('hide_this_block') == 0) { ?>
             </div>
             <div class="cont-whychoose">
                 <?php if (have_rows('grid_box_wcb')) : ?>
-                    <?php while (have_rows('grid_box_wcb')) : the_row(); ?>
+                    <?php 
+                         $t=.5;
+                        while (have_rows('grid_box_wcb')) : the_row(); ?>
                         <?php $icon = get_sub_field('icon'); ?>
 
 
-                        <div class="column-whychoose os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
+                        <div class="column-whychoose os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t?>s">
                             <?php if ($icon) : ?>
                                 <div class="icon-whychoose"><img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" /></div>
                             <?php endif; ?>
                             <?php the_sub_field('content'); ?>
                         </div>
-                    <?php endwhile; ?>
+                    <?php 
+                 $t=$t+0.1;
+                endwhile; ?>
                 <?php endif; ?>
             </div>
 

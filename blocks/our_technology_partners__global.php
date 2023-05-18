@@ -13,9 +13,12 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 
             <div class="cont-otp">
                 <?php if (have_rows('grid_box_otp', 'option')) : ?>
-                    <?php while (have_rows('grid_box_otp', 'option')) : the_row(); ?>
+                    <?php
+
+                    $t = .5;
+                    while (have_rows('grid_box_otp', 'option')) : the_row(); ?>
                         <?php $icon = get_sub_field('icon'); ?>
-                        <div class="column-otp os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
+                        <div class="column-otp os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t ?>s">
                             <?php $link = get_sub_field('link'); ?>
                             <?php if ($link) : ?>
                                 <a href="<?php echo esc_url($link['url']); ?>" target="<?php echo esc_attr($link['target']); ?>" class="link-box"></a>
@@ -25,7 +28,9 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                             <?php endif; ?>
                             <?php the_sub_field('content'); ?>
                         </div>
-                    <?php endwhile; ?>
+                    <?php
+                        $t = $t + 0.1;
+                    endwhile; ?>
                 <?php endif; ?>
             </div>
         </div>

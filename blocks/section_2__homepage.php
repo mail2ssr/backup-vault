@@ -13,12 +13,16 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                 <?php the_sub_field('top_content'); ?>
             </div>
 
-            <div class="cont-hotrd os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".8s">
+            <div class="cont-hotrd">
 
                 <?php if (have_rows('icon_section')) : ?>
-                    <?php while (have_rows('icon_section')) : the_row(); ?>
+                    <?php 
+                        
+                        $t=.5;
+
+                        while (have_rows('icon_section')) : the_row(); ?>
                         <?php $icon = get_sub_field('icon'); ?>
-                        <div class="column-hotrd">
+                        <div class="column-hotrd os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t?>s">
                             <div class="icon-hotrd">
                                 <?php if ($icon) : ?>
                                     <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" />
@@ -26,7 +30,11 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                             </div>
                             <?php the_sub_field('content'); ?>
                         </div>
-                    <?php endwhile; ?>
+                    <?php 
+                
+                $t=$t+0.1;
+                
+                endwhile; ?>
                 <?php endif; ?>
             </div>
         </div>

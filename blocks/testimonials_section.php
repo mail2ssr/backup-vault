@@ -27,9 +27,12 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 
                         <?php $select_testimonials = get_sub_field('select_testimonials'); ?>
                         <?php if ($select_testimonials) : ?>
-                            <?php foreach ($select_testimonials as $post) : ?>
+                            <?php
+                                 $t=.5;
+                                
+                                foreach ($select_testimonials as $post) : ?>
                                 <?php setup_postdata($post); ?>
-                                <div class="column-testimonials  os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
+                                <div class="column-testimonials  os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t?>s">
                                     <p><?php the_field('content'); ?></p>
 
                                     <div class="author-testimonial">
@@ -56,7 +59,9 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                                         </div>
                                     </div>
                                 </div>
-                            <?php endforeach; ?>
+                            <?php 
+                         $t=$t+0.1;
+                        endforeach; ?>
                             <?php wp_reset_postdata(); ?>
                         <?php endif; ?>
 

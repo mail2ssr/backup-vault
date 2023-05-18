@@ -11,9 +11,10 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 
                     <?php $args = array('post_type' => 'post',  'post_status' => 'publish', 'posts_per_page' => -1);
                     $loop = new WP_Query($args);
+                    $t = .5;
                     while ($loop->have_posts()) : $loop->the_post(); ?>
 
-                        <div class="column-ourblog itemsbigtip os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
+                        <div class="column-ourblog itemsbigtip os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t?>s">
                             <div class="img-ourblog">
 
                                 <?php if (has_post_thumbnail()) { ?>
@@ -38,7 +39,9 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                         </div>
 
 
-                    <?php endwhile; ?>
+                    <?php
+                        $t = $t + 0.1;
+                    endwhile; ?>
                     <?php wp_reset_postdata(); ?>
 
 
@@ -65,8 +68,8 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 
             });
             if (jQuery("div.itemsbigtip:hidden").length == 0) {
-                    jQuery("#loadMore").fadeOut(500);
-                }
+                jQuery("#loadMore").fadeOut(500);
+            }
         });
     </script>
 
