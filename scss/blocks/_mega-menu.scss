@@ -31,7 +31,9 @@
                 padding: 0 0 0 30px;
                 display: block;
 
-                @include max-screen(1100px) {}
+                @include max-screen(1399px) {
+                    padding: 0 0 0 20px;
+                }
 
                 &:hover {
                     color: #007AFF !important;
@@ -275,7 +277,7 @@
                         width: 25px;
                         height: 25px;
                         object-fit: contain;
-                    }   
+                    }
                 }
             }
 

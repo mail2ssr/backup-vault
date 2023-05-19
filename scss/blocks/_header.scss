@@ -23,7 +23,7 @@
         background-color: #f5faff;
     }
 
-    @include max-screen(1100px) {
+    @include max-screen(1000px) {
         top: 80px;
     }
 
@@ -31,7 +31,7 @@
         top: 75px;
     }
 
-    @include max-screen(600px) {
+    @include max-screen(650px) {
         top: 97px;
     }
 }
