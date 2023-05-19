@@ -24,6 +24,10 @@
     margin: 75px 0 0 0;
     padding: 0;
 
+    @include max-screen(767px) {
+      margin: 45px 0 0 0;
+    }
+
     ul {
       margin: 0;
       padding: 0;
@@ -41,8 +45,22 @@
         flex: 0 0 calc(20% - 30px);
         margin: 0 15px 30px;
         min-height: 120px;
-        border: 1px solid #e6e8eb; 
+        border: 1px solid #e6e8eb;
         border-radius: 25px;
+
+        @include max-screen(767px) {
+          flex: 0 0 calc(20% - 20px);
+          margin: 0 10px 15px;
+          min-height: 90px;
+        }
+
+        img {
+          @include max-screen(767px) {
+            max-height: 60px;
+            width: auto;
+          }
+
+        }
       }
     }
   }

@@ -5,6 +5,16 @@
         padding: 60px 0;
     }
 
+    .brief-c {
+        h2 {
+            @include max-screen(767px) {
+                max-width: 263px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
     .protect-features {
         margin: 100px 0 0 0;
 

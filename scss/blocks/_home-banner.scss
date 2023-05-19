@@ -63,10 +63,9 @@
             display: flex;
             align-items: center;
 
-            @include max-screen(991px) {
+            @include max-screen(767px) {
                 display: block;
                 text-align: center;
-                max-width: 425px;
                 margin: 0 auto;
             }
 
@@ -124,8 +123,8 @@
         margin: 90px 0 0 0;
 
         @include max-screen(991px) {
-            margin-bottom: 60px;
-            margin-top: 0;
+            margin-top: 30px;
+            margin-bottom: 0;
         }
 
         .videoBlock {

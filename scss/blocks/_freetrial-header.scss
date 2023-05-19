@@ -266,10 +266,9 @@
             display: flex;
             align-items: center;
 
-            @include max-screen(991px) {
+            @include max-screen(767px) {
                 display: block;
                 text-align: center;
-                max-width: 425px;
                 margin: 0 auto;
             }
 

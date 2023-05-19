@@ -48,12 +48,17 @@
 
         @include max-screen(991px) {
             flex-direction: column;
+            margin-top: 30px;
         }
 
         .column-hotrd {
             flex: 0 0 calc(33.33333333% - 30px);
             margin: 0 15px 50px;
             text-align: center;
+
+            @include max-screen(767px) {
+                margin: 0 15px 30px;
+            }
 
             &:last-child {
                 margin-bottom: 0;
@@ -65,6 +70,18 @@
 
             .icon-hotrd {
                 margin: 0 0 30px 0;
+
+                @include max-screen(767px) {
+                    margin: 0 0 15px 0;
+                }
+
+                img {
+                    @include max-screen(767px) {
+                        max-width: 75px;
+                        height: auto;
+                    }
+
+                }
             }
 
             h4 {

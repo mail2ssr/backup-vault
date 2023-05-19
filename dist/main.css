@@ -13449,7 +13449,7 @@ h1, .h1 {
 }
 @media only screen and (max-width: 767px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 2.2222222222rem;
   }
 }
 
@@ -13460,7 +13460,7 @@ h2, .h2 {
 }
 @media only screen and (max-width: 767px) {
   h2, .h2 {
-    font-size: 1.7777777778rem;
+    font-size: 1.6666666667rem;
   }
 }
 
@@ -14479,8 +14479,12 @@ video {
 }
 @media only screen and (max-width: 767px) {
   .green-button-i a {
-    min-width: auto;
+    min-width: 171px;
     margin-bottom: 15px;
+    margin-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .green-button-i a span {
@@ -14602,7 +14606,7 @@ video {
 }
 @media only screen and (max-width: 767px) {
   #main {
-    padding-top: 64px;
+    padding-top: 110px;
   }
 }
 @media only screen and (max-width: 430px) {
@@ -14963,11 +14967,10 @@ video {
       -ms-flex-align: center;
           align-items: center;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   .home-banner-w .trusted-partners ul {
     display: block;
     text-align: center;
-    max-width: 425px;
     margin: 0 auto;
   }
 }
@@ -15021,8 +15024,8 @@ video {
 }
 @media only screen and (max-width: 991px) {
   .home-banner-w .home-video-img {
-    margin-bottom: 60px;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 }
 .home-banner-w .home-video-img .videoBlock {
@@ -15092,6 +15095,7 @@ video {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 30px;
   }
 }
 .hotrd-w .cont-hotrd .column-hotrd {
@@ -15100,6 +15104,11 @@ video {
           flex: 0 0 calc(33.33333333% - 30px);
   margin: 0 15px 50px;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .hotrd-w .cont-hotrd .column-hotrd {
+    margin: 0 15px 30px;
+  }
 }
 .hotrd-w .cont-hotrd .column-hotrd:last-child {
   margin-bottom: 0;
@@ -15113,6 +15122,17 @@ video {
 }
 .hotrd-w .cont-hotrd .column-hotrd .icon-hotrd {
   margin: 0 0 30px 0;
+}
+@media only screen and (max-width: 767px) {
+  .hotrd-w .cont-hotrd .column-hotrd .icon-hotrd {
+    margin: 0 0 15px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hotrd-w .cont-hotrd .column-hotrd .icon-hotrd img {
+    max-width: 75px;
+    height: auto;
+  }
 }
 .hotrd-w .cont-hotrd .column-hotrd h4, .hotrd-w .cont-hotrd .column-hotrd .h4 {
   margin: 0;
@@ -15130,6 +15150,13 @@ video {
 @media only screen and (max-width: 767px) {
   .protect-business-w {
     padding: 60px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .protect-business-w .brief-c h2, .protect-business-w .brief-c .h2 {
+    max-width: 263px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .protect-business-w .protect-features {
@@ -15581,6 +15608,14 @@ video {
 .testimonials-w .cont-testimonials {
   margin: 0;
 }
+.testimonials-w .cont-testimonials .testimonials-slider {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .testimonials-w .cont-testimonials .testimonials-slider {
+    display: block;
+  }
+}
 .testimonials-w .cont-testimonials .static-testimonials {
   margin: 80px -20px 0 -20px;
   padding: 0;
@@ -15593,6 +15628,7 @@ video {
 @media only screen and (max-width: 767px) {
   .testimonials-w .cont-testimonials .static-testimonials {
     margin-top: 50px;
+    display: none;
   }
 }
 .testimonials-w .cont-testimonials .static-testimonials .column-testimonials {
@@ -16217,6 +16253,11 @@ footer .sm-icons a i {
   margin: 75px 0 0 0;
   padding: 0;
 }
+@media only screen and (max-width: 767px) {
+  .about-hdr .about-logos {
+    margin: 45px 0 0 0;
+  }
+}
 .about-hdr .about-logos ul {
   margin: 0;
   padding: 0;
@@ -16249,6 +16290,21 @@ footer .sm-icons a i {
   min-height: 120px;
   border: 1px solid #e6e8eb;
   border-radius: 25px;
+}
+@media only screen and (max-width: 767px) {
+  .about-hdr .about-logos ul li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(20% - 20px);
+            flex: 0 0 calc(20% - 20px);
+    margin: 0 10px 15px;
+    min-height: 90px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-hdr .about-logos ul li img {
+    max-height: 60px;
+    width: auto;
+  }
 }
 
 .how-started-w {
@@ -16713,11 +16769,10 @@ footer .sm-icons a i {
       -ms-flex-align: center;
           align-items: center;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   .pricing-header .trusted-partners ul {
     display: block;
     text-align: center;
-    max-width: 425px;
     margin: 0 auto;
   }
 }
@@ -17210,12 +17265,14 @@ footer .sm-icons a i {
 }
 @media only screen and (max-width: 991px) {
   .c-banner-w .img-sec {
-    padding-bottom: 60px;
+    padding-top: 60px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 767px) {
   .c-banner-w .img-sec {
-    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 0;
   }
 }
 .c-banner-w .img-c-banner {

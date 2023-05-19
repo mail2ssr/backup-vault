@@ -105,7 +105,7 @@
                                  <div class="icon-menu"><img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" /></div>
                                <?php endif; ?>
                                <div class="info-menu">
-                                 <p> <?php echo esc_html($subnav_title['title']); ?></p>
+                                 <?php echo esc_html($subnav_title['title']); ?>
                                </div>
                              </div>
                              <?php if ($description) : ?><span><?php the_sub_field('description'); ?></span><?php endif; ?>

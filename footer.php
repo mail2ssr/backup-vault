@@ -188,8 +188,16 @@
 <script>
 
 jQuery(".bottom-w h6").click(function () {
-    jQuery(this).parent(".nav-btm").toggleClass("open");
+    jQuery(this).parent(".nav-btm").toggleClass("open")
 });
+
+jQuery('.accordion-collapse').on('shown.bs.collapse', function (e) {
+    var $panel = $(this).closest('.accordion-item');
+    jQuery('html,body').animate({
+        scrollTop: ( $panel.offset().top - 100)
+    }, 500); 
+}); 
+ 
 
 
 </script>

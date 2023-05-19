@@ -11,22 +11,7 @@ if (get_sub_field('hide_this_block') == 0) { ?>
     <section class="home-banner-w">
         <div class="container">
             <div class="row align-items-<?php the_sub_field('vertical_align'); ?>">
-                <div class="col-lg-5 order-lg-1">
-                    <div class="home-video-img os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
-                        <?php if ($select_media_type == 'image') {
-                            get_template_part('blocks/inc/image-inc');
-                        }
-                        ?>
-                        <?php if ($select_media_type == 'video') {
-                            get_template_part('blocks/inc/video-inc');
-                        }
-                        ?>
-                        <?php if ($select_media_type == 'json') {
-                            get_template_part('blocks/inc/jsonAnimation-inc');
-                        }
-                        ?>
-                    </div>
-                </div>
+                
                 <div class="col-lg-7 order-lg-0 d-flex">
                     <div class="home-info os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
                         <?php the_sub_field('content'); ?>
@@ -57,6 +42,22 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                                 </ul>
                             </div>
                         <?php endif; ?>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-1">
+                    <div class="home-video-img os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
+                        <?php if ($select_media_type == 'image') {
+                            get_template_part('blocks/inc/image-inc');
+                        }
+                        ?>
+                        <?php if ($select_media_type == 'video') {
+                            get_template_part('blocks/inc/video-inc');
+                        }
+                        ?>
+                        <?php if ($select_media_type == 'json') {
+                            get_template_part('blocks/inc/jsonAnimation-inc');
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

@@ -29,11 +29,13 @@
     .img-sec {
 
         @include max-screen(991px) {
-            padding-bottom: 60px;
+            padding-top: 60px;
+            margin-bottom: 0;
         }
 
         @include max-screen(767px) {
-            padding-bottom: 30px;
+            padding-top: 30px;
+            margin-bottom: 0;
         }
 
     }

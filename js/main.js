@@ -39,5 +39,7 @@ on('setPosition', function (event, slick) {
 
 
 
+
+
 //slider testimonials end
 
