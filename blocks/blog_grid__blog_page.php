@@ -12,7 +12,16 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                     <?php $args = array('post_type' => 'post',  'post_status' => 'publish', 'posts_per_page' => -1);
                     $loop = new WP_Query($args);
                     $t = .5;
-                    while ($loop->have_posts()) : $loop->the_post(); ?>
+                    $c = 1;
+                    while ($loop->have_posts()) : $loop->the_post();
+                    
+                    if ( $c % 9 == 0 ) {
+
+                        $t=.5;
+                    }
+                    
+                    ?>
+                    
 
                         <div class="column-ourblog itemsbigtip os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t?>s">
                             <div class="img-ourblog">
@@ -40,7 +49,10 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 
 
                     <?php
+                    
                         $t = $t + 0.1;
+
+                        $c = $c + 1;
                     endwhile; ?>
                     <?php wp_reset_postdata(); ?>
 
