@@ -18,7 +18,7 @@
 
     p {
         font-size: pxToRem(20px);
-        max-width: 476px;
+        max-width: 515px;
     }
 
     ul {
@@ -120,7 +120,7 @@
     }
 
     .home-video-img {
-        margin: 90px 0 0 0;
+        margin: 100px 0 0 0;
 
         @include max-screen(991px) {
             margin-top: 30px;
@@ -131,6 +131,7 @@
             padding-bottom: 84.25%;
             max-width: 150%;
             width: 150%;
+            border-radius: 20px;
 
             @include max-screen(1100px) {
                 width: 100%;
