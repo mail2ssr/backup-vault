@@ -1,4 +1,4 @@
-.video_wrapper { position: relative; padding-bottom: 56.25%; overflow: hidden; max-width: 100%; height: auto; } 
+.video_wrapper { position: relative; padding-bottom: 56.25%; overflow: hidden; max-width: 100%; height: auto; border-radius: 20px; } 
  
 .video_wrapper .rll-youtube-player,
 .video_wrapper embed,

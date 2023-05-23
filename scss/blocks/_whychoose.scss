@@ -27,6 +27,7 @@
         .column-whychoose {
             flex: 0 0 calc(20% - 40px);
             margin: 0 20px 30px 20px;
+            text-align: center;
 
             @include max-screen(991px) {
                 flex: 0 0 calc(50% - 40px);

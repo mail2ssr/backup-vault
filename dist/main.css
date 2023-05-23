@@ -13750,15 +13750,14 @@ video {
   }
 }
 .header .header__logo {
-  width: 150px;
-  max-width: 30%;
+  width: 200px;
   display: inline-block;
   position: relative;
   z-index: 5;
 }
 @media only screen and (max-width: 430px) {
   .header .header__logo img {
-    width: 170%;
+    width: 170px;
   }
 }
 
@@ -14839,6 +14838,13 @@ video {
   text-decoration: underline;
 }
 
+.sitemap a {
+  color: #262626 !important;
+}
+.sitemap a:hover {
+  color: #007aff !important;
+}
+
 .download-contact {
   background-color: #007aff;
   padding: 12px 0;
@@ -15734,6 +15740,8 @@ video {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media only screen and (max-width: 767px) {
   .ourtechpartners-w .cont-otp {
@@ -15750,10 +15758,10 @@ video {
 }
 .ourtechpartners-w .cont-otp .column-otp {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(33.33333333% - 80px);
-          flex: 0 0 calc(33.33333333% - 80px);
-  margin: 0 40px 30px;
-  padding: 40px 30px;
+      -ms-flex: 0 0 calc(25% - 40px);
+          flex: 0 0 calc(25% - 40px);
+  margin: 0 20px 30px;
+  padding: 20px 23px;
   background-color: #fff;
   border-radius: 30px;
   text-align: center;
@@ -15783,6 +15791,9 @@ video {
 }
 .ourtechpartners-w .cont-otp .partner-logo {
   margin: 0 0 20px 0;
+}
+.ourtechpartners-w .cont-otp .partner-logo img {
+  max-height: 40px;
 }
 
 .dark-bg {
@@ -16033,6 +16044,7 @@ video {
       -ms-flex: 0 0 calc(20% - 40px);
           flex: 0 0 calc(20% - 40px);
   margin: 0 20px 30px 20px;
+  text-align: center;
 }
 @media only screen and (max-width: 991px) {
   .whychoose-w .cont-whychoose .column-whychoose {
@@ -16365,7 +16377,7 @@ video {
   color: #0bd47d;
 }
 .bottom-w .b-logo {
-  max-width: 180px;
+  max-width: 200px;
 }
 @media only screen and (max-width: 991px) {
   .bottom-w .b-logo {

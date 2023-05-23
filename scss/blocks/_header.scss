@@ -72,15 +72,14 @@
 
 
     .header__logo {
-        width: 150px;
-        max-width: 30%;
+        width: 200px;
         display: inline-block;
         position: relative;
         z-index: 5;
 
         @include max-screen(430px) {
             img {
-                width: 170%;
+                width: 170px;
             }
         }
     }
