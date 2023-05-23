@@ -72,6 +72,12 @@
       padding: 0 0 0 35px;
       position: relative;
 
+      @include max-screen(991px) {
+        br {
+          display: block !important;
+        }
+      }
+
       &:before {
         content: "";
         width: 24px;

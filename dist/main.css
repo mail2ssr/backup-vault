@@ -17658,6 +17658,11 @@ footer .sm-icons a i {
   padding: 0 0 0 35px;
   position: relative;
 }
+@media only screen and (max-width: 991px) {
+  .c-w-info1 ul li br {
+    display: block !important;
+  }
+}
 .c-w-info1 ul li:before {
   content: "";
   width: 24px;
