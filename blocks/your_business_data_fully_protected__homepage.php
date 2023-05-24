@@ -24,7 +24,7 @@
                             $i = 1;
                             while (have_rows('desktop_graphics')) : the_row(); ?>
                                 <?php $icon = get_sub_field('icon'); ?>
-                                <div class="icon<?php echo $i;?>">
+                                <div class="icon<?php echo $i;?> icon-circle">
                                     <div class="special-text"><img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" /><span class="special-text__tooltip"><?php the_sub_field('tooltip_title'); ?></span></div>
                                 </div>
                             <?php

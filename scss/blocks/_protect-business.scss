@@ -288,11 +288,37 @@
             z-index: 1;
         }
 
-        .icon1 {
+        .icon-circle {
             position: absolute;
             top: 298px;
             left: 35px;
+            width: 115px;
+            height: 115px;
+            border-radius: 100%;
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
 
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                    transition: all .3s ease-in-out, left .5s ease-in-out;
+                }
+            }
+
+            &:hover .special-text__tooltip {
+                visibility: visible;
+                opacity: 1;
+                transition: all .3s ease-in-out, left .5s ease-in-out;
+            }
+        }
+
+        .icon1 {
+            position: absolute;
+            top: 265px;
+            left: 0px;
 
             img {
                 max-height: 50px;
@@ -308,8 +334,8 @@
 
         .icon2 {
             position: absolute;
-            top: 165px;
-            left: 60px;
+            top: 133px;
+            left: 35px;
 
             .special-text__tooltip {
                 left: -66%;
@@ -329,8 +355,8 @@
 
         .icon3 {
             position: absolute;
-            top: 77px;
-            left: 172px;
+            top: 36px;
+            left: 132px;
 
             .special-text__tooltip {
                 left: -145%;
@@ -350,8 +376,8 @@
 
         .icon4 {
             position: absolute;
-            top: 38px;
-            left: 301px;
+            top: 0px;
+            left: 265px;
 
             img {
                 max-height: 44px;
@@ -367,8 +393,8 @@
 
         .icon5 {
             position: absolute;
-            top: 70px;
-            left: 421px;
+            top: 37px;
+            left: 397px;
 
             .special-text__tooltip {
                 left: -52%;
@@ -389,8 +415,8 @@
 
         .icon6 {
             position: absolute;
-            top: 180px;
-            left: 527px;
+            top: 134px;
+            left: 494px;
 
             .special-text__tooltip {
                 left: -91%;
@@ -411,8 +437,8 @@
 
         .icon7 {
             position: absolute;
-            top: 303px;
-            left: 566px;
+            top: 266px;
+            left: 530px;
 
             .special-text__tooltip {
                 left: -129%;

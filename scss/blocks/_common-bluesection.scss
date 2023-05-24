@@ -30,14 +30,15 @@
 
   h2 {
     color: #fff;
-    margin: 0 0 25px 0;
+    margin: 0 auto 25px auto;
+    max-width: 925px;
   }
 
   p {
     color: #bfe2ff;
     margin: 0 auto;
     font-size: pxToRem(18px);
-    max-width: 626px;
+    max-width: 825px;
 
   }
 
