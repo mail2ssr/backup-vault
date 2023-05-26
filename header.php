@@ -43,10 +43,15 @@
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
+
+
+    <?php the_field( 'header_scripts', 'option' ); ?>
 </head>
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
+
+  <?php the_field( 'body_scripts', 'option' ); ?>
 
 
 
