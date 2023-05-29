@@ -14650,6 +14650,7 @@ video {
 }
 .form p {
   margin-bottom: 0 !important;
+  max-width: 100% !important;
 }
 .form .fieldbox {
   margin: 0 0 10px 0;
@@ -15633,6 +15634,11 @@ video {
 .free-trial-c .cont-free-trial {
   max-width: 575px;
   padding: 48px 0 48px 66px;
+}
+@media only screen and (max-width: 991px) {
+  .free-trial-c .cont-free-trial br {
+    display: block !important;
+  }
 }
 @media only screen and (max-width: 991px) {
   .free-trial-c .cont-free-trial {
@@ -16825,6 +16831,7 @@ footer .sm-icons a i {
 @media only screen and (max-width: 991px) {
   .freetrial-header h6, .freetrial-header .h6 {
     margin: 0 auto;
+    max-width: 500px;
   }
 }
 .freetrial-header h4, .freetrial-header .h4 {

@@ -30,6 +30,7 @@
 
         @include max-screen(991px) {
             margin: 0 auto;
+            max-width: 500px;
         }
     }
 
