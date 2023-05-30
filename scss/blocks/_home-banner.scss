@@ -2,7 +2,7 @@
     padding: 50px 0 120px 0;
 
     @include max-screen(767px) {
-        padding: 0px 0 60px 0;
+        padding: 0px 0 30px 0;
     }
 
     h1 {
@@ -10,6 +10,12 @@
         letter-spacing: -1px;
         line-height: 1.23;
         margin: 0 0 35px 0;
+
+        @include max-screen(767px) {
+
+            margin-bottom: 10px;
+
+        }
 
         span {
             color: #007aff;
@@ -31,6 +37,12 @@
             width: fit-content;
         }
 
+        @include max-screen(767px) {
+            padding: 0px 0 15px 0;
+            margin: 0 auto;
+            width: fit-content;
+        }
+
 
 
         li {
@@ -42,6 +54,12 @@
             font-weight: bold;
             text-align: left;
             display: block;
+
+            @include max-screen(767px) {
+
+                margin: 0 20px 5px 0;
+
+            }
 
             &:last-child {
                 margin-right: 0;
@@ -55,6 +73,7 @@
 
         @include max-screen(991px) {
             max-width: 100%;
+            margin: 15px 0 0 0;
         }
 
         ul {
@@ -78,8 +97,9 @@
                 @include max-screen(991px) {
                     display: inline-block;
                     margin: 0 20px 20px 20px;
-                    
+
                 }
+
                 @include max-screen(767px) {
                     margin: 0 10px 20px 10px;
                 }
@@ -91,6 +111,7 @@
                 img {
                     max-width: 100%;
                     max-height: 64px;
+
                     @include max-screen(767px) {
                         max-height: 48px;
                     }

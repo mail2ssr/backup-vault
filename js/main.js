@@ -33,27 +33,23 @@ $('.slider-testimonials').slick({
 
 });
 
-on('setPosition', function (event, slick) {
-    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-});
-
 //slider testimonials end
 
 
-//slider testimonials start
+//slider blog start
 
 $('.slider-blog').slick({
     infinite: true,
     slidesToShow: 3,
-    prevArrow: $(".customprev"),
-    nextArrow: $(".customnext"),
+    prevArrow: $(".customprev1"),
+    nextArrow: $(".customnext1"),
     autoplaySpeed: 1000,
     dots: true,
     slidesToScroll: 1,
     responsive: [{
         breakpoint: 991,
         settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             dots: true,
             arrows: true,
             slidesToScroll: 1
@@ -75,13 +71,10 @@ $('.slider-blog').slick({
 
 });
 
-on('setPosition', function (event, slick) {
-    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-});
+//slider blog end
 
 
-
-
-
-//slider testimonials end
+ on('setPosition', function (event, slick) {
+     slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+ });
 

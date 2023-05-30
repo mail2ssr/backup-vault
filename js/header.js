@@ -10,8 +10,9 @@
         let subNav = $(this).next();
         btn.on('click',function(e){
             e.preventDefault();
-            subNav.slideToggle();
+            subNav.fadeToggle(300);
             block.toggleClass('active');
+
         });
     })
     

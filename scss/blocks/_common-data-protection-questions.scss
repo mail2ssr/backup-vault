@@ -12,6 +12,14 @@
         max-width: 680px;
         margin: 0 auto;
 
+        h2 {
+            br {
+                @include max-screen(991px) {
+                    display: block !important;
+                }
+            }
+        }
+
         p {
             max-width: 580px;
             margin: 0 auto;
@@ -121,10 +129,16 @@
                     color: #fff;
                     padding: 0 30px 30px 30px;
                     background-color: rgba(255, 255, 255, 0.2);
-                    p, h2, h3, h4, li {
+
+                    p,
+                    h2,
+                    h3,
+                    h4,
+                    li {
                         color: #fff;
                     }
                 }
-            }}
+            }
+        }
     }
 }

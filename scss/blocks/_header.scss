@@ -78,8 +78,10 @@
         z-index: 5;
 
         @include max-screen(430px) {
+            width: 160px;
+
             img {
-                width: 170px;
+                width: 160px;
             }
         }
     }
@@ -128,7 +130,7 @@
         display: block;
         position: absolute;
         width: 100%;
-        height: calc(100vh - 60px);
+        height: 83vh;
         top: 100%;
         right: -100%;
         overflow: auto;
@@ -140,11 +142,13 @@
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start;
+
+        .scrolled & {
+            height: 92vh;
+
+        }
     }
 
-    @include max-screen(1100px) {
-        height: calc(100vh - 200px);
-    }
 }
 
 /****************** Desktop Buttons ******************/
@@ -155,12 +159,20 @@
     display: flex;
 
     @include max-screen(1100px) {
-        position: absolute;
-        bottom: 0;
+        position: static;
+        flex-wrap: wrap;
+        width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-top: 20px;
         padding-left: 25px;
         padding-right: 25px;
-        padding-bottom: 10px;
-        flex-wrap: wrap;
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        margin: 0 auto;
+        z-index: -1;
     }
 
     .button {
@@ -203,22 +215,7 @@
         }
     }
 
-    @include max-screen(1100px) {
-        width: 100%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding-bottom: 20px;
-        padding-left: 25px;
-        padding-right: 25px;
-        left: 0;
-        right: 0;
-        max-width: -webkit-fit-content;
-        max-width: -moz-fit-content;
-        max-width: fit-content;
-        margin: 0 auto;
-        z-index: -1;
-    }
+
 }
 
 /****************** Mobile Buttons ******************/
@@ -238,7 +235,7 @@
         align-items: center;
 
         .button {
-            margin-right: 10px;
+            //margin-right: 10px;
             border-radius: 30px;
             background: rgba(11, 212, 125, 1) url(../images/icon-green-accept.svg) 18px center no-repeat;
             border-radius: 27px;

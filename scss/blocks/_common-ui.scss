@@ -106,6 +106,15 @@
             justify-content: center;
         }
 
+        .c-banner-w & {
+            @include max-screen(473px) {
+                min-width:fit-content;
+                margin-bottom: 15px;
+                margin-right: 10px;
+                justify-content: center;
+            }
+        }
+
         span {
             margin-right: 10px;
         }
@@ -243,12 +252,13 @@
 
         p br,
         li br,
-        h1 br,
-        h2 br,
-        h3 br,
-        h4 br,
-        h5 br,
-        h6 br {
+        // h1 br,
+        // h2 br,
+        // h3 br,
+        // h4 br,
+        // h5 br,
+        // h6 br 
+            {
             display: none;
         }
 

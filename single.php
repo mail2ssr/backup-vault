@@ -96,7 +96,7 @@ $select_media_type = get_field('select_media_type');
 
 						<div class="action-blog">
 							<div class="green-button">
-								<a href="<?php the_permalink(); ?>">Read more</a>
+								<a href="<?php the_permalink(); ?>">Read More</a>
 							</div>
 						</div>
 					</div>
