@@ -15,7 +15,7 @@
         .testimonials-slider {
             display: none;
 
-            @include max-screen(767px) {
+            @include max-screen(991px) {
                 display: block;
             }
         }
@@ -26,7 +26,7 @@
             display: flex;
             flex-wrap: wrap;
 
-            @include max-screen(767px) {
+            @include max-screen(991px) {
                 margin-top: 50px;
                 display: none;
             }

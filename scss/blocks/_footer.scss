@@ -30,6 +30,9 @@ footer {
       margin-left: 30px;
       display: inline-block;
       color: #007AFF;
+      @include max-screen(767px) {
+        margin: 0 15px;
+      }
 
       i {
         font-size: 20px;

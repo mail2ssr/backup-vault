@@ -14,8 +14,8 @@
         flex-wrap: wrap;
         margin-top: 80px;
 
-        @include max-screen(767px) {
-            margin-top: 50px;
+        @include max-screen(991px) {
+            margin-top: 30px;
         }
 
         .column-ourblog {
@@ -26,10 +26,10 @@
 
             @include max-screen(991px) {
                 flex: 0 0 calc(100% - 30px);
-                margin-bottom: 60px;
+                padding-bottom: 0px;
 
                 &:last-child {
-                    margin-bottom: 0;
+                    padding-bottom: 0;
                 }
             }
 
@@ -71,6 +71,10 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
+                @include max-screen(991px) {
+                    position: static;
+                    margin-top: 20px;
+                }
             }
         }
     }

@@ -11,7 +11,7 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 			</div>
 
 
-			<div class="cont-ourblog">
+			<div class="cont-ourblog slider-blog">
 
 				<?php $select_blog_grid_type = get_sub_field('select_blog_grid_type'); ?>
 
@@ -20,11 +20,11 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 					<?php $args = array('post_type' => 'post',  'post_status' => 'publish', 'posts_per_page' => 3,);
 					$loop = new WP_Query($args);
 
-					$t=.5;
+					$t = .5;
 
 					while ($loop->have_posts()) : $loop->the_post(); ?>
 
-						<div class="column-ourblog os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t?>s">
+						<div class="column-ourblog os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t ?>s">
 							<div class="img-ourblog">
 								<?php if (has_post_thumbnail()) { ?>
 									<a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('medium'); ?></a>
@@ -48,9 +48,9 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 						</div>
 
 
-					<?php 
-				 $t=$t+0.1;
-				endwhile; ?>
+					<?php
+						$t = $t + 0.1;
+					endwhile; ?>
 					<?php wp_reset_postdata(); ?>
 
 				<?php } ?>
@@ -65,13 +65,13 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 					<?php $select_any_3_blog = get_sub_field('select_any_3_blog'); ?>
 					<?php if ($select_any_3_blog) : ?>
 						<?php
-							
-							$t=.5;
-							foreach ($select_any_3_blog as $post) : ?>
+
+						$t = .5;
+						foreach ($select_any_3_blog as $post) : ?>
 							<?php setup_postdata($post); ?>
 
 
-							<div class="column-ourblog os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t?>s">
+							<div class="column-ourblog os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t ?>s">
 								<div class="img-ourblog">
 									<?php if (has_post_thumbnail()) { ?>
 										<a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('medium'); ?></a>
@@ -95,8 +95,8 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 
 
 						<?php
-					$t=$t+0.1;
-					endforeach; ?>
+							$t = $t + 0.1;
+						endforeach; ?>
 						<?php wp_reset_postdata(); ?>
 					<?php endif; ?>
 

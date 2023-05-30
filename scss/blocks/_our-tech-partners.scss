@@ -82,7 +82,11 @@
         }
 
         .partner-logo {
-            margin: 0 0 20px 0;
+            margin: 0 0 0px 0;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             img {
                 max-height: 40px;

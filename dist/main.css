@@ -14476,7 +14476,7 @@ video {
   min-height: 54px;
   min-width: 141px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 473px) {
   .green-button-i a {
     min-width: 171px;
     margin-bottom: 15px;
@@ -15629,6 +15629,7 @@ video {
 @media only screen and (max-width: 991px) {
   .free-trial-c p {
     max-width: none;
+    padding: 0 30px;
   }
 }
 .free-trial-c .cont-free-trial {
@@ -15650,7 +15651,7 @@ video {
 }
 @media only screen and (max-width: 767px) {
   .free-trial-c .cont-free-trial {
-    padding: 48px 30px;
+    padding: 48px 20px;
     text-align: center;
     max-width: 100%;
   }
@@ -15673,7 +15674,7 @@ video {
             justify-content: center;
   }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 473px) {
   .free-trial-c .trial-action-button {
     -webkit-box-pack: baseline;
         -ms-flex-pack: baseline;
@@ -15687,7 +15688,7 @@ video {
   display: -ms-flexbox;
   display: flex;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 473px) {
   .free-trial-c .trial-action-button ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -15701,7 +15702,7 @@ video {
   padding: 0;
   list-style-type: none;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 473px) {
   .free-trial-c .trial-action-button ul li {
     -webkit-box-pack: baseline;
         -ms-flex-pack: baseline;
@@ -15713,7 +15714,7 @@ video {
 .free-trial-c .trial-action-button ul li:last-child {
   margin-right: 0;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 473px) {
   .free-trial-c .trial-action-button ul li div {
     width: 100%;
   }
@@ -15835,7 +15836,17 @@ video {
   }
 }
 .ourtechpartners-w .cont-otp .partner-logo {
-  margin: 0 0 20px 0;
+  margin: 0 0 0px 0;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .ourtechpartners-w .cont-otp .partner-logo img {
   max-height: 40px;
@@ -15892,7 +15903,7 @@ video {
 .testimonials-w .cont-testimonials .testimonials-slider {
   display: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .testimonials-w .cont-testimonials .testimonials-slider {
     display: block;
   }
@@ -15906,7 +15917,7 @@ video {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .testimonials-w .cont-testimonials .static-testimonials {
     margin-top: 50px;
     display: none;
@@ -16281,9 +16292,9 @@ video {
       flex-wrap: wrap;
   margin-top: 80px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .our-blog-w .cont-ourblog {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 .our-blog-w .cont-ourblog .column-ourblog {
@@ -16299,10 +16310,10 @@ video {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100% - 30px);
             flex: 0 0 calc(100% - 30px);
-    margin-bottom: 60px;
+    padding-bottom: 0px;
   }
   .our-blog-w .cont-ourblog .column-ourblog:last-child {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 .our-blog-w .cont-ourblog .column-ourblog .img-ourblog {
@@ -16339,6 +16350,12 @@ video {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+@media only screen and (max-width: 991px) {
+  .our-blog-w .cont-ourblog .column-ourblog .action-blog {
+    position: static;
+    margin-top: 20px;
+  }
 }
 .our-blog-w .blog-free-trial-ad {
   margin: 100px 0 0 0;
@@ -16506,6 +16523,11 @@ footer .sm-icons a {
   margin-left: 30px;
   display: inline-block;
   color: #007AFF;
+}
+@media only screen and (max-width: 767px) {
+  footer .sm-icons a {
+    margin: 0 15px;
+  }
 }
 footer .sm-icons a i {
   font-size: 20px;
@@ -16730,11 +16752,21 @@ footer .sm-icons a i {
 .news-w .our-blog-w {
   padding: 120px 0;
 }
+@media only screen and (max-width: 991px) {
+  .news-w .our-blog-w {
+    padding: 60px 0;
+  }
+}
 .news-w .our-blog-w .cont-ourblog {
   margin-top: 0;
 }
 .news-w .our-blog-w .cont-ourblog .column-ourblog {
-  margin-bottom: 70px;
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 991px) {
+  .news-w .our-blog-w .cont-ourblog .column-ourblog {
+    padding-bottom: 0;
+  }
 }
 
 .whybackup-hdr {

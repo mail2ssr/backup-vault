@@ -98,7 +98,8 @@
         min-height: 54px;
         min-width: 141px;
 
-        @include max-screen(767px) {
+
+        @include max-screen(473px) {
             min-width: 171px;
             margin-bottom: 15px;
             margin-right: 0;
