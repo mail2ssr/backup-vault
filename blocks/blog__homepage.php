@@ -88,7 +88,7 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 
 								<div class="action-blog">
 									<div class="green-button">
-										<a href="<?php the_permalink(); ?>">Read more</a>
+										<a href="<?php the_permalink(); ?>">Read More</a>
 									</div>
 								</div>
 							</div>

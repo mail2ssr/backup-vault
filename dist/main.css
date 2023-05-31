@@ -13717,6 +13717,11 @@ video {
     top: 97px;
   }
 }
+@media only screen and (max-width: 1100px) {
+  #header {
+    border-bottom: 1.5px solid rgba(6, 27, 59, 0.1);
+  }
+}
 
 .header {
   position: relative;
@@ -15634,7 +15639,7 @@ video {
 }
 .free-trial-c p {
   color: #fff;
-  max-width: 420px;
+  max-width: 455px;
 }
 @media only screen and (max-width: 991px) {
   .free-trial-c p {
@@ -15997,7 +16002,7 @@ video {
 
 .testimonials-slider {
   position: relative;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .testimonials-slider .slide {
   height: 100%;
@@ -16314,7 +16319,7 @@ video {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 @media only screen and (max-width: 991px) {
   .our-blog-w .cont-ourblog {
@@ -17624,6 +17629,11 @@ footer .sm-icons a i {
 }
 .c-banner-w .c-info {
   margin: 0;
+}
+@media only screen and (max-width: 991px) {
+  .c-banner-w .c-info {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 991px) {
   .c-banner-w .img-sec {
