@@ -32,12 +32,6 @@
         max-width: 575px;
         padding: 48px 0 48px 66px;
 
-        br {
-            @include max-screen(991px) {
-               display: block !important;
-            }
-        }
-
         @include max-screen(991px) {
             padding: 48px 76px;
             text-align: center;

@@ -108,7 +108,7 @@
 
         .c-banner-w & {
             @include max-screen(473px) {
-                min-width:fit-content;
+                min-width: fit-content;
                 margin-bottom: 15px;
                 margin-right: 10px;
                 justify-content: center;
@@ -248,17 +248,18 @@
         padding-top: 84px;
     }
 
+    @include max-screen(331px) {
+        padding-top: 95px;
+    }
+
+    @include max-screen(273px) {
+        padding-top: 101px;
+    }
+
     @include max-screen(991px) {
 
         p br,
-        li br,
-        // h1 br,
-        // h2 br,
-        // h3 br,
-        // h4 br,
-        // h5 br,
-        // h6 br 
-            {
+        li br {
             display: none;
         }
 

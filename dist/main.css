@@ -13717,6 +13717,16 @@ video {
     top: 97px;
   }
 }
+@media only screen and (max-width: 331px) {
+  #header {
+    top: 119px;
+  }
+}
+@media only screen and (max-width: 273px) {
+  #header {
+    top: 143px;
+  }
+}
 @media only screen and (max-width: 1100px) {
   #header {
     border-bottom: 1.5px solid rgba(6, 27, 59, 0.1);
@@ -13876,6 +13886,11 @@ video {
   min-height: 54px;
   min-width: 141px;
 }
+@media only screen and (max-width: 350px) {
+  .header__nav__buttons .button {
+    margin-bottom: 10px;
+  }
+}
 .header__nav__buttons .button:hover {
   background-color: rgba(11, 212, 125, 0.7);
 }
@@ -13935,6 +13950,11 @@ video {
     padding: 0 15px;
     min-height: 44px;
     margin-right: 0;
+  }
+}
+@media only screen and (max-width: 1100px) and (max-width: 360px) {
+  .header__buttons .button {
+    display: none;
   }
 }
 
@@ -14618,6 +14638,16 @@ video {
 @media only screen and (max-width: 430px) {
   #main {
     padding-top: 84px;
+  }
+}
+@media only screen and (max-width: 331px) {
+  #main {
+    padding-top: 95px;
+  }
+}
+@media only screen and (max-width: 273px) {
+  #main {
+    padding-top: 101px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -15650,11 +15680,6 @@ video {
 .free-trial-c .cont-free-trial {
   max-width: 575px;
   padding: 48px 0 48px 66px;
-}
-@media only screen and (max-width: 991px) {
-  .free-trial-c .cont-free-trial br {
-    display: block !important;
-  }
 }
 @media only screen and (max-width: 991px) {
   .free-trial-c .cont-free-trial {
