@@ -17839,11 +17839,6 @@ footer .sm-icons a i {
     text-align: center;
   }
 }
-@media only screen and (max-width: 991px) {
-  .c-w-info1 h2 br, .c-w-info1 .h2 br {
-    display: block !important;
-  }
-}
 .c-w-info1 ul {
   margin: 0;
   padding: 0;

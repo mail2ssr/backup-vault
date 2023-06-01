@@ -64,12 +64,7 @@
     @include max-screen(767px) {
       text-align: center;
     }
-
-    @include max-screen(991px) {
-      br {
-        display: block !important;
-      }
-    }
+    
   }
 
   ul {
