@@ -48,7 +48,7 @@ $select_media_type = get_field('select_media_type');
 
 					<?php } else { ?>
 
-						<img src="<?php echo get_template_directory_uri(); ?>/images/blog-default.svg" alt="" class="img-fluid">
+						<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/blog-default.svg" alt="" class="img-fluid"> -->
 
 					<?php } ?>
 				<?php endif; ?>
