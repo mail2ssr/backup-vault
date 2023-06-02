@@ -35,7 +35,7 @@ $select_media_type = get_sub_field('select_media_type');
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="col-lg-5 offset-lg-1 <?php if ($media_position == "right") {
+                <div class="col-lg-6 <?php if ($media_position == "right") {
                                                         echo "order-lg-1";
                                                     } ?> d-flex align-items-<?php the_sub_field('vertical_align'); ?> os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".5s">
 
