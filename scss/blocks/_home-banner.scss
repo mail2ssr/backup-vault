@@ -140,11 +140,10 @@
     }
 
     .home-video-img {
-        margin: 100px 0 0 0;
+        margin: 0 0 0 0;
 
         .page-id-266 & {
-            margin: 20px 0 0 0;
-
+            margin: 0px 0 0 0;
         }
 
         @include max-screen(991px) {
