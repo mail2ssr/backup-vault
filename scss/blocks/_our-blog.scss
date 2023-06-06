@@ -1,8 +1,8 @@
 .our-blog-w {
-    padding: 120px 0 0px 0;
+    padding: 120px 0;
 
     @include max-screen(767px) {
-        padding: 60px 0 0 0;
+        padding: 60px 0;
     }
 
     .brief-c {

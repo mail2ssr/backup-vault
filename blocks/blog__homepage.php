@@ -2,8 +2,9 @@
 
 if (get_sub_field('hide_this_block') == 0) { ?>
 
+
 	<!--Our Blog Start-->
-	<section class="our-blog-w">
+	<section class="our-blog-w <?php the_sub_field('remove_padding'); ?>">
 		<div class="container">
 			<div class="brief-c  os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
 

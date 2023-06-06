@@ -16336,11 +16336,11 @@ video {
 }
 
 .our-blog-w {
-  padding: 120px 0 0px 0;
+  padding: 120px 0;
 }
 @media only screen and (max-width: 767px) {
   .our-blog-w {
-    padding: 60px 0 0 0;
+    padding: 60px 0;
   }
 }
 .our-blog-w .brief-c {
