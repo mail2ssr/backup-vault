@@ -7,24 +7,26 @@ $select_media_type = get_sub_field('select_media_type');
 ?>
 
 <style>
-.custom { background-color: <?php the_sub_field( 'section_custom_background_color' ); ?> ;}
+	.custom {
+		background-color: <?php the_sub_field('section_custom_background_color'); ?>;
+	}
 </style>
 
-<?php if ( get_sub_field( 'remove_content_left_or_right_padding' ) == 0 ) : ?>
-<?php if ($media_position == "right") {
+<?php if (get_sub_field('remove_content_left_or_right_padding') == 0) : ?>
+	<?php if ($media_position == "right") {
 
-	$col_padding = "col-padding-right";
-} else {
+		$col_padding = "col-padding-right";
+	} else {
 
-	$col_padding = "col-padding-left";
-}
+		$col_padding = "col-padding-left";
+	}
 
-?>
+	?>
 <?php endif; ?>
 
 <!--media_content.php-->
 <?php if (get_sub_field('hide_this_block') == 0) : ?>
-	<section class="<?php the_sub_field( 'block_top_bottom_margin' ); ?> <?php the_sub_field( 'section_background_color' ); ?> <?php the_sub_field( 'section_text_color' ); ?> <?php the_sub_field( 'remove_padding' ); ?> os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
+	<section class="<?php the_sub_field('block_top_bottom_margin'); ?> <?php the_sub_field('section_background_color'); ?> <?php the_sub_field('section_text_color'); ?> <?php the_sub_field('remove_padding'); ?> os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
 		<div class="<?php the_sub_field('container_width'); ?>">
 			<div class="row">
 				<div class="col-lg-<?php echo $media_width; ?> col-md-<?php echo $media_width; ?> <?php if ($media_position == "right") {
@@ -44,14 +46,21 @@ $select_media_type = get_sub_field('select_media_type');
 							get_template_part('blocks/inc/jsonAnimation-inc');
 						}
 						?>
+					
+
+					<?php $button = get_sub_field('button'); ?>
+					<?php if ($button) : ?>
+						<br><div class="text-center"><div class="green-button-i"><a href="<?php echo esc_url($button['url']); ?>" target="<?php echo esc_attr($button['target']); ?>"><?php echo esc_html($button['title']); ?></a></div></div>
+					<?php endif; ?>
+
 					</div>
 				</div>
 				<div class="col-lg-<?php echo 12 - $media_width; ?> col-md-<?php echo 12 - $media_width; ?> <?php if ($media_position == "right") {
 																												echo "order-md-0 order-lg-0";
 																											} ?> d-flex align-items-<?php the_sub_field('vertical_align'); ?> os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
-					<div class="innerpage-body <?php echo $col_padding;?>">
+					<div class="innerpage-body <?php echo $col_padding; ?>">
 
-					<div class="c-w-info1"><?php the_sub_field('content'); ?></div>
+						<div class="c-w-info1"><?php the_sub_field('content'); ?></div>
 					</div>
 				</div>
 			</div>
