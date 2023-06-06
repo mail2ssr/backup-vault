@@ -46,21 +46,7 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <?php if (get_sub_field('content_dr')) { ?>
-                            <div class="column-pf disasterrecovery os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".7s">
-                                <div class="cont-pf">
-                                    <?php the_sub_field('content_dr'); ?>
-                                    <?php $button_dr = get_sub_field('button_dr'); ?>
-                                    <?php if ($button_dr) : ?>
-                                        <a href="<?php echo esc_url($button_dr['url']); ?>" target="<?php echo esc_attr($button_dr['target']); ?>"><?php echo esc_html($button_dr['title']); ?></a>
-                                    <?php endif; ?>
-                                </div>
-                                <?php $bottom_image_dr = get_sub_field('bottom_image_dr'); ?>
-                                <?php if ($bottom_image_dr) : ?>
-                                    <div class="img-placeholder"><img src="<?php echo esc_url($bottom_image_dr['url']); ?>" alt="<?php echo esc_attr($bottom_image_dr['alt']); ?>" /></div>
-                                <?php endif; ?>
-                            </div>
-                        <?php } ?>
+                        
                         <?php if (get_sub_field('content_gw')) { ?>
                             <div class="column-pf googleworkspace os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".6s">
                                 <div class="cont-pf">
@@ -74,6 +60,22 @@
                                 <?php $bottom_image_gw = get_sub_field('bottom_image_gw'); ?>
                                 <?php if ($bottom_image_gw) : ?>
                                     <div class="img-placeholder"><img src="<?php echo esc_url($bottom_image_gw['url']); ?>" alt="<?php echo esc_attr($bottom_image_gw['alt']); ?>" /></div>
+                                <?php endif; ?>
+                            </div>
+                        <?php } ?>
+
+                        <?php if (get_sub_field('content_dr')) { ?>
+                            <div class="column-pf disasterrecovery os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".7s">
+                                <div class="cont-pf">
+                                    <?php the_sub_field('content_dr'); ?>
+                                    <?php $button_dr = get_sub_field('button_dr'); ?>
+                                    <?php if ($button_dr) : ?>
+                                        <a href="<?php echo esc_url($button_dr['url']); ?>" target="<?php echo esc_attr($button_dr['target']); ?>"><?php echo esc_html($button_dr['title']); ?></a>
+                                    <?php endif; ?>
+                                </div>
+                                <?php $bottom_image_dr = get_sub_field('bottom_image_dr'); ?>
+                                <?php if ($bottom_image_dr) : ?>
+                                    <div class="img-placeholder"><img src="<?php echo esc_url($bottom_image_dr['url']); ?>" alt="<?php echo esc_attr($bottom_image_dr['alt']); ?>" /></div>
                                 <?php endif; ?>
                             </div>
                         <?php } ?>
