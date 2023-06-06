@@ -15673,6 +15673,9 @@ video {
   color: #fff;
   max-width: 455px;
 }
+.page-id-1042 .free-trial-c p {
+  max-width: none !important;
+}
 @media only screen and (max-width: 991px) {
   .free-trial-c p {
     max-width: none;
@@ -15682,6 +15685,9 @@ video {
 .free-trial-c .cont-free-trial {
   max-width: 575px;
   padding: 48px 0 48px 66px;
+}
+.page-id-1042 .free-trial-c .cont-free-trial {
+  max-width: 605px;
 }
 @media only screen and (max-width: 991px) {
   .free-trial-c .cont-free-trial {

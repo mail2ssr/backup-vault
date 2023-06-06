@@ -21,6 +21,11 @@
     p {
         color: #fff;
         max-width: 455px;
+        
+        .page-id-1042 &
+        {
+            max-width:none !important;
+        }
 
         @include max-screen(991px) {
             max-width: none;
@@ -31,6 +36,11 @@
     .cont-free-trial {
         max-width: 575px;
         padding: 48px 0 48px 66px;
+
+        .page-id-1042 &
+        {
+            max-width: 605px;
+        }
 
         @include max-screen(991px) {
             padding: 48px 76px;
