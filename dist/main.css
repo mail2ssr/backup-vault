@@ -14406,6 +14406,12 @@ video {
     max-width: 1200px;
   }
 }
+@media only screen and (max-width: 1100px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .brief-c {
   max-width: 700px;
   text-align: center;
@@ -14629,6 +14635,11 @@ video {
 @media only screen and (max-width: 767px) {
   #main {
     padding-top: 110px;
+  }
+}
+@media only screen and (max-width: 604px) {
+  #main {
+    padding-top: 95px;
   }
 }
 @media only screen and (max-width: 430px) {
@@ -14895,6 +14906,254 @@ video {
   top: 32px;
 }
 
+/*Transfer Calculator-----------+++++++++++++++++----------------------+++++++++++++*/
+.select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  color: #262626;
+}
+.select-box span {
+  padding-bottom: 5px;
+  display: block;
+}
+
+.select-box select {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0;
+  padding: 0px 15px 0 10px;
+  margin-top: -5px;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  background: url(../images/chevron-down-blue.svg) no-repeat;
+  background-position: right center;
+  background-size: 12px;
+}
+
+.row-calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media only screen and (max-width: 767px) {
+  .row-calc {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+span.input-help-icon {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  right: 0;
+  height: 13px;
+  width: 13px;
+  margin-left: 5px;
+  background-image: url(../images/help-grey.svg);
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.input-help-icon:hover {
+  background-image: url(../images/help-blue.svg);
+}
+
+.calc-input label {
+  position: relative;
+}
+
+span.input-help-text {
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: -227px;
+  width: 240px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px 18px;
+  border-radius: 3px;
+  background-color: #007aff;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: unset;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: left;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  z-index: 9999;
+}
+
+.input-help-icon:hover + .input-help-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.calc-input label {
+  position: relative;
+  margin: 0 0 28px 0;
+  color: #262626;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#calculator .noUi-target.noUi-background {
+  background-color: #007aff;
+  height: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  border: 0;
+}
+
+#calculator .noUi-handle {
+  width: 28px;
+  height: 28px;
+  left: -14px;
+  border: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-image: url(../images/slider-handle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-color: transparent;
+  top: -12px;
+  cursor: col-resize;
+}
+
+#calculator .noUi-handle:before,
+#calculator .noUi-handle:after {
+  display: none;
+}
+
+#calculator .calc-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+#calculator .calc-input .ten-columns {
+  width: 100%;
+}
+@media only screen and (min-width: 767px) {
+  #calculator .calc-input .ten-columns {
+    width: 80%;
+  }
+}
+
+#calculator .calc-input .two-columns {
+  width: 100%;
+}
+@media only screen and (min-width: 767px) {
+  #calculator .calc-input .two-columns {
+    width: 20%;
+  }
+}
+
+.calc-input input {
+  border: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  text-align: center;
+  color: #007aff;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: unset;
+  line-height: 1;
+  -moz-appearance: textfield;
+  width: 100%;
+  background: transparent;
+}
+
+.two-columns span {
+  display: block;
+  text-align: center;
+  color: #007aff;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  font-weight: unset;
+  line-height: 1;
+  width: 100%;
+}
+
+#calculator .noUi-target .noUi-origin {
+  background-color: #dfdfdf;
+  border-radius: 0;
+}
+
+#calculator .noUi-origin {
+  background-color: #dfdfdf;
+  border-radius: 0;
+  width: auto;
+  bottom: 0;
+  height: auto !important;
+}
+
+div#calculator h4, div#calculator .h4 {
+  color: #007aff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 8px;
+  max-width: none;
+}
+
+.call-to-action .col-lg-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.call-to-action .btn-action {
+  margin-top: 0;
+}
+
+span.elementor-post-category a {
+  color: #adadad;
+}
+
+.inline-icon .elementor-icon-box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+/*-----------+++++++++++++++++----------------------+++++++++++++Transfer Calculator*/
 .download-contact {
   background-color: #007aff;
   padding: 12px 0;
@@ -16948,7 +17207,7 @@ footer .sm-icons a i {
 
 .freetrial-header {
   background-color: #f5faff;
-  padding: 50px 0 130px 0;
+  padding: 50px 0 50px 0;
 }
 @media only screen and (max-width: 991px) {
   .freetrial-header {
@@ -16957,7 +17216,7 @@ footer .sm-icons a i {
 }
 @media only screen and (max-width: 767px) {
   .freetrial-header {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 }
 .freetrial-header h1, .freetrial-header .h1 {
@@ -16995,13 +17254,12 @@ footer .sm-icons a i {
 }
 .freetrial-header p {
   color: #262626;
-  margin: 0;
-  font-weight: bold;
-  max-width: 415px;
+  max-width: 490px;
 }
 @media only screen and (max-width: 991px) {
   .freetrial-header p {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

@@ -779,3 +779,63 @@ function my_acf_op_init()
 		));
 	}
 }
+
+add_shortcode('transfer-calculator', 'calculator_callback');
+function calculator_callback()
+{
+    ob_start();
+?>
+    <div id="calculator">
+        <div class="calc-selects">
+            <div class="row-calc">
+                <div class="select-box">
+                    <span>Data Size Increment:</span>
+                    <select id="size-select" name="size-select" class="ss">
+                        <option>GB</option>
+                        <option>KB</option>
+                        <option>MB</option>
+                        <option>TB</option>
+                    </select>
+                </div>
+                <div class="select-box">
+                    <span>Bandwidth Rate Increment:</span>
+                    <select id="rate-select" name="rate-select" class="ss">
+                        <option>Mbps</option>
+                        <option>Kbps</option>
+                        <option>Gbps</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="calc-input">
+            <div class="ten-columns">
+                <label>Amount of Data<span class="input-help-icon"></span>
+                    <span class="input-help-text">Enter the size of your total data set that needs transferred.</span></label>
+                <div id="size-slider"></div>
+            </div>
+            <div class="two-columns">
+                <input type="number" name="size" value="100" id="size" class="required" autocomplete="off" step="1" min="1" disabled="">
+                <span id="size-increment">KB</span>
+            </div>
+        </div>
+
+        <div class="calc-input">
+            <div class="ten-columns">
+                <label>Transfer Rate<span data-target="rate-help" class="input-help-icon"></span>
+                    <span class="input-help-text">Select the speed of your network based on available capacity.</span></label>
+                <div id="rate-slider"></div>
+            </div>
+            <div class="two-columns">
+                <input type="number" name="rate" value="15" id="rate" class="required" autocomplete="off" step="1" min="1" disabled="">
+                <span id="rate-increment">Kbps</span>
+            </div>
+        </div>
+
+        <h4>Total Transfer Time</h4>
+        <h4 id="transfer-time">0 days, 0 hours, 0 minutes, 4 seconds</h4>
+
+    </div>
+<?php
+    return ob_get_clean();
+}
