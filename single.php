@@ -20,7 +20,7 @@ $select_media_type = get_field('select_media_type');
 	<div class="container">
 		<div class="container-768">
 			<div class="hdr-article">
-				<h2><?php the_title(); ?></h2>
+				<h1><?php the_title(); ?></h1>
 				<div class="date"><?php echo get_the_date(); ?></div>
 			</div>
 		</div>

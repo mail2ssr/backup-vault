@@ -60,6 +60,8 @@ if (get_sub_field('hide_this_block') == 0) { ?>
 
                 </div>
 
+                <br><br>
+
                 <div class="green-button text-center">
                     <a href="#" id="loadMore">View more</a>
                 </div>
