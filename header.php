@@ -46,10 +46,10 @@
 
 
     <?php
-    if (is_page('data-upload-calculator')) {
+    
       wp_enqueue_script('nouislider-js', get_stylesheet_directory_uri() . '/js/nouislider.js', array('jquery'), rand(), true);
       wp_enqueue_style('noUiSlider-style', 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.css', array(), '14.6.3');
-    }
+    
 
     ?>
 
