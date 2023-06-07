@@ -36,10 +36,15 @@
 
   p {
     color: #bfe2ff;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     font-size: pxToRem(18px);
     max-width: 825px;
+  }
 
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
   }
 
   .cont-blue {
