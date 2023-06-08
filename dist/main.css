@@ -14440,7 +14440,7 @@ video {
   font-weight: bold;
   padding: 0 30px;
   line-height: 54px;
-  border: 0;
+  border: 0 !important;
 }
 .green-button a:hover,
 .green-button input[type=button]:hover,
@@ -14489,7 +14489,7 @@ video {
   color: #fff;
   font-weight: bold;
   padding: 0 30px 0 45px;
-  border: 1px solid transparent;
+  border: 1px solid transparent !important;
   min-height: 54px;
   min-width: 141px;
 }
@@ -14541,7 +14541,7 @@ video {
   color: #fff;
   font-weight: bold;
   padding: 0 30px;
-  border: 1px solid transparent;
+  border: 1px solid transparent !important;
   min-height: 54px;
   min-width: 141px;
 }
@@ -14564,7 +14564,7 @@ video {
 .border-button-i a {
   border-radius: 27px;
   display: inline-block;
-  border: 1px solid #fff;
+  border: 1px solid #fff !important;
   text-align: left;
   font-size: 0.8333333333rem;
   color: #fff;
@@ -18057,8 +18057,11 @@ footer .sm-icons a i {
   display: inline-flex;
 }
 .actions div.border-button-i a {
-  border: 1px solid #e6e8eb;
+  border: 1px solid #e6e8eb !important;
   color: #262626;
+}
+.actions div.border-button-i a:hover {
+  background-color: #f5f9ff;
 }
 
 .c-blue-w {

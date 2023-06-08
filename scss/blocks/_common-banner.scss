@@ -95,8 +95,12 @@
 
         &.border-button-i {
             a {
-                border: 1px solid #e6e8eb;
+                border: 1px solid #e6e8eb !important;
                 color: #262626;
+
+                &:hover {
+                    background-color: #f5f9ff;
+                }
             }
         }
     }
