@@ -74,12 +74,19 @@
 
     }
 
+    @include max-screen(991px) {
+
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+
+    }
+
     &.container {
         @include max-screen(1100px) {
             max-width: 100% !important;
             --bs-gutter-x: 0;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 
