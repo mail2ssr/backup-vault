@@ -82,7 +82,7 @@
     <!--Header Start-->
     <header id="header" class="<?php echo $header_background_color; ?>">
       <div class="header container">
-        <a href="/" title="Uqudo" class="header__logo">
+        <a href="/" class="header__logo">
           <?php $upload_logo = get_field('upload_logo', 'option'); ?>
           <?php if ($upload_logo) : ?>
             <img src="<?php echo esc_url($upload_logo['url']); ?>" alt="<?php echo esc_attr($upload_logo['alt']); ?>" />
