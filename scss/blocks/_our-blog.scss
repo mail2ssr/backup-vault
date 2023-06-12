@@ -33,10 +33,25 @@
             .column-ourblog {
                 margin: 0px;
                 height: 100% !important;
+                
+
+                .link-it {
+
+                    position: relative;
+
+                a.link-box {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    border: 0 !important;
+                }
+            }
             }
         }
 
-        .slick-slide > div {
+        .slick-slide>div {
             height: 100% !important;
         }
 
