@@ -15525,7 +15525,7 @@ span.elementor-post-category a {
   }
 }
 .protect-business-w .protect-features .column-pf {
-  padding: 77px;
+  padding: 77px 65px 77px 77px;
   min-height: 600px;
   margin-bottom: 40px;
   margin-right: 13px;
@@ -15648,9 +15648,6 @@ span.elementor-post-category a {
 .protect-business-w .protect-features .column-pf.googleworkspace .img-placeholder img {
   max-width: 100%;
 }
-.protect-business-w .cont-pf {
-  max-width: 385px;
-}
 @media only screen and (max-width: 767px) {
   .protect-business-w .cont-pf {
     text-align: center;
@@ -15709,7 +15706,6 @@ span.elementor-post-category a {
 }
 .your-business-data .img-ybd-tootip .special-text {
   position: relative;
-  cursor: pointer;
 }
 .your-business-data .img-ybd-tootip .special-text:hover .special-text__tooltip {
   visibility: visible;
@@ -15776,7 +15772,6 @@ span.elementor-post-category a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  cursor: pointer;
 }
 .your-business-data .img-ybd-tootip .icon-circle:hover img {
   -webkit-transform: scale(1.2);
@@ -15805,7 +15800,6 @@ span.elementor-post-category a {
           transform: scale(1.2);
   -webkit-transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
   transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
-  cursor: pointer;
 }
 .your-business-data .img-ybd-tootip .icon2 {
   position: absolute;
@@ -15825,7 +15819,6 @@ span.elementor-post-category a {
           transform: scale(1.2);
   -webkit-transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
   transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
-  cursor: pointer;
 }
 .your-business-data .img-ybd-tootip .icon3 {
   position: absolute;
@@ -15845,7 +15838,6 @@ span.elementor-post-category a {
           transform: scale(1.2);
   -webkit-transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
   transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
-  cursor: pointer;
 }
 .your-business-data .img-ybd-tootip .icon4 {
   position: absolute;
@@ -15862,7 +15854,6 @@ span.elementor-post-category a {
           transform: scale(1.2);
   -webkit-transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
   transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
-  cursor: pointer;
 }
 .your-business-data .img-ybd-tootip .icon5 {
   position: absolute;
@@ -15883,7 +15874,6 @@ span.elementor-post-category a {
           transform: scale(1.2);
   -webkit-transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
   transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
-  cursor: pointer;
 }
 .your-business-data .img-ybd-tootip .icon6 {
   position: absolute;
@@ -15904,7 +15894,6 @@ span.elementor-post-category a {
           transform: scale(1.2);
   -webkit-transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
   transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
-  cursor: pointer;
 }
 .your-business-data .img-ybd-tootip .icon7 {
   position: absolute;
@@ -15925,7 +15914,6 @@ span.elementor-post-category a {
           transform: scale(1.2);
   -webkit-transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
   transition: all 0.3s ease-in-out, left 0.5s ease-in-out;
-  cursor: pointer;
 }
 
 .free-trial-c {
@@ -16653,13 +16641,23 @@ span.elementor-post-category a {
   }
 }
 .our-blog-w .cont-ourblog .slide {
-  height: 100%;
+  height: 100% !important;
+}
+.our-blog-w .cont-ourblog .slick-track {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 .our-blog-w .cont-ourblog .slick-slide {
   padding: 0 20px;
+  height: inherit !important;
 }
 .our-blog-w .cont-ourblog .slick-slide .column-ourblog {
   margin: 0px;
+  height: 100% !important;
+}
+.our-blog-w .cont-ourblog .slick-slide > div {
+  height: 100% !important;
 }
 .our-blog-w .cont-ourblog .slick-dots {
   position: relative;

@@ -23,7 +23,7 @@
         }
 
         .column-pf {
-            padding: 77px;
+            padding: 77px 65px 77px 77px;
             min-height: 600px;
             margin-bottom: 40px;
             margin-right: 13px;
@@ -167,7 +167,7 @@
     }
 
     .cont-pf {
-        max-width: 385px;
+        //max-width: 385px;
 
         @include max-screen(767px) {
             text-align: center;
@@ -228,7 +228,7 @@
         // Okay legit CSS now
         .special-text {
             position: relative;
-            cursor: pointer;
+            //cursor: pointer;
         }
 
         /* Show the tooltip on hover */
@@ -299,7 +299,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
+            //cursor: pointer;
 
             &:hover {
                 img {
@@ -327,7 +327,7 @@
                 &:hover {
                     transform: scale(1.2);
                     transition: all .3s ease-in-out, left .5s ease-in-out;
-                    cursor: pointer;
+                    //cursor: pointer;
                 }
             }
         }
@@ -348,7 +348,7 @@
                 &:hover {
                     transform: scale(1.2);
                     transition: all .3s ease-in-out, left .5s ease-in-out;
-                    cursor: pointer;
+                    //cursor: pointer;
                 }
             }
         }
@@ -369,7 +369,7 @@
                 &:hover {
                     transform: scale(1.2);
                     transition: all .3s ease-in-out, left .5s ease-in-out;
-                    cursor: pointer;
+                    //cursor: pointer;
                 }
             }
         }
@@ -386,7 +386,7 @@
                 &:hover {
                     transform: scale(1.2);
                     transition: all .3s ease-in-out, left .5s ease-in-out;
-                    cursor: pointer;
+                    //cursor: pointer;
                 }
             }
         }
@@ -408,7 +408,7 @@
                 &:hover {
                     transform: scale(1.2);
                     transition: all .3s ease-in-out, left .5s ease-in-out;
-                    cursor: pointer;
+                    //cursor: pointer;
                 }
             }
         }
@@ -430,7 +430,7 @@
                 &:hover {
                     transform: scale(1.2);
                     transition: all .3s ease-in-out, left .5s ease-in-out;
-                    cursor: pointer;
+                    //cursor: pointer;
                 }
             }
         }
@@ -452,7 +452,7 @@
                 &:hover {
                     transform: scale(1.2);
                     transition: all .3s ease-in-out, left .5s ease-in-out;
-                    cursor: pointer;
+                    //cursor: pointer;
                 }
             }
         }

@@ -67,6 +67,7 @@ $('.slider-blog').slick({
     },
 
     ]
+   
 
 
 });
