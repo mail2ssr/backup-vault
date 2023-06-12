@@ -30,18 +30,7 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                             </div>
                         <?php endif; ?>
 
-                        <?php if (have_rows('logo_group')) : ?>
-                            <div class="trusted-partners">
-                                <ul>
-                                    <?php while (have_rows('logo_group')) : the_row(); ?>
-                                        <?php $upload_logo = get_sub_field('upload_logo'); ?>
-                                        <?php if ($upload_logo) : ?>
-                                            <li><img src="<?php echo esc_url($upload_logo['url']); ?>" alt="<?php echo esc_attr($upload_logo['alt']); ?>" /></li>
-                                        <?php endif; ?>
-                                    <?php endwhile; ?>
-                                </ul>
-                            </div>
-                        <?php endif; ?>
+                        
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
@@ -58,6 +47,18 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                             get_template_part('blocks/inc/jsonAnimation-inc');
                         }
                         ?>
+                        <?php if (have_rows('logo_group')) : ?>
+                            <div class="trusted-partners">
+                                <ul>
+                                    <?php while (have_rows('logo_group')) : the_row(); ?>
+                                        <?php $upload_logo = get_sub_field('upload_logo'); ?>
+                                        <?php if ($upload_logo) : ?>
+                                            <li><img src="<?php echo esc_url($upload_logo['url']); ?>" alt="<?php echo esc_attr($upload_logo['alt']); ?>" /></li>
+                                        <?php endif; ?>
+                                    <?php endwhile; ?>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
