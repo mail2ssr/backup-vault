@@ -14,6 +14,7 @@
         .column-members {
             margin: 0 10px 80px;
             flex: 0 0 calc(20% - 20px);
+            
 
             @include max-screen(991px) {
                 flex: 0 0 calc(50% - 30px);
@@ -41,12 +42,14 @@
                 font-size: pxToRem(18px);
                 margin: 0 0 10px 0;
                 font-weight: bold;
+                text-align: center;
             }
 
             h6 {
                 color: #007aff;
                 font-weight: 500;
                 font-size: pxToRem(18px);
+                text-align: center;
             }
         }
     }

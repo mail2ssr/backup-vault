@@ -16843,11 +16843,6 @@ span.elementor-post-category a {
   font-size: 0.8333333333rem;
   font-weight: 700;
 }
-@media only screen and (max-width: 991px) {
-  .bottom-w .phone-address ul li {
-    margin-bottom: 30px;
-  }
-}
 .bottom-w .phone-address ul li.address {
   background: url(../images/icon-blue-address.svg) no-repeat left 2px;
   padding: 0 0 0 25px;
@@ -17084,11 +17079,13 @@ footer .sm-icons a i {
   font-size: 1rem;
   margin: 0 0 10px 0;
   font-weight: bold;
+  text-align: center;
 }
 .team-w .members-c .column-members h6, .team-w .members-c .column-members .h6 {
   color: #007aff;
   font-weight: 500;
   font-size: 1rem;
+  text-align: center;
 }
 
 .estb-company {

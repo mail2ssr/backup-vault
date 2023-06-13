@@ -34,9 +34,20 @@
               Wilson House, Lorne Park Road, Bournemouth, Dorset, BH1 1JN
             </li>
           </ul>
+          <div class="addrerss-nav" style="padding-left:25px">
+            <?php
+            wp_nav_menu(
+              array(
+                'theme_location' => 'fnav_address',
+                'menu_class'     => '',
+                'menu_id'        => '',
+              )
+            );
+            ?>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3 nav-btm">
+      <div class="col-lg-2 nav-btm">
         <h6>Backup Software</h6>
         <?php
           wp_nav_menu(
@@ -48,7 +59,19 @@
           );
           ?>
       </div>
-      <div class="col-lg-3 nav-btm">
+      <div class="col-lg-2 nav-btm">
+        <h6>Cyber Security</h6>
+        <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'fnav4',
+              'menu_class'     => '',
+              'menu_id'        => '',
+            )
+          );
+          ?>
+      </div>
+      <div class="col-lg-2 nav-btm">
         <h6>Company</h6>
         <?php
           wp_nav_menu(

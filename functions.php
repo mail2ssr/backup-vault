@@ -129,9 +129,11 @@ if ( ! function_exists( 'twentyfourteen_setup' ) ) :
 			array(
 				'primary'   => __( 'Top primary menu', 'twentyfourteen' ),
 				'secondary' => __( 'Secondary menu in left sidebar', 'twentyfourteen' ),
-				'fnav1' => __( 'Footer nav 1', 'twentyfourteen' ),
-				'fnav2' => __( 'Footer nav 2', 'twentyfourteen' ),
-				'fnav3' => __( 'Footer nav 3', 'twentyfourteen' ),
+				'fnav1' => __( 'Backup Software', 'twentyfourteen' ),
+				'fnav2' => __( 'Company', 'twentyfourteen' ),
+				'fnav3' => __( 'Support', 'twentyfourteen' ),
+				'fnav4' => __( 'Cyber Security', 'twentyfourteen' ),
+				'fnav_address' => __( 'Nave Below Address', 'twentyfourteen' ),
 			)
 		);
 
