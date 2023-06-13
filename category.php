@@ -9,56 +9,142 @@
  * @since Twenty Fourteen 1.0
  */
 
+
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+<div id="main-content" class="main-content">
+
+	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
+			
+			<!-- content_full_width.php -->
+			<div class="blocks-margin top-padding-50 light default none  os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
+				<div class="container">
+					<div class="innerpage-body">
+						<h1 class="text-center"> 
+							<?php _e('Blog'); ?>
+						</h1>
+					</div>
+				</div>
+			</div>
+			<!-- content_full_width.php -->
+			
+			<!--News Start-->
+			<section class="news-w">
+				<div class="our-blog-w">
+					<div class="container">
+							<?php 
+							$args = array(
+								'taxonomy' => 'category',
+								'hide_empty' => 1,
+								'exclude' => 1
+							);
+							$category = get_category( get_query_var( 'cat' ) );
+							$cat_ID = $category->cat_ID;
+							$terms = get_categories($args);
+							if ($terms) : ?>
+								<ul class="categories__list">
+									<li style="display: inline-block;">
+										<a class="button <?php if(is_home()) : echo 'active'; endif;?>" href="<?php echo  home_url( '/blog' ); ;?>"><?php _e('All','backup-vault'); ?></a>
+									</li>
+									<?php foreach ($terms as $term) : 
+										$termid = $term->term_id;
+										if ($cat_ID == $termid) : $class = "active"; else : $class = ""; endif;
+										?>
+										<li style="display: inline-block;">
+											<a class="button <?php echo $class;?>" href="<?php echo get_term_link($term) ;?>" data-term="<?php echo $termid;?>"><?php echo $term->name;?></a>
+										</li>
+									<?php endforeach; ?>
+								</ul>
+							<?php endif; ?>
 
-			<?php if ( have_posts() ) : ?>
+						<div class="cont-ourblog">
 
-			<header class="archive-header">
-				<h1 class="archive-title">
-				<?php
-				/* translators: %s: Category title. */
-				printf( __( 'Category Archives: %s', 'twentyfourteen' ), single_cat_title( '', false ) );
-				?>
-				</h1>
+							<?php if ( have_posts() ) : ?>
+								<?php 
+								while ( have_posts() ) :
+									the_post();
 
-				<?php
-					// Show an optional term description.
-					$term_description = term_description();
-				if ( ! empty( $term_description ) ) :
-					printf( '<div class="taxonomy-description">%s</div>', $term_description );
-					endif;
-				?>
-			</header><!-- .archive-header -->
+									if ( $c % 9 == 0 ) {
 
-				<?php
-				// Start the Loop.
-				while ( have_posts() ) :
-					the_post();
+										$t=.5;
+									}
 
-					/*
-					* Include the post format-specific template for the content. If you want
-					* to use this in a child theme, then include a file called content-___.php
-					* (where ___ is the post format) and that will be used instead.
-					*/
-					get_template_part( 'content', get_post_format() );
+									?>
 
-					endwhile;
-					// Previous/next page navigation.
-					twentyfourteen_paging_nav();
 
-				else :
-					// If no content, include the "No posts found" template.
-					get_template_part( 'content', 'none' );
+										<div class="column-ourblog itemsbigtip os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t?>s">
+											<div class="img-ourblog">
 
-				endif;
-				?>
+												<?php if (has_post_thumbnail()) { ?>
+													<a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('medium'); ?></a>
+
+												<?php } else { ?>
+													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/blog-default.svg" alt="" /></a>
+												<?php } ?>
+
+											</div>
+
+											<div class="date"><?php echo get_the_date(); ?></div>
+
+											<h4><?php the_title(); ?></h4>
+											<p><?php echo wp_trim_words(get_field('brief_description'), 22, '...'); ?></p>
+
+											<div class="action-blog">
+												<div class="green-button">
+													<a href="<?php the_permalink(); ?>">Read More</a>
+												</div>
+											</div>
+										</div>
+
+
+									<?php
+
+										$t = $t + 0.1;
+
+										$c = $c + 1;
+								endwhile; ?>
+								<?php wp_reset_postdata(); ?>
+
+
+
+							</div>
+
+							<br><br>
+
+							<div class="green-button text-center">
+								<a href="#" id="loadMore">View more</a>
+							</div>
+						<?php endif; ?>
+					</div>
+				</div>
+			</section>
+			<!--News End-->
+
+			<script>
+				jQuery(function() {
+					jQuery("div.itemsbigtip").slice(0, 9).show();
+					jQuery("#loadMore").on('click', function(e) {
+						e.preventDefault();
+						jQuery("div.itemsbigtip:hidden").slice(0, 9).fadeIn();
+						if (jQuery("div.itemsbigtip:hidden").length == 0) {
+							jQuery("#loadMore").fadeOut(500);
+						}
+
+					});
+					if (jQuery("div.itemsbigtip:hidden").length == 0) {
+						jQuery("#loadMore").fadeOut(500);
+					}
+				});
+			</script>
+
 		</div><!-- #content -->
-	</section><!-- #primary -->
+	</div><!-- #primary -->
+	
+</div><!-- #main-content -->
 
 <?php
-get_sidebar( 'content' );
-get_sidebar();
 get_footer();
+?>
+
+

@@ -6,6 +6,31 @@ if (get_sub_field('hide_this_block') == 0) { ?>
     <section class="news-w">
         <div class="our-blog-w">
             <div class="container">
+                <?php if(get_sub_field('show_categories')): ?>
+                    <?php 
+                    $args = array(
+                        'taxonomy' => 'category',
+                        'hide_empty' => 1,
+                        'exclude' => 1
+                    );
+                    $terms = get_categories($args);
+                    if ($terms) : ?>
+                        <ul class="categories__list">
+                            <li style="display: inline-block;">
+                                <a class="button <?php if(is_home()) : echo 'active'; endif;?>" href="<?php echo  home_url( '/blog' ); ;?>"><?php _e('All','backup-vault'); ?></a>
+                            </li>
+                            <?php foreach ($terms as $term) : 
+                                $termid = $term->term_id;
+                                if ($cat_ID == $termid) : $class = "active"; else : $class = ""; endif;
+                                ?>
+                                <li style="display: inline-block;">
+                                    <a class="button <?php echo $class;?>" href="<?php echo get_term_link($term) ;?>" data-term="<?php echo $termid;?>"><?php echo $term->name;?></a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
+                <?php endif; ?>
+
                 <div class="cont-ourblog">
 
 
