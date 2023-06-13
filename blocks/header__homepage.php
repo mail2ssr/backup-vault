@@ -11,7 +11,7 @@ if (get_sub_field('hide_this_block') == 0) { ?>
     <section class="home-banner-w">
         <div class="container">
             <div class="row align-items-<?php the_sub_field('vertical_align'); ?>">
-                
+
                 <div class="col-lg-6 order-lg-0 d-flex">
                     <div class="home-info os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".5s">
                         <?php the_sub_field('content'); ?>
@@ -30,7 +30,7 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                             </div>
                         <?php endif; ?>
 
-                        
+
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
@@ -48,12 +48,19 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                         }
                         ?>
                         <?php if (have_rows('logo_group')) : ?>
+
+                            
                             <div class="trusted-partners">
                                 <ul>
                                     <?php while (have_rows('logo_group')) : the_row(); ?>
                                         <?php $upload_logo = get_sub_field('upload_logo'); ?>
+                                        <?php $logo_link = get_sub_field('logo_link'); ?>
                                         <?php if ($upload_logo) : ?>
-                                            <li><img src="<?php echo esc_url($upload_logo['url']); ?>" alt="<?php echo esc_attr($upload_logo['alt']); ?>" /></li>
+                                            <?php if ($logo_link) { ?>
+                                                <li><a href="<?php echo esc_url($logo_link['url']); ?>" target="<?php echo esc_attr($logo_link['target']); ?>"><img src="<?php echo esc_url($upload_logo['url']); ?>" alt="<?php echo esc_attr($upload_logo['alt']); ?>" /></a></li>
+                                            <?php } else { ?>
+                                                <li><img src="<?php echo esc_url($upload_logo['url']); ?>" alt="<?php echo esc_attr($upload_logo['alt']); ?>" /></li>
+                                            <?php }  ?>
                                         <?php endif; ?>
                                     <?php endwhile; ?>
                                 </ul>
