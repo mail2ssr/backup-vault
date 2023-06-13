@@ -14,10 +14,11 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                         'exclude' => 1
                     );
                     $terms = get_categories($args);
+                    $category = get_category( get_query_var( 'cat' ) );
                     if ($terms) : ?>
                         <ul class="categories__list">
                             <li style="display: inline-block;">
-                                <a class="button <?php if(is_home()) : echo 'active'; endif;?>" href="<?php echo  home_url( '/blog' ); ;?>"><?php _e('All','backup-vault'); ?></a>
+                                <a class="button <?php if(true) : echo 'active'; endif;?>" href="<?php echo  home_url( '/blog' ); ;?>"><?php _e('All','backup-vault'); ?></a>
                             </li>
                             <?php foreach ($terms as $term) : 
                                 $termid = $term->term_id;

@@ -139,3 +139,26 @@
         padding-bottom: 45px;
     }
 }
+
+.categories__list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-bottom: 40px;
+    margin: -10px;
+    li{
+        padding: 10px;
+    }
+    .button{
+        background-color: #fbfbfb;
+        color: #262626;
+        border-radius: 30px;
+        display: inline-block;
+        padding: 2px 15px;
+        font-size: 16px;
+        &.active{
+            background-color: #0bd47d;
+            color: #fff;
+        }
+    }
+}

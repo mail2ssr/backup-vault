@@ -78,6 +78,7 @@
     </div>
 
     <?php $header_background_color = get_field('header_background_color'); ?>
+    <?php if(is_category()){ $header_background_color = 'light-blue'; }?>
 
     <!--Header Start-->
     <header id="header" class="<?php echo $header_background_color; ?>">

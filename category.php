@@ -20,10 +20,11 @@ get_header(); ?>
 			<!-- content_full_width.php -->
 			<div class="blocks-margin top-padding-50 light default none  os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
 				<div class="container">
-					<div class="innerpage-body">
-						<h1 class="text-center"> 
+					<div class="innerpage-body text-center">
+						<h1> 
 							<?php _e('Blog'); ?>
 						</h1>
+						<p><?php _e('Gain more knowledge on data protection here – with our informative articles.');?></p>
 					</div>
 				</div>
 			</div>
@@ -59,11 +60,21 @@ get_header(); ?>
 							<?php endif; ?>
 
 						<div class="cont-ourblog">
-
-							<?php if ( have_posts() ) : ?>
+							<?php 
+							$current_category = get_queried_object(); ////getting current category
+							$args = array(
+									'post_type' => 'post',// your post type,
+									'orderby' => 'post_date',
+									'order' => 'DESC',
+									'posts_per_page' => -1,
+									'cat' => $current_category->cat_ID // current category ID
+							);
+							$the_query = new WP_Query($args);
+							?>
+							<?php if ( $the_query->have_posts() ) : ?>
 								<?php 
-								while ( have_posts() ) :
-									the_post();
+								while ( $the_query->have_posts() ) :
+									$the_query->the_post();
 
 									if ( $c % 9 == 0 ) {
 
