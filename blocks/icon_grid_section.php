@@ -33,12 +33,12 @@ if (get_sub_field('hide_this_block') == 0) : ?>
 
             <div class="row justify-content-center">
                 <?php if (have_rows('grid')) : ?>
-                    <?php 
-                         $t=.5;
-                        while (have_rows('grid')) : the_row(); ?>
+                    <?php
+                    $t = .5;
+                    while (have_rows('grid')) : the_row(); ?>
                         <?php $icon = get_sub_field('icon'); ?>
                         <div class="<?php echo $clscol; ?>">
-                            <div class="column-grid-icon os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t?>s">
+                            <div class="column-grid-icon os-animation" data-os-animation="fadeInDown" data-os-animation-delay="<?php echo $t ?>s">
                                 <?php if ($icon) : ?>
                                     <div class="icon-grid"><img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" /></div>
                                 <?php endif; ?>
@@ -46,15 +46,17 @@ if (get_sub_field('hide_this_block') == 0) : ?>
                             </div>
                         </div>
                     <?php
-                 $t=$t+0.1;
-                endwhile; ?>
+                        $t = $t + 0.1;
+                    endwhile; ?>
                 <?php endif; ?>
             </div>
 
-            <?php $button = get_sub_field( 'button' ); ?>
-			<?php if ( $button ) : ?>
-				<div class="green-button text-center"><a href="<?php echo esc_url( $button['url'] ); ?>" target="<?php echo esc_attr( $button['target'] ); ?>"><?php echo esc_html( $button['title'] ); ?></a></div>
-			<?php endif; ?>
+            <?php $button = get_sub_field('button'); ?>
+            <?php if ($button) : ?>
+                <div class="btn-top-margin">
+                    <div class="green-button text-center"><a href="<?php echo esc_url($button['url']); ?>" target="<?php echo esc_attr($button['target']); ?>"><?php echo esc_html($button['title']); ?></a></div>
+                </div>
+            <?php endif; ?>
         </div>
 
 

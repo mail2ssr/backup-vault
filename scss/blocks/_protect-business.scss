@@ -144,6 +144,10 @@
                 background-size: cover;
                 margin-top: 76px;
 
+                @include max-screen(991px) {
+                    margin-top: 0px;
+                }
+
                 a {
                     color: #00a4ff;
 

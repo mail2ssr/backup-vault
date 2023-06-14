@@ -13627,10 +13627,6 @@ video {
   margin-bottom: 0 !important;
 }
 
-.grecaptcha-badge {
-  display: none !important;
-}
-
 .wpcf7-mail-sent-ok {
   display: none !important;
 }
@@ -14317,6 +14313,8 @@ video {
 .mega-menu ul li .sub-nav .menu-group .icon-menu img {
   width: 25px;
   height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .mega-menu ul li .sub-nav .menu-group .info-menu {
   padding-top: 2px;
@@ -15631,6 +15629,11 @@ span.elementor-post-category a {
   background-size: cover;
   margin-top: 76px;
 }
+@media only screen and (max-width: 991px) {
+  .protect-business-w .protect-features .column-pf.googleworkspace {
+    margin-top: 0px;
+  }
+}
 .protect-business-w .protect-features .column-pf.googleworkspace a {
   color: #00a4ff;
 }
@@ -16654,17 +16657,6 @@ span.elementor-post-category a {
   margin: 0px;
   height: 100% !important;
 }
-.our-blog-w .cont-ourblog .slick-slide .column-ourblog .link-it {
-  position: relative;
-}
-.our-blog-w .cont-ourblog .slick-slide .column-ourblog .link-it a.link-box {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border: 0 !important;
-}
 .our-blog-w .cont-ourblog .slick-slide > div {
   height: 100% !important;
 }
@@ -16843,6 +16835,11 @@ span.elementor-post-category a {
   font-size: 0.8333333333rem;
   font-weight: 700;
 }
+@media only screen and (max-width: 991px) {
+  .bottom-w .phone-address ul li {
+    margin-bottom: 30px;
+  }
+}
 .bottom-w .phone-address ul li.address {
   background: url(../images/icon-blue-address.svg) no-repeat left 2px;
   padding: 0 0 0 25px;
@@ -16964,6 +16961,7 @@ footer .sm-icons a i {
           flex: 0 0 calc(33% - 30px);
   margin: 0 15px 30px;
   min-height: 120px;
+  border: 1px solid #e6e8eb;
   border-radius: 25px;
 }
 @media only screen and (max-width: 767px) {
@@ -17079,13 +17077,11 @@ footer .sm-icons a i {
   font-size: 1rem;
   margin: 0 0 10px 0;
   font-weight: bold;
-  text-align: center;
 }
 .team-w .members-c .column-members h6, .team-w .members-c .column-members .h6 {
   color: #007aff;
   font-weight: 500;
   font-size: 1rem;
-  text-align: center;
 }
 
 .estb-company {
@@ -18123,6 +18119,9 @@ footer .sm-icons a i {
   color: #fff;
   margin: 0 auto;
 }
+.c-blue-w .cont-blue h2 > br, .c-blue-w .cont-blue .h2 > br {
+  display: none;
+}
 .c-blue-w .img-btm {
   max-width: 100%;
   height: auto;
@@ -18398,4 +18397,12 @@ footer .sm-icons a i {
   height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.icon-grid-section .btn-top-margin {
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 991px) {
+  .icon-grid-section .btn-top-margin {
+    margin-top: 1.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */

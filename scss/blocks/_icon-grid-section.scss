@@ -1,5 +1,5 @@
 .icon-grid-section {
-   // background-color: #f5faff;
+    // background-color: #f5faff;
 
     .brief-c {
         max-width: 840px;
@@ -33,6 +33,14 @@
                 height: 100px;
                 object-fit: contain;
             }
+        }
+    }
+
+    .btn-top-margin {
+        margin-top: 2rem;
+
+        @include max-screen(991px) {
+            margin-top: 1.5rem;
         }
     }
 
