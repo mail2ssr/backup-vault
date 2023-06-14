@@ -33,7 +33,6 @@ if (get_sub_field('hide_this_block') == 0) { ?>
                     <?php 
                 
                 $t=$t+0.1;
-                
                 endwhile; ?>
                 <?php endif; ?>
             </div>

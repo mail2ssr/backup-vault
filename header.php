@@ -22,6 +22,56 @@
   <!--<![endif]-->
 
   <head>
+	  <meta name="google-site-verification" content="Brs-jGencRyj8lbgOheDS1YTCeefqLv-d_2Pl2hk6Mk" />
+	  <!-- Google Tag Manager -->
+<script type=""rocketlazyloadscript"">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WFXZ3WT');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Click Guardian -->
+<script type=""rocketlazyloadscript"" data-rocket-type=""text/javascript"">
+var _cgk = 'CVNgAbIuk0nSJlZ';
+(function () {
+        var _cg = document.createElement('script'); _cg.type = 'text/javascript'; _cg.async = true;
+        _cg.src = 'https://v2.clickguardian.app/track.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(_cg, s);
+})();
+</script>
+<!-- End Click Guardian -->
+	  
+	  <!-- Hotjar Tracking Code for www.backupvault.co.uk -->
+<script type=""rocketlazyloadscript"">
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1127797,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+	  
+	  <script type="application/ld+json">
+{
+"@context" : "http://schema.org",
+"@type" : "Organization",
+"name" : "BackupVault",
+"url" : "https://backupvault.co.uk/",
+"logo": "https://backupvault.co.uk/wp-content/uploads/2023/05/logo-backupvault-new-color-1.svg",
+"sameAs" : [
+"https://www.linkedin.com/company/backupvault/",
+"https://twitter.com/BackupVaultUK",
+"https://www.facebook.com/backupvault.co.uk",
+"https://www.youtube.com/@BackupvaultCoUkonlinebackup"
+]
+}
+</script>
+	  
+	  <meta property="og:image" content=”https://backupvault.co.uk/wp-content/uploads/2023/06/Backup-Vault-site-image-600x338.jpg”/>
+<meta property="og:url" content="https://backupvault.co.uk/"/>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php wp_title('|', true, 'right'); ?></title>

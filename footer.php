@@ -34,7 +34,7 @@
               Wilson House, Lorne Park Road, Bournemouth, Dorset, BH1 1JN
             </li>
           </ul>
-          <div class="addrerss-nav" style="padding-left:25px">
+          <div style="padding-left:25px">
             <?php
             wp_nav_menu(
               array(
@@ -227,6 +227,17 @@ jQuery('.accordion-collapse').on('shown.bs.collapse', function (e) {
 
 </script>
 <?php wp_footer(); ?>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src=""https://www.googletagmanager.com/ns.html?id=GTM-WFXZ3WT""
+height=""0"" width=""0"" style=""display:none;visibility:hidden""></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Click Guardian -->
+<noscript>
+  <img src=""https://v2.clickguardian.app/pixel?tkey=CVNgAbIuk0nSJlZ"" height=""1"" width=""1"" style=""border:0;"" alt=""Click Guardian v2 Tracking Pixel""/>
+</noscript>
+<!-- End Click Guardian -->
 </body>
 
 </html>
